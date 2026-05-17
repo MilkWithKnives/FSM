@@ -6,10 +6,20 @@
 </svelte:head>
 
 <script lang="ts">
+	import { properties } from '$lib/properties';
+	import { photoSrcset, photoFallback, PHOTO_SIZES_HALF } from '$lib/images';
+
+	const tierImages = [
+		{ slug: properties[2].slug, n: properties[2].selected[0] },
+		{ slug: properties[1].slug, n: properties[1].selected[0] },
+		{ slug: properties[0].slug, n: properties[0].selected[0] },
+		{ slug: properties[3].slug, n: properties[3].selected[0] },
+	];
+
 	const tiers = [
 		{
 			sqft: '1,000 – 1,999 sqft',
-			img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop',
+			img: tierImages[0],
 			services: [
 				{ name: 'Photography', price: '$480' },
 				{ name: 'Video Tour', price: '$480' },
@@ -19,7 +29,7 @@
 		},
 		{
 			sqft: '2,000 – 2,999 sqft',
-			img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80&auto=format&fit=crop',
+			img: tierImages[1],
 			services: [
 				{ name: 'Photography', price: '$520' },
 				{ name: 'Video Tour', price: '$980' },
@@ -29,7 +39,7 @@
 		},
 		{
 			sqft: '3,000 – 3,999 sqft',
-			img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80&auto=format&fit=crop',
+			img: tierImages[2],
 			services: [
 				{ name: 'Photography', price: '$600' },
 				{ name: 'Video Tour', price: '$1,100' },
@@ -39,7 +49,7 @@
 		},
 		{
 			sqft: '4,000 – 4,999 sqft',
-			img: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=900&q=80&auto=format&fit=crop',
+			img: tierImages[3],
 			services: [
 				{ name: 'Photography', price: '$720' },
 				{ name: 'Video Tour', price: '$1,400' },
@@ -97,7 +107,18 @@
 	{#each tiers as tier, i}
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-gray-100 {i === tiers.length - 1 ? 'border-b' : ''}">
 			<div class="overflow-hidden aspect-[16/10] {i % 2 === 1 ? 'md:order-2' : ''}">
-				<img src={tier.img} alt={tier.sqft} class="w-full h-full object-cover" />
+				<picture>
+					<source type="image/webp" srcset={photoSrcset(tier.img.slug, tier.img.n, 'webp')} sizes={PHOTO_SIZES_HALF} />
+					<img
+						src={photoFallback(tier.img.slug, tier.img.n)}
+						srcset={photoSrcset(tier.img.slug, tier.img.n, 'jpg')}
+						sizes={PHOTO_SIZES_HALF}
+						alt={tier.sqft}
+						loading="lazy"
+						decoding="async"
+						class="w-full h-full object-cover"
+					/>
+				</picture>
 			</div>
 			<div class="flex flex-col justify-center px-8 md:px-14 py-14 {i % 2 === 1 ? 'md:order-1' : ''}">
 				<p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">{tier.sqft}</p>
@@ -115,17 +136,6 @@
 	{/each}
 </section>
 
-<!-- AS SEEN IN -->
-<section class="bg-gray-50 py-20 px-8 border-y border-gray-100">
-	<div class="max-w-5xl mx-auto text-center">
-		<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-10">Our Work As Seen In</p>
-		<div class="flex flex-wrap items-center justify-center gap-12">
-			{#each ['Architectural Digest', 'Wall Street Journal', 'Lansing State Journal', 'Robb Report'] as pub}
-				<p class="text-sm tracking-widest uppercase text-gray-400 font-light" style="font-family: var(--font-serif)">{pub}</p>
-			{/each}
-		</div>
-	</div>
-</section>
 
 <!-- FAQ -->
 <section class="py-24 px-8 lg:px-20 max-w-4xl mx-auto">

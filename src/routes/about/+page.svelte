@@ -6,35 +6,28 @@
 </svelte:head>
 
 <script lang="ts">
-	const team = [
-		{
-			name: 'Angela R.',
-			role: 'Luxury Interior Photographer',
-			bio: 'Specializing in capturing the warmth and flow of luxury interiors, Angela brings over 12 years of editorial experience to every shoot.',
-			img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80&auto=format&fit=crop&crop=face',
-		},
-		{
-			name: 'Michelle K.',
-			role: 'Architectural Photographer',
-			bio: 'A Michigan-based photographer with more than 15 years of experience documenting high-end residential architecture.',
-			img: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80&auto=format&fit=crop&crop=face',
-		},
-		{
-			name: 'Brittany M.',
-			role: 'Operations Manager',
-			bio: 'Brittany brings 10 years of operations expertise to Full Scope Media, ensuring every shoot runs seamlessly from booking to delivery.',
-			img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80&auto=format&fit=crop&crop=face',
-		},
-	];
+	import { properties, propertyArea } from '$lib/properties';
+	import { photoSrcset, photoFallback, PHOTO_SIZES_FULL, PHOTO_SIZES_HALF } from '$lib/images';
+
+	const heroProperty = properties[0];
+
+	const aboutPhotoSrcset = (ext: 'webp' | 'jpg') =>
+		[800, 1400, 2000].map((w) => `/about/me-${w}.${ext} ${w}w`).join(', ');
 </script>
 
 <!-- HERO -->
 <section class="relative h-[55vh] overflow-hidden">
-	<img
-		src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1800&q=85&auto=format&fit=crop"
-		alt="Our studio"
-		class="absolute inset-0 w-full h-full object-cover"
-	/>
+	<picture>
+		<source type="image/webp" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
+		<img
+			src={photoFallback(heroProperty.slug, heroProperty.selected[0])}
+			srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'jpg')}
+			sizes={PHOTO_SIZES_FULL}
+			alt="{heroProperty.address}, {propertyArea(heroProperty)}"
+			fetchpriority="high"
+			class="absolute inset-0 w-full h-full object-cover"
+		/>
+	</picture>
 	<div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-6">
 		<p class="text-xs tracking-[0.4em] uppercase mb-4 opacity-70">Our Story</p>
 		<h1 class="text-5xl md:text-7xl font-light" style="font-family: var(--font-serif)">About Us</h1>
@@ -57,13 +50,19 @@
 			</p>
 			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">WORK WITH US</a>
 		</div>
-		<div class="grid grid-cols-2 gap-4">
-			<div class="overflow-hidden aspect-[3/4] mt-12">
-				<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop&crop=face" alt="Arturo" class="w-full h-full object-cover" />
-			</div>
-			<div class="overflow-hidden aspect-[3/4]">
-				<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80&auto=format&fit=crop&crop=face" alt="Lauren" class="w-full h-full object-cover" />
-			</div>
+		<div class="overflow-hidden aspect-[4/5]">
+			<picture>
+				<source type="image/webp" srcset={aboutPhotoSrcset('webp')} sizes={PHOTO_SIZES_HALF} />
+				<img
+					src="/about/me-1400.jpg"
+					srcset={aboutPhotoSrcset('jpg')}
+					sizes={PHOTO_SIZES_HALF}
+					alt="Founder, Full Scope Media LLC"
+					loading="lazy"
+					decoding="async"
+					class="w-full h-full object-cover"
+				/>
+			</picture>
 		</div>
 	</div>
 </section>
@@ -93,23 +92,6 @@
 	</div>
 </section>
 
-<!-- TEAM -->
-<section class="py-24 px-8 lg:px-20 max-w-6xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 text-center">The People Behind the Lens</p>
-	<h2 class="text-3xl md:text-4xl font-light text-center mb-16" style="font-family: var(--font-serif)">Meet the Team</h2>
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-		{#each team as member}
-			<div>
-				<div class="overflow-hidden aspect-[3/4] mb-6">
-					<img src={member.img} alt={member.name} class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
-				</div>
-				<h3 class="text-xl font-light mb-1" style="font-family: var(--font-serif)">{member.name}</h3>
-				<p class="text-xs tracking-widest uppercase text-gray-400 mb-3">{member.role}</p>
-				<p class="text-sm text-gray-500 leading-relaxed">{member.bio}</p>
-			</div>
-		{/each}
-	</div>
-</section>
 
 <!-- CTA -->
 <section class="bg-neutral text-white py-24 px-8 text-center">

@@ -6,23 +6,24 @@
 </svelte:head>
 
 <script lang="ts">
-	const videos = [
-		{
-			title: 'Hagadorn Rd · East Lansing',
-			tag: 'Cinematic Tour',
-			thumbnail: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80&auto=format&fit=crop',
-		},
-		{
-			title: 'Lake Dr · East Lansing',
-			tag: 'Property Tour + Aerial',
-			thumbnail: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80&auto=format&fit=crop',
-		},
-		{
-			title: 'Grand River Ave · Grand Ledge',
-			tag: 'Lifestyle Film',
-			thumbnail: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=900&q=80&auto=format&fit=crop',
-		},
-	];
+	import { properties, propertyArea } from '$lib/properties';
+	import {
+		photoSrcset,
+		photoFallback,
+		heroFallback,
+		PHOTO_SIZES_FULL,
+	} from '$lib/images';
+
+	const heroProperty = properties[0];
+
+	const videos = properties.slice(0, 3).map((p) => ({
+		slug: p.slug,
+		title: `${p.address} · ${p.city}`,
+		tag: p.tag.includes('Floorplans') ? 'Cinematic Tour + Aerial' : 'Cinematic Tour',
+		address: p.address,
+		area: propertyArea(p),
+		coverIndex: p.selected[0],
+	}));
 
 	const includes = [
 		'2–4 minute cinematic walkthrough',
@@ -36,11 +37,17 @@
 
 <!-- HERO -->
 <section class="relative h-[60vh] overflow-hidden">
-	<img
-		src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1800&q=85&auto=format&fit=crop"
-		alt="Real estate video production"
-		class="absolute inset-0 w-full h-full object-cover"
-	/>
+	<picture>
+		<source type="image/webp" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
+		<img
+			src={heroFallback(heroProperty)}
+			srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'jpg')}
+			sizes={PHOTO_SIZES_FULL}
+			alt="Real estate video production"
+			fetchpriority="high"
+			class="absolute inset-0 w-full h-full object-cover"
+		/>
+	</picture>
 	<div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-6">
 		<p class="text-xs tracking-[0.4em] uppercase mb-4 opacity-70">Services</p>
 		<h1 class="text-5xl md:text-7xl font-light" style="font-family: var(--font-serif)">Video Tours</h1>
@@ -86,15 +93,21 @@
 <section class="px-8 lg:px-20 pb-28 max-w-6xl mx-auto">
 	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-10 text-center">Recent Productions</p>
 	<div class="flex flex-col gap-8">
-		{#each videos as video}
-			<div class="group relative overflow-hidden aspect-[16/9] cursor-pointer">
-				<img
-					src={video.thumbnail}
-					alt={video.title}
-					class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-				/>
+		{#each videos as video (video.slug)}
+			<a href="/portfolio/{video.slug}" class="group relative overflow-hidden aspect-[16/9] block">
+				<picture>
+					<source type="image/webp" srcset={photoSrcset(video.slug, video.coverIndex, 'webp')} sizes={PHOTO_SIZES_FULL} />
+					<img
+						src={photoFallback(video.slug, video.coverIndex)}
+						srcset={photoSrcset(video.slug, video.coverIndex, 'jpg')}
+						sizes={PHOTO_SIZES_FULL}
+						alt={video.title}
+						loading="lazy"
+						decoding="async"
+						class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+					/>
+				</picture>
 				<div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white">
-					<!-- Play button -->
 					<div class="w-16 h-16 rounded-full border border-white/70 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-1" fill="white" viewBox="0 0 24 24">
 							<path d="M8 5v14l11-7z" />
@@ -103,7 +116,7 @@
 					<p class="text-lg font-light" style="font-family: var(--font-serif)">{video.title}</p>
 					<p class="text-xs tracking-widest uppercase mt-1 opacity-70">{video.tag}</p>
 				</div>
-			</div>
+			</a>
 		{/each}
 	</div>
 	<div class="text-center mt-12">

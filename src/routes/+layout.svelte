@@ -10,7 +10,7 @@
 	const siteUrl = 'https://fullscope-media.com';
 	const siteName = 'Full Scope Media LLC';
 	const defaultDescription = 'Full Scope Media LLC is a luxury real estate media studio offering photography, cinematic video tours, and aerial drone services in East Lansing, MI.';
-	const defaultImage = 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&auto=format&fit=crop';
+	const defaultImage = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg`;
 
 	const navLinks = [
 		{ href: '/portfolio', label: 'Portfolio' },
@@ -141,7 +141,13 @@
 
 			<!-- END: Book Us button (always) -->
 			<div class="navbar-end">
-				<a href="/contact" class="btn btn-neutral btn-sm rounded-none tracking-wider text-xs px-4 lg:px-6 whitespace-nowrap">BOOK US</a>
+				<a href="/contact" class="cta" aria-label="Book us">
+					<span>BOOK US</span>
+					<svg width="15" height="10" viewBox="0 0 13 10" aria-hidden="true">
+						<path d="M1,5 L11,5"></path>
+						<polyline points="8 1 12 5 8 9"></polyline>
+					</svg>
+				</a>
 			</div>
 		</nav>
 
@@ -288,6 +294,73 @@
 </div>
 
 <style>
+  /* ── Navbar Book Us CTA (Uiverse: alexmaracinaru) ── */
+  .cta {
+    position: relative;
+    padding: 10px 16px;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .cta::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 40px;
+    height: 40px;
+    transition: width 0.3s ease, background 0.3s ease;
+  }
+
+  .cta span {
+    position: relative;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #234567;
+  }
+
+  .cta svg {
+    position: relative;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: transform 0.3s ease;
+  }
+
+  .cta:hover::before {
+    width: 100%;
+    background: #9fd0e0;
+  }
+
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+
+  .cta:active {
+    transform: scale(0.95);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cta, .cta::before, .cta svg {
+      transition: none;
+    }
+  }
+
   /* ── Social icon bounce animation ── */
   .social-login-icons {
     display: flex;

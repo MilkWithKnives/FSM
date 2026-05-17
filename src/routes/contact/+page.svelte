@@ -8,6 +8,11 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { onMount } from 'svelte';
+	import { properties } from '$lib/properties';
+	import { photoSrcset, photoFallback, PHOTO_SIZES_HALF } from '$lib/images';
+
+	const sideProperty = properties[1];
+	const sidePhoto = sideProperty.selected[1] ?? sideProperty.selected[0];
 
 	let { form: actionResult } = $props();
 
@@ -167,7 +172,18 @@
 				<a href="https://instagram.com/full.scope.media" class="text-sm text-gray-700 hover:text-black transition-colors">@full.scope.media</a>
 			</div>
 			<div class="overflow-hidden aspect-[4/5]">
-				<img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=600&q=80&auto=format&fit=crop" alt="Luxury interior" class="w-full h-full object-cover" />
+				<picture>
+					<source type="image/webp" srcset={photoSrcset(sideProperty.slug, sidePhoto, 'webp')} sizes={PHOTO_SIZES_HALF} />
+					<img
+						src={photoFallback(sideProperty.slug, sidePhoto)}
+						srcset={photoSrcset(sideProperty.slug, sidePhoto, 'jpg')}
+						sizes={PHOTO_SIZES_HALF}
+						alt="{sideProperty.address}, {sideProperty.city}, {sideProperty.state}"
+						loading="lazy"
+						decoding="async"
+						class="w-full h-full object-cover"
+					/>
+				</picture>
 			</div>
 		</div>
 

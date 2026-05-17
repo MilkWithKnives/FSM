@@ -1,49 +1,47 @@
 <script lang="ts">
 	import { inView } from '$lib/actions/inView';
+	import { properties, propertyArea } from '$lib/properties';
+	import {
+		photoSrcset,
+		photoFallback,
+		heroFallback,
+		PHOTO_SIZES_FULL,
+		PHOTO_SIZES_GALLERY,
+		PHOTO_SIZES_HALF,
+	} from '$lib/images';
 
-	const listings = [
-		{
-			address: 'Hagadorn Rd',
-			area: 'East Lansing',
-			tag: 'Photos + Video',
-			img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format&fit=crop',
-		},
-		{
-			address: 'Hamilton Rd',
-			area: 'Okemos',
-			tag: 'Photos',
-			img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80&auto=format&fit=crop',
-		},
-		{
-			address: 'Oriole Ln',
-			area: 'East Lansing',
-			tag: 'Photos + Video',
-			img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80&auto=format&fit=crop',
-		},
-	];
+	const listings = properties.slice(0, 3);
+	const heroProperty = properties[0];
+	const quoteProperty = properties[1];
+	const aboutProperty = properties[2];
 
 	const services = [
 		{
 			title: 'Photography',
-			description: 'High-resolution, fully edited images that capture every detail — from wide-angle architectural shots to intimate interior moments.',
-			img: 'https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=700&q=80&auto=format&fit=crop',
+			description:
+				'High-resolution, fully edited images that capture every detail — from wide-angle architectural shots to intimate interior moments.',
+			slug: properties[2].slug,
+			photoIndex: properties[2].selected[2] ?? properties[2].selected[0],
 			href: '/photos',
 		},
 		{
 			title: 'Video Tours',
-			description: 'Cinematic property walkthroughs that immerse buyers in the experience before they ever set foot inside.',
-			img: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=80&auto=format&fit=crop',
+			description:
+				'Cinematic property walkthroughs that immerse buyers in the experience before they ever set foot inside.',
+			slug: properties[3].slug,
+			photoIndex: properties[3].selected[2] ?? properties[3].selected[0],
 			href: '/videos',
 		},
 		{
 			title: 'Aerial Drone',
-			description: "Stunning bird's-eye perspectives that showcase location, lot size, and surrounding amenities.",
-			img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=80&auto=format&fit=crop',
+			description:
+				"Stunning bird's-eye perspectives that showcase location, lot size, and surrounding amenities.",
+			slug: properties[0].slug,
+			photoIndex: properties[0].selected[0],
 			href: '/pricing',
 		},
 	];
 
-	const press = ['Architectural Digest', 'Wall Street Journal', 'Lansing State Journal', 'Robb Report'];
 </script>
 
 <svelte:head>
@@ -55,13 +53,18 @@
 
 <!-- HERO -->
 <section class="relative h-[100dvh] min-h-[500px] overflow-hidden">
-	<img
-		src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=85&auto=format&fit=crop"
-		alt="Luxury property exterior"
-		fetchpriority="high"
-		class="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[8s] ease-out"
-		style="animation: heroZoom 8s ease forwards;"
-	/>
+	<picture>
+		<source type="image/webp" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
+		<img
+			src={heroFallback(heroProperty)}
+			srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'jpg')}
+			sizes={PHOTO_SIZES_FULL}
+			alt="{heroProperty.address}, {propertyArea(heroProperty)}"
+			fetchpriority="high"
+			class="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[8s] ease-out"
+			style="animation: heroZoom 8s ease forwards;"
+		/>
+	</picture>
 	<div class="absolute inset-0 bg-black/35 flex flex-col items-center justify-center text-white text-center px-5">
 		<p class="hero-line-1 text-xs tracking-[0.4em] uppercase mb-5 opacity-80">Real Estate Media Studio · East Lansing, MI</p>
 		<h1 class="hero-line-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light max-w-3xl leading-tight" style="font-family: var(--font-serif)">
@@ -91,18 +94,24 @@
 		<a href="/portfolio" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity hidden sm:block">View All</a>
 	</div>
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
-		{#each listings as listing, i}
-			<a href="/portfolio" class="group block" use:inView={{ delay: i * 120 }}>
+		{#each listings as listing, i (listing.slug)}
+			<a href="/portfolio/{listing.slug}" class="group block" use:inView={{ delay: i * 120 }}>
 				<div class="reveal overflow-hidden aspect-[4/5] mb-3">
-					<img
-						src={listing.img}
-						alt="{listing.address}, {listing.area}"
-						loading="lazy"
-						class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-					/>
+					<picture>
+						<source type="image/webp" srcset={photoSrcset(listing.slug, listing.selected[0], 'webp')} sizes={PHOTO_SIZES_GALLERY} />
+						<img
+							src={photoFallback(listing.slug, listing.selected[0])}
+							srcset={photoSrcset(listing.slug, listing.selected[0], 'jpg')}
+							sizes={PHOTO_SIZES_GALLERY}
+							alt="{listing.address}, {propertyArea(listing)}"
+							loading="lazy"
+							decoding="async"
+							class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+						/>
+					</picture>
 				</div>
 				<p class="reveal text-base font-light" style="font-family: var(--font-serif)">{listing.address}</p>
-				<p class="text-sm text-gray-500">{listing.area} · {listing.tag}</p>
+				<p class="text-sm text-gray-500">{propertyArea(listing)} · {listing.tag}</p>
 			</a>
 		{/each}
 	</div>
@@ -119,15 +128,21 @@
 			<h2 class="text-3xl md:text-5xl font-light" style="font-family: var(--font-serif)">Our Services</h2>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
-			{#each services as service, i}
+			{#each services as service, i (service.title)}
 				<div class="group reveal" use:inView={{ delay: i * 150 }}>
 					<div class="overflow-hidden aspect-[4/3] mb-5">
-						<img
-							src={service.img}
-							alt="Real estate {service.title.toLowerCase()} by Full Scope Media LLC"
-							loading="lazy"
-							class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-						/>
+						<picture>
+							<source type="image/webp" srcset={photoSrcset(service.slug, service.photoIndex, 'webp')} sizes={PHOTO_SIZES_GALLERY} />
+							<img
+								src={photoFallback(service.slug, service.photoIndex)}
+								srcset={photoSrcset(service.slug, service.photoIndex, 'jpg')}
+								sizes={PHOTO_SIZES_GALLERY}
+								alt="Real estate {service.title.toLowerCase()} by Full Scope Media LLC"
+								loading="lazy"
+								decoding="async"
+								class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+							/>
+						</picture>
 					</div>
 					<h3 class="text-xl md:text-2xl font-light mb-2" style="font-family: var(--font-serif)">{service.title}</h3>
 					<p class="text-sm text-gray-500 leading-relaxed mb-4">{service.description}</p>
@@ -140,12 +155,18 @@
 
 <!-- FULL-BLEED QUOTE -->
 <section class="relative h-[50vh] md:h-[60vh] min-h-[300px] overflow-hidden">
-	<img
-		src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1800&q=85&auto=format&fit=crop"
-		alt="Luxury interior"
-		loading="lazy"
-		class="absolute inset-0 w-full h-full object-cover"
-	/>
+	<picture>
+		<source type="image/webp" srcset={photoSrcset(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
+		<img
+			src={photoFallback(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0])}
+			srcset={photoSrcset(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0], 'jpg')}
+			sizes={PHOTO_SIZES_FULL}
+			alt="Interior at {quoteProperty.address}"
+			loading="lazy"
+			decoding="async"
+			class="absolute inset-0 w-full h-full object-cover"
+		/>
+	</picture>
 	<div class="absolute inset-0 bg-black/30 flex items-center justify-center px-5">
 		<blockquote class="text-white text-center max-w-2xl reveal" use:inView>
 			<p class="text-2xl sm:text-3xl md:text-5xl font-light italic" style="font-family: var(--font-serif)">"Every property has a story worth telling beautifully."</p>
@@ -153,17 +174,6 @@
 	</div>
 </section>
 
-<!-- AS SEEN IN -->
-<section class="py-16 md:py-20 px-5 border-b border-gray-100">
-	<div class="max-w-5xl mx-auto text-center">
-		<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-8 reveal" use:inView>Our Work As Seen In</p>
-		<div class="flex flex-wrap items-center justify-center gap-6 md:gap-12">
-			{#each press as pub, i}
-				<p class="text-xs md:text-sm tracking-widest uppercase text-gray-400 font-light reveal" use:inView={{ delay: i * 100 }} style="font-family: var(--font-serif)">{pub}</p>
-			{/each}
-		</div>
-	</div>
-</section>
 
 <!-- ABOUT TEASER -->
 <section class="py-16 md:py-24 px-5 md:px-10 lg:px-20 max-w-7xl mx-auto">
@@ -182,12 +192,18 @@
 			<a href="/about" class="btn btn-neutral rounded-none tracking-widest text-xs px-8 hover:scale-105 transition-transform duration-200">MEET THE TEAM</a>
 		</div>
 		<div class="overflow-hidden aspect-[4/5] order-1 md:order-2 reveal-scale" use:inView>
-			<img
-				src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=900&q=85&auto=format&fit=crop"
-				alt="Luxury property at dusk"
-				loading="lazy"
-				class="w-full h-full object-cover"
-			/>
+			<picture>
+				<source type="image/webp" srcset={photoSrcset(aboutProperty.slug, aboutProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_HALF} />
+				<img
+					src={heroFallback(aboutProperty)}
+					srcset={photoSrcset(aboutProperty.slug, aboutProperty.selected[0], 'jpg')}
+					sizes={PHOTO_SIZES_HALF}
+					alt="{aboutProperty.address}, {propertyArea(aboutProperty)}"
+					loading="lazy"
+					decoding="async"
+					class="w-full h-full object-cover"
+				/>
+			</picture>
 		</div>
 	</div>
 </section>

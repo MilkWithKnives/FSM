@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "$HOME/Projects/shelfdrop/.venv/bin/python" "$HOME/Projects/shelfdrop/shelfdrop.py" "$@"
