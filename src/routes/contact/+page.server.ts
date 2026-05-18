@@ -4,8 +4,8 @@ import { SMTP_USER, SMTP_PASS } from '$env/static/private';
 import type { Actions } from './$types';
 
 const transporter = nodemailer.createTransport({
-	host: '127.0.0.1',
-	port: 1025,
+	host: 'smtp.protonmail.ch',
+	port: 587,
 	secure: false,
 	auth: {
 		user: SMTP_USER,
