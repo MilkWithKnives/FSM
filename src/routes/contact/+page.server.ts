@@ -1,15 +1,15 @@
 import { fail } from '@sveltejs/kit';
 import nodemailer from 'nodemailer';
-import { GMAIL_USER, GMAIL_APP_PASSWORD } from '$env/static/private';
+import { SMTP_USER, SMTP_PASS } from '$env/static/private';
 import type { Actions } from './$types';
 
 const transporter = nodemailer.createTransport({
-	host: 'smtp.gmail.com',
-	port: 587,
+	host: '127.0.0.1',
+	port: 1025,
 	secure: false,
 	auth: {
-		user: GMAIL_USER,
-		pass: GMAIL_APP_PASSWORD,
+		user: SMTP_USER,
+		pass: SMTP_PASS,
 	},
 });
 
@@ -57,8 +57,8 @@ export const actions: Actions = {
 
 		try {
 			await transporter.sendMail({
-				from: `"Full Scope Media" <${GMAIL_USER}>`,
-				to: GMAIL_USER,
+				from: `"Full Scope Media" <${SMTP_USER}>`,
+				to: SMTP_USER,
 				replyTo: email,
 				subject: `New Inquiry — ${name} · ${address}`,
 				text,
