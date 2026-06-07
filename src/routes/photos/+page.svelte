@@ -1,11 +1,5 @@
-<svelte:head>
-	<title>Real Estate Photography | Full Scope Media LLC · East Lansing, MI</title>
-	<meta name="description" content="Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered in 24–48 hours. Serving Lansing, Okemos, and Metro Detroit." />
-	<meta property="og:title" content="Real Estate Photography | Full Scope Media LLC" />
-	<meta property="og:description" content="40+ fully edited real estate photos delivered in 24–48 hours. Serving East Lansing and greater Michigan." />
-</svelte:head>
-
 <script lang="ts">
+	import Seo from '$lib/Seo.svelte';
 	import { properties, propertyArea } from '$lib/properties';
 	import {
 		photoSrcset,
@@ -32,6 +26,13 @@
 		'Online gallery delivered in 24–48 hours',
 	];
 </script>
+
+<Seo
+	title="Real Estate Photography | Full Scope Media LLC · East Lansing, MI"
+	description="Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered in 24–48 hours. Serving Lansing, Okemos, and Metro Detroit."
+	ogTitle="Real Estate Photography | Full Scope Media LLC"
+	ogDescription="40+ fully edited real estate photos delivered in 24–48 hours. Serving East Lansing and greater Michigan."
+/>
 
 <!-- HERO -->
 <section class="relative h-[60vh] overflow-hidden">

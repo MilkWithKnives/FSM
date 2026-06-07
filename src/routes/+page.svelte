@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Seo from '$lib/Seo.svelte';
 	import { inView } from '$lib/actions/inView';
 	import { properties, propertyArea } from '$lib/properties';
 	import {
@@ -44,12 +45,12 @@
 
 </script>
 
-<svelte:head>
-	<title>Full Scope Media LLC | Real Estate Photography & Video · East Lansing, MI</title>
-	<meta name="description" content="Full Scope Media LLC elevates real estate listings through professional photography, cinematic video tours, and aerial drone services across East Lansing, Lansing, and Metro Detroit." />
-	<meta property="og:title" content="Full Scope Media LLC | Real Estate Photography & Video" />
-	<meta property="og:description" content="Elevating real estate listings through exceptional photography, video, and drone services in East Lansing, MI." />
-</svelte:head>
+<Seo
+	title="Full Scope Media LLC | Real Estate Photography & Video · East Lansing, MI"
+	description="Full Scope Media LLC elevates real estate listings through professional photography, cinematic video tours, and aerial drone services across East Lansing, Lansing, and Metro Detroit."
+	ogTitle="Full Scope Media LLC | Real Estate Photography & Video"
+	ogDescription="Elevating real estate listings through exceptional photography, video, and drone services in East Lansing, MI."
+/>
 
 <!-- HERO -->
 <section class="relative h-[100dvh] min-h-[500px] overflow-hidden">

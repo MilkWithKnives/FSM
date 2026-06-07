@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Seo from '$lib/Seo.svelte';
 	import { onMount } from 'svelte';
 	import { propertyFullAddress, propertyArea } from '$lib/properties';
 	import {
@@ -48,19 +49,12 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{p.address} · {propertyArea(p)} | Full Scope Media LLC</title>
-	<meta
-		name="description"
-		content="Real estate photography for {propertyFullAddress(p)} by Full Scope Media LLC."
-	/>
-	<meta property="og:title" content="{p.address} · {propertyArea(p)} | Full Scope Media LLC" />
-	<meta
-		property="og:description"
-		content="Real estate photography for {propertyFullAddress(p)}."
-	/>
-	<meta property="og:image" content={heroFallback(p)} />
-</svelte:head>
+<Seo
+	title="{p.address} · {propertyArea(p)} | Full Scope Media LLC"
+	description="Real estate photography for {propertyFullAddress(p)} by Full Scope Media LLC."
+	ogDescription="Real estate photography for {propertyFullAddress(p)}."
+	image={heroFallback(p)}
+/>
 
 <!-- BREADCRUMB + TITLE -->
 <section class="px-5 md:px-10 lg:px-20 max-w-7xl mx-auto pt-10 pb-8">

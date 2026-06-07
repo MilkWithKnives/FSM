@@ -1,11 +1,5 @@
-<svelte:head>
-	<title>About Us | Full Scope Media LLC · Luxury Real Estate Media</title>
-	<meta name="description" content="Meet the Full Scope Media LLC team — experienced real estate photographers and media professionals serving East Lansing, Lansing, and greater Michigan." />
-	<meta property="og:title" content="About Us | Full Scope Media LLC" />
-	<meta property="og:description" content="Meet the Full Scope Media LLC team — experienced real estate photographers serving East Lansing, MI." />
-</svelte:head>
-
 <script lang="ts">
+	import Seo from '$lib/Seo.svelte';
 	import { properties, propertyArea } from '$lib/properties';
 	import { photoSrcset, photoFallback, PHOTO_SIZES_FULL, PHOTO_SIZES_HALF } from '$lib/images';
 
@@ -14,6 +8,13 @@
 	const aboutPhotoSrcset = (ext: 'webp' | 'jpg') =>
 		[800, 1400, 2000].map((w) => `/about/me-${w}.${ext} ${w}w`).join(', ');
 </script>
+
+<Seo
+	title="About Us | Full Scope Media LLC · Luxury Real Estate Media"
+	description="Meet the Full Scope Media LLC team — experienced real estate photographers and media professionals serving East Lansing, Lansing, and greater Michigan."
+	ogTitle="About Us | Full Scope Media LLC"
+	ogDescription="Meet the Full Scope Media LLC team — experienced real estate photographers serving East Lansing, MI."
+/>
 
 <!-- HERO -->
 <section class="relative h-[55vh] overflow-hidden">

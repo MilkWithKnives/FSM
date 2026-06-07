@@ -1,11 +1,5 @@
-<svelte:head>
-	<title>Real Estate Video Tours | Full Scope Media LLC · East Lansing, MI</title>
-	<meta name="description" content="Cinematic real estate video tours in East Lansing and greater Michigan. Professional property films delivered in 3–5 days. Aerial drone integration available." />
-	<meta property="og:title" content="Real Estate Video Tours | Full Scope Media LLC" />
-	<meta property="og:description" content="Cinematic real estate video tours with aerial drone integration. Serving East Lansing and greater Michigan." />
-</svelte:head>
-
 <script lang="ts">
+	import Seo from '$lib/Seo.svelte';
 	import { properties, propertyArea } from '$lib/properties';
 	import {
 		photoSrcset,
@@ -34,6 +28,13 @@
 		'Delivered within 3–5 business days',
 	];
 </script>
+
+<Seo
+	title="Real Estate Video Tours | Full Scope Media LLC · East Lansing, MI"
+	description="Cinematic real estate video tours in East Lansing and greater Michigan. Professional property films delivered in 3–5 days. Aerial drone integration available."
+	ogTitle="Real Estate Video Tours | Full Scope Media LLC"
+	ogDescription="Cinematic real estate video tours with aerial drone integration. Serving East Lansing and greater Michigan."
+/>
 
 <!-- HERO -->
 <section class="relative h-[60vh] overflow-hidden">

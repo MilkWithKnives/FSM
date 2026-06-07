@@ -1,11 +1,5 @@
-<svelte:head>
-	<title>Book a Shoot | Full Scope Media LLC · Real Estate Photography East Lansing, MI</title>
-	<meta name="description" content="Book a real estate photography or video shoot with Full Scope Media LLC. Serving East Lansing, Lansing, Okemos, and greater Michigan. Get in touch today." />
-	<meta property="og:title" content="Book a Shoot | Full Scope Media LLC" />
-	<meta property="og:description" content="Book a real estate photography or video shoot in East Lansing, MI. Get in touch with Full Scope Media LLC today." />
-</svelte:head>
-
 <script lang="ts">
+	import Seo from '$lib/Seo.svelte';
 	import { enhance } from '$app/forms';
 	import { onMount } from 'svelte';
 	import { properties } from '$lib/properties';
@@ -48,6 +42,13 @@
 		document.head.appendChild(s);
 	});
 </script>
+
+<Seo
+	title="Book a Shoot | Full Scope Media LLC · Real Estate Photography East Lansing, MI"
+	description="Book a real estate photography or video shoot with Full Scope Media LLC. Serving East Lansing, Lansing, Okemos, and greater Michigan. Get in touch today."
+	ogTitle="Book a Shoot | Full Scope Media LLC"
+	ogDescription="Book a real estate photography or video shoot in East Lansing, MI. Get in touch with Full Scope Media LLC today."
+/>
 
 <!-- HEADER -->
 <section class="pt-20 pb-16 px-8 lg:px-20 max-w-6xl mx-auto">
@@ -152,7 +153,7 @@
 		<div class="flex flex-col gap-10">
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Call Us</p>
-				<a href="tel:+19893206709" class="text-sm text-gray-700 hover:text-black transition-colors">(989) 320-6709</a>
+				<a href="tel:+19895779513" class="text-sm text-gray-700 hover:text-black transition-colors">(989) 577-9513</a>
 			</div>
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Email Us</p>

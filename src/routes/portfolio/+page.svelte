@@ -1,11 +1,5 @@
-<svelte:head>
-	<title>Portfolio | Full Scope Media LLC · Real Estate Photography East Lansing, MI</title>
-	<meta name="description" content="Browse Full Scope Media LLC's real estate photography and video portfolio — featuring properties across East Lansing, Lansing, Okemos, and Metro Detroit." />
-	<meta property="og:title" content="Portfolio | Full Scope Media LLC" />
-	<meta property="og:description" content="Real estate photography and video portfolio across East Lansing, Lansing, and greater Michigan." />
-</svelte:head>
-
 <script lang="ts">
+	import Seo from '$lib/Seo.svelte';
 	import { onMount } from 'svelte';
 	import { properties, propertyArea } from '$lib/properties';
 	import {
@@ -57,6 +51,13 @@
 		else if (e.key === 'ArrowLeft') prev();
 	}
 </script>
+
+<Seo
+	title="Portfolio | Full Scope Media LLC · Real Estate Photography East Lansing, MI"
+	description="Browse Full Scope Media LLC's real estate photography and video portfolio — featuring properties across East Lansing, Lansing, Okemos, and Metro Detroit."
+	ogTitle="Portfolio | Full Scope Media LLC"
+	ogDescription="Real estate photography and video portfolio across East Lansing, Lansing, and greater Michigan."
+/>
 
 <!-- PAGE HEADER -->
 <section class="pt-16 pb-6 px-5 md:px-10 lg:px-20 max-w-7xl mx-auto">

@@ -8,13 +8,13 @@
 	let mobileOpen = $state(false);
 
 	const siteUrl = 'https://fullscope-media.com';
-	const siteName = 'Full Scope Media LLC';
 	const defaultDescription = 'Full Scope Media LLC is a luxury real estate media studio offering photography, cinematic video tours, and aerial drone services in East Lansing, MI.';
 	const defaultImage = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg`;
 
 	const navLinks = [
 		{ href: '/portfolio', label: 'Portfolio' },
 		{ href: '/pricing', label: 'Pricing' },
+		{ href: '/faq', label: 'FAQ' },
 		{ href: '/about', label: 'About' },
 		{ href: '/journal', label: 'Journal' },
 		{ href: '/contact', label: 'Contact' },
@@ -35,28 +35,7 @@
 
 <svelte:head>
 	<link rel="icon" href={logo} />
-	<!-- Default SEO — pages override title/description via their own <svelte:head> -->
-	<title>{siteName} | Real Estate Photography & Video · East Lansing, MI</title>
-	<meta name="description" content={defaultDescription} />
-	<meta name="robots" content="index, follow" />
-	<link rel="canonical" href="{siteUrl}{$page.url.pathname}" />
-
-	<!-- Open Graph -->
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content={siteName} />
-	<meta property="og:url" content="{siteUrl}{$page.url.pathname}" />
-	<meta property="og:title" content="{siteName} | Real Estate Photography & Video" />
-	<meta property="og:description" content={defaultDescription} />
-	<meta property="og:image" content={defaultImage} />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
-	<meta property="og:locale" content="en_US" />
-
-	<!-- Twitter / X -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="{siteName} | Luxury Real Estate Photography & Video" />
-	<meta name="twitter:description" content={defaultDescription} />
-	<meta name="twitter:image" content={defaultImage} />
+	<!-- Per-page title/description/OG are rendered by the <Seo> component on each route. -->
 
 	<!-- Local Business JSON-LD -->
 	{@html `<script type="application/ld+json">${JSON.stringify({
@@ -66,6 +45,7 @@
 		"description": defaultDescription,
 		"url": siteUrl,
 		"email": "info@fullscope-media.com",
+		"telephone": "+1-989-577-9513",
 		"address": {
 			"@type": "PostalAddress",
 			"addressLocality": "East Lansing",
@@ -171,6 +151,7 @@
 					<ul class="space-y-2.5">
 						<li><a href="/portfolio" class="text-sm text-gray-600 hover:text-black transition-colors">Portfolio</a></li>
 						<li><a href="/about" class="text-sm text-gray-600 hover:text-black transition-colors">About</a></li>
+						<li><a href="/faq" class="text-sm text-gray-600 hover:text-black transition-colors">FAQ</a></li>
 						<li><a href="/journal" class="text-sm text-gray-600 hover:text-black transition-colors">Journal</a></li>
 						<li><a href="/contact" class="text-sm text-gray-600 hover:text-black transition-colors">Contact</a></li>
 					</ul>
@@ -185,7 +166,7 @@
 				</div>
 				<div>
 					<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Contact</p>
-					<a href="tel:+19893206709" class="text-sm text-gray-600 hover:text-black transition-colors block">(989) 320-6709</a>
+					<a href="tel:+19895779513" class="text-sm text-gray-600 hover:text-black transition-colors block">(989) 577-9513</a>
 					<a href="mailto:info@fullscope-media.com" class="text-sm text-gray-600 hover:text-black transition-colors block mt-1">info@fullscope-media.com</a>
 					<p class="text-sm text-gray-600 mt-1">East Lansing, MI</p>
 					<a href="https://instagram.com/full.scope.media" class="text-xs tracking-widest uppercase text-gray-400 hover:text-black transition-colors mt-3 inline-block">@full.scope.media</a>
@@ -282,6 +263,7 @@
 					</ul>
 				</li>
 				<li><a href="/pricing" class="text-base tracking-wider text-gray-800" onclick={() => mobileOpen = false}>Pricing</a></li>
+				<li><a href="/faq" class="text-base tracking-wider text-gray-800" onclick={() => mobileOpen = false}>FAQ</a></li>
 				<li><a href="/about" class="text-base tracking-wider text-gray-800" onclick={() => mobileOpen = false}>About</a></li>
 				<li><a href="/journal" class="text-base tracking-wider text-gray-800" onclick={() => mobileOpen = false}>Journal</a></li>
 				<li><a href="/contact" class="text-base tracking-wider text-gray-800" onclick={() => mobileOpen = false}>Contact</a></li>

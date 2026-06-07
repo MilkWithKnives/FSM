@@ -1,11 +1,5 @@
-<svelte:head>
-	<title>Pricing | Full Scope Media LLC · Real Estate Photography Packages East Lansing, MI</title>
-	<meta name="description" content="Transparent real estate photography and video pricing by property size. Packages starting at $480 for photography, $480 for video. Serving East Lansing and greater Michigan." />
-	<meta property="og:title" content="Pricing | Full Scope Media LLC" />
-	<meta property="og:description" content="Real estate photography packages starting at $480. Transparent pricing by property size, serving East Lansing, MI." />
-</svelte:head>
-
 <script lang="ts">
+	import Seo from '$lib/Seo.svelte';
 	import { properties } from '$lib/properties';
 	import { photoSrcset, photoFallback, PHOTO_SIZES_HALF } from '$lib/images';
 
@@ -58,36 +52,14 @@
 			],
 		},
 	];
-
-	const faqs = [
-		{
-			q: 'How quickly will I receive my photos?',
-			a: 'Edited photos are delivered within 24–48 hours of your shoot via an online gallery. Rush delivery (same day) is available upon request for an additional fee.',
-		},
-		{
-			q: 'What is included in each shoot?',
-			a: 'Each photography package includes 1 location, a 2–2.5 hour shoot, and 40 fully edited, high-resolution photos delivered in web and print formats.',
-		},
-		{
-			q: 'What if I need to reschedule?',
-			a: 'We understand schedules change. Reschedules are accepted up to 48 hours before the shoot at no charge. Cancellations within 24 hours may incur a fee.',
-		},
-		{
-			q: 'Do you offer packages for larger properties over 5,000 sqft?',
-			a: 'Absolutely. For estates over 5,000 sqft or multi-location shoots, please contact us for a custom quote.',
-		},
-		{
-			q: 'What payment methods do you accept?',
-			a: 'We accept all major credit cards, Zelle, and ACH bank transfer. Payment is due within 3 days of image delivery.',
-		},
-		{
-			q: 'Do you shoot outside of East Lansing?',
-			a: 'Our primary service area is greater Michigan — including Lansing, Okemos, and Metro Detroit. We do travel for larger projects — contact us to discuss travel fees.',
-		},
-	];
-
-	let openFaq = $state<number | null>(null);
 </script>
+
+<Seo
+	title="Pricing | Full Scope Media LLC · Real Estate Photography Packages East Lansing, MI"
+	description="Transparent real estate photography and video pricing by property size. Packages starting at $480 for photography, $480 for video. Serving East Lansing and greater Michigan."
+	ogTitle="Pricing | Full Scope Media LLC"
+	ogDescription="Real estate photography packages starting at $480. Transparent pricing by property size, serving East Lansing, MI."
+/>
 
 <!-- HEADER -->
 <section class="pt-20 pb-4 px-8 lg:px-20 max-w-6xl mx-auto">
@@ -138,25 +110,13 @@
 
 
 <!-- FAQ -->
-<section class="py-24 px-8 lg:px-20 max-w-4xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 text-center">Common Questions</p>
-	<h2 class="text-3xl md:text-4xl font-light text-center mb-14" style="font-family: var(--font-serif)">FAQ</h2>
-	<div class="flex flex-col">
-		{#each faqs as faq, i}
-			<div class="border-t border-gray-100 {i === faqs.length - 1 ? 'border-b' : ''}">
-				<button
-					class="w-full flex items-center justify-between py-5 text-left"
-					onclick={() => openFaq = openFaq === i ? null : i}
-				>
-					<span class="text-base font-light pr-8" style="font-family: var(--font-serif)">{faq.q}</span>
-					<span class="text-gray-400 text-lg flex-shrink-0">{openFaq === i ? '−' : '+'}</span>
-				</button>
-				{#if openFaq === i}
-					<p class="text-sm text-gray-500 leading-relaxed pb-6">{faq.a}</p>
-				{/if}
-			</div>
-		{/each}
-	</div>
+<section class="py-24 px-8 lg:px-20 max-w-4xl mx-auto text-center">
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4">Common Questions</p>
+	<h2 class="text-3xl md:text-4xl font-light mb-6" style="font-family: var(--font-serif)">Have Questions?</h2>
+	<p class="text-sm text-gray-500 max-w-md mx-auto leading-relaxed mb-8">
+		Turnaround times, what's included, payment, service area, and more — we've answered the questions we hear most.
+	</p>
+	<a href="/faq" class="btn btn-neutral rounded-none tracking-widest text-xs px-10">READ THE FAQ</a>
 </section>
 
 <!-- CTA -->
