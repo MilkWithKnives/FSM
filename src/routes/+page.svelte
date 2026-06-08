@@ -47,7 +47,7 @@
 
 <Seo
 	title="Full Scope Media LLC | Real Estate Photography & Video · East Lansing, MI"
-	description="Full Scope Media LLC elevates real estate listings through professional photography, cinematic video tours, and aerial drone services across East Lansing, Lansing, and Metro Detroit."
+	description="Full-service real estate media by Full Scope Media LLC — photography, cinematic video, aerial drone, floor plans, Matterport & virtual staging serving East Lansing, Mid-Michigan, Ann Arbor & the Metro Detroit area."
 	ogTitle="Full Scope Media LLC | Real Estate Photography & Video"
 	ogDescription="Elevating real estate listings through exceptional photography, video, and drone services in East Lansing, MI."
 />
@@ -55,6 +55,7 @@
 <!-- HERO -->
 <section class="relative h-[100dvh] min-h-[500px] overflow-hidden">
 	<picture>
+		<source type="image/avif" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_FULL} />
 		<source type="image/webp" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
 		<img
 			src={heroFallback(heroProperty)}
@@ -99,6 +100,7 @@
 			<a href="/portfolio/{listing.slug}" class="group block" use:inView={{ delay: i * 120 }}>
 				<div class="reveal overflow-hidden aspect-[4/5] mb-3">
 					<picture>
+						<source type="image/avif" srcset={photoSrcset(listing.slug, listing.selected[0], 'avif')} sizes={PHOTO_SIZES_GALLERY} />
 						<source type="image/webp" srcset={photoSrcset(listing.slug, listing.selected[0], 'webp')} sizes={PHOTO_SIZES_GALLERY} />
 						<img
 							src={photoFallback(listing.slug, listing.selected[0])}
@@ -133,6 +135,7 @@
 				<div class="group reveal" use:inView={{ delay: i * 150 }}>
 					<div class="overflow-hidden aspect-[4/3] mb-5">
 						<picture>
+							<source type="image/avif" srcset={photoSrcset(service.slug, service.photoIndex, 'avif')} sizes={PHOTO_SIZES_GALLERY} />
 							<source type="image/webp" srcset={photoSrcset(service.slug, service.photoIndex, 'webp')} sizes={PHOTO_SIZES_GALLERY} />
 							<img
 								src={photoFallback(service.slug, service.photoIndex)}
@@ -157,6 +160,7 @@
 <!-- FULL-BLEED QUOTE -->
 <section class="relative h-[50vh] md:h-[60vh] min-h-[300px] overflow-hidden">
 	<picture>
+		<source type="image/avif" srcset={photoSrcset(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_FULL} />
 		<source type="image/webp" srcset={photoSrcset(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
 		<img
 			src={photoFallback(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0])}
@@ -194,6 +198,7 @@
 		</div>
 		<div class="overflow-hidden aspect-[4/5] order-1 md:order-2 reveal-scale" use:inView>
 			<picture>
+				<source type="image/avif" srcset={photoSrcset(aboutProperty.slug, aboutProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_HALF} />
 				<source type="image/webp" srcset={photoSrcset(aboutProperty.slug, aboutProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_HALF} />
 				<img
 					src={heroFallback(aboutProperty)}

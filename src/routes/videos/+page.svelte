@@ -39,6 +39,7 @@
 <!-- HERO -->
 <section class="relative h-[60vh] overflow-hidden">
 	<picture>
+		<source type="image/avif" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_FULL} />
 		<source type="image/webp" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
 		<img
 			src={heroFallback(heroProperty)}
@@ -97,6 +98,7 @@
 		{#each videos as video (video.slug)}
 			<a href="/portfolio/{video.slug}" class="group relative overflow-hidden aspect-[16/9] block">
 				<picture>
+					<source type="image/avif" srcset={photoSrcset(video.slug, video.coverIndex, 'avif')} sizes={PHOTO_SIZES_FULL} />
 					<source type="image/webp" srcset={photoSrcset(video.slug, video.coverIndex, 'webp')} sizes={PHOTO_SIZES_FULL} />
 					<img
 						src={photoFallback(video.slug, video.coverIndex)}

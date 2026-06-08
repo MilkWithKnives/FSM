@@ -37,6 +37,7 @@
 <!-- HERO -->
 <section class="relative h-[60vh] overflow-hidden">
 	<picture>
+		<source type="image/avif" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_FULL} />
 		<source type="image/webp" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
 		<img
 			src={heroFallback(heroProperty)}
@@ -95,6 +96,7 @@
 		{#each gallery as item, i (item.slug + item.n)}
 			<a href="/portfolio/{item.slug}" class="block overflow-hidden break-inside-avoid">
 				<picture>
+					<source type="image/avif" srcset={photoSrcset(item.slug, item.n, 'avif')} sizes={PHOTO_SIZES_GALLERY} />
 					<source type="image/webp" srcset={photoSrcset(item.slug, item.n, 'webp')} sizes={PHOTO_SIZES_GALLERY} />
 					<img
 						src={photoFallback(item.slug, item.n)}

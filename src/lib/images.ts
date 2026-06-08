@@ -13,7 +13,7 @@ export const photoSrc = (slug: string, n: number, w: PhotoWidth = 1400): string 
 export const photoFallback = (slug: string, n: number, w: PhotoWidth = 1400): string =>
 	`${base(slug, n)}-${w}.jpg`;
 
-export const photoSrcset = (slug: string, n: number, ext: 'webp' | 'jpg' = 'webp'): string =>
+export const photoSrcset = (slug: string, n: number, ext: 'avif' | 'webp' | 'jpg' = 'webp'): string =>
 	PHOTO_WIDTHS.map((w) => `${base(slug, n)}-${w}.${ext} ${w}w`).join(', ');
 
 export const heroPhoto = (p: Property, w: PhotoWidth = 2000): string => photoSrc(p.slug, p.selected[0], w);

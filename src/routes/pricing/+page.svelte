@@ -80,6 +80,7 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-gray-100 {i === tiers.length - 1 ? 'border-b' : ''}">
 			<div class="overflow-hidden aspect-[16/10] {i % 2 === 1 ? 'md:order-2' : ''}">
 				<picture>
+					<source type="image/avif" srcset={photoSrcset(tier.img.slug, tier.img.n, 'avif')} sizes={PHOTO_SIZES_HALF} />
 					<source type="image/webp" srcset={photoSrcset(tier.img.slug, tier.img.n, 'webp')} sizes={PHOTO_SIZES_HALF} />
 					<img
 						src={photoFallback(tier.img.slug, tier.img.n)}

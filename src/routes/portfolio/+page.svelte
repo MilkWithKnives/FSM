@@ -87,6 +87,7 @@
 				aria-label="{i + 1} of {total}: {project.address}"
 			>
 				<picture>
+					<source type="image/avif" srcset={photoSrcset(project.slug, project.selected[0], 'avif')} sizes={PHOTO_SIZES_FULL} />
 					<source type="image/webp" srcset={photoSrcset(project.slug, project.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
 					<img
 						src={heroFallback(project)}
@@ -165,6 +166,7 @@
 			<a href="/portfolio/{project.slug}" class="group flex flex-col">
 				<div class="overflow-hidden aspect-[4/3] bg-gray-100">
 					<picture>
+						<source type="image/avif" srcset={photoSrcset(project.slug, project.selected[0], 'avif')} sizes={PHOTO_SIZES_HALF} />
 						<source type="image/webp" srcset={photoSrcset(project.slug, project.selected[0], 'webp')} sizes={PHOTO_SIZES_HALF} />
 						<img
 							src={heroFallback(project)}

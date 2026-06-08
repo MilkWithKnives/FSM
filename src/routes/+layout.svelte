@@ -8,7 +8,7 @@
 	let mobileOpen = $state(false);
 
 	const siteUrl = 'https://fullscope-media.com';
-	const defaultDescription = 'Full Scope Media LLC is a luxury real estate media studio offering photography, cinematic video tours, and aerial drone services in East Lansing, MI.';
+	const defaultDescription = 'Full Scope Media LLC is a full-service real estate media studio — photography, cinematic video tours, aerial drone, floor plans, Matterport 3D tours, and virtual staging — serving East Lansing, Mid-Michigan, and the Metro Detroit area.';
 	const defaultImage = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg`;
 
 	const navLinks = [
@@ -52,8 +52,8 @@
 			"addressRegion": "MI",
 			"addressCountry": "US"
 		},
-		"areaServed": ["East Lansing", "Lansing", "Okemos", "Grand Ledge", "Metro Detroit", "Michigan"],
-		"serviceType": ["Real Estate Photography", "Real Estate Video", "Aerial Drone Photography", "Matterport 3D Tours"],
+		"areaServed": ["East Lansing", "Lansing", "Okemos", "Grand Ledge", "Mid-Michigan", "Bay City", "Saginaw", "Midland", "Kalamazoo", "Battle Creek", "Ann Arbor", "Jackson", "Metro Detroit", "Michigan"],
+		"serviceType": ["Real Estate Photography", "Cinematic Video Tours", "Aerial Drone Photography", "Matterport 3D Tours", "Floor Plans", "Virtual Staging"],
 		"priceRange": "$$",
 		"image": defaultImage,
 		"sameAs": ["https://instagram.com/full.scope.media"]

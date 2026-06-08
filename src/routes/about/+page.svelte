@@ -5,7 +5,7 @@
 
 	const heroProperty = properties[0];
 
-	const aboutPhotoSrcset = (ext: 'webp' | 'jpg') =>
+	const aboutPhotoSrcset = (ext: 'avif' | 'webp' | 'jpg') =>
 		[800, 1400, 2000].map((w) => `/about/me-${w}.${ext} ${w}w`).join(', ');
 </script>
 
@@ -19,6 +19,7 @@
 <!-- HERO -->
 <section class="relative h-[55vh] overflow-hidden">
 	<picture>
+		<source type="image/avif" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_FULL} />
 		<source type="image/webp" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
 		<img
 			src={photoFallback(heroProperty.slug, heroProperty.selected[0])}
@@ -53,6 +54,7 @@
 		</div>
 		<div class="overflow-hidden aspect-[4/5]">
 			<picture>
+				<source type="image/avif" srcset={aboutPhotoSrcset('avif')} sizes={PHOTO_SIZES_HALF} />
 				<source type="image/webp" srcset={aboutPhotoSrcset('webp')} sizes={PHOTO_SIZES_HALF} />
 				<img
 					src="/about/me-1400.jpg"

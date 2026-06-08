@@ -45,7 +45,7 @@
 
 <Seo
 	title="Book a Shoot | Full Scope Media LLC · Real Estate Photography East Lansing, MI"
-	description="Book a real estate photography or video shoot with Full Scope Media LLC. Serving East Lansing, Lansing, Okemos, and greater Michigan. Get in touch today."
+	description="Book a full-service real estate media shoot — photography, video, drone, floor plans & virtual staging — with Full Scope Media LLC. Serving East Lansing, Mid-Michigan, Ann Arbor & Metro Detroit."
 	ogTitle="Book a Shoot | Full Scope Media LLC"
 	ogDescription="Book a real estate photography or video shoot in East Lansing, MI. Get in touch with Full Scope Media LLC today."
 />
@@ -162,7 +162,7 @@
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Based In</p>
 				<p class="text-sm text-gray-700">East Lansing, Michigan</p>
-				<p class="text-xs text-gray-400 mt-1">Serving East Lansing · Lansing · Metro Detroit</p>
+				<p class="text-xs text-gray-400 mt-1">Serving East Lansing · Lansing · Mid-Michigan · Ann Arbor · Metro Detroit</p>
 			</div>
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Turnaround</p>
@@ -174,6 +174,7 @@
 			</div>
 			<div class="overflow-hidden aspect-[4/5]">
 				<picture>
+					<source type="image/avif" srcset={photoSrcset(sideProperty.slug, sidePhoto, 'avif')} sizes={PHOTO_SIZES_HALF} />
 					<source type="image/webp" srcset={photoSrcset(sideProperty.slug, sidePhoto, 'webp')} sizes={PHOTO_SIZES_HALF} />
 					<img
 						src={photoFallback(sideProperty.slug, sidePhoto)}

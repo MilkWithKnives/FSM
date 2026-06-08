@@ -86,6 +86,7 @@
 				aria-label="Photo {i + 1} of {total}"
 			>
 				<picture>
+					<source type="image/avif" srcset={photoSrcset(p.slug, n, 'avif')} sizes={PHOTO_SIZES_FULL} />
 					<source type="image/webp" srcset={photoSrcset(p.slug, n, 'webp')} sizes={PHOTO_SIZES_FULL} />
 					<img
 						src={photoFallback(p.slug, n)}
