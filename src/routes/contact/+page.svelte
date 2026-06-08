@@ -20,7 +20,7 @@
 		message: '',
 	});
 
-	const serviceOptions = ['Photography', 'Video Tour', 'Aerial Drone', 'Floorplan', 'Matterport', 'Full Package'];
+	const serviceOptions = ['Photography', 'Video Tour', 'Aerial Drone', 'Floorplan', 'Matterport', 'Virtual Staging', 'Full Package'];
 	const calConfig = '{"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"}';
 
 	function toggleService(service: string) {
@@ -166,7 +166,7 @@
 			</div>
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Turnaround</p>
-				<p class="text-sm text-gray-700">Edited photos delivered within 24–48 hours of your shoot.</p>
+				<p class="text-sm text-gray-700">Guaranteed 24-hour turnaround — edited photos delivered within 24 hours of your shoot.</p>
 			</div>
 			<div class="border-t border-gray-100 pt-8">
 				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Follow Along</p>

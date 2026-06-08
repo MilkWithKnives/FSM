@@ -70,7 +70,7 @@
 <!-- INTRO -->
 <section class="px-8 lg:px-20 pb-16 max-w-6xl mx-auto">
 	<p class="text-sm text-gray-500 max-w-xl leading-relaxed mt-4">
-		All packages include 1 location, a 2–2.5 hour shoot, and 40 fully edited photos delivered within 24–48 hours. Custom packages available for larger estates.
+		All packages include 1 location, a 2–2.5 hour shoot, and 40 fully edited photos delivered with a guaranteed 24-hour turnaround. Custom packages available for larger estates.
 	</p>
 </section>
 
@@ -109,6 +109,18 @@
 	{/each}
 </section>
 
+
+<!-- ADD-ONS -->
+<section class="px-8 lg:px-20 pb-24 max-w-6xl mx-auto">
+	<p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">Add-Ons</p>
+	<div class="flex items-center justify-between border-t border-b border-gray-100 py-6 gap-6">
+		<div>
+			<p class="text-base font-light" style="font-family: var(--font-serif)">Virtual Staging</p>
+			<p class="text-xs text-gray-400 mt-1 max-w-md">Digitally furnish empty rooms so vacant listings feel like a home buyers can picture themselves in.</p>
+		</div>
+		<a href="/contact" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity whitespace-nowrap">Inquire for Pricing</a>
+	</div>
+</section>
 
 <!-- FAQ -->
 <section class="py-24 px-8 lg:px-20 max-w-4xl mx-auto text-center">

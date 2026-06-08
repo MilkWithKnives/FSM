@@ -4,7 +4,7 @@
 	const faqs = [
 		{
 			q: 'How quickly will I receive my photos?',
-			a: 'Edited photos are delivered within 24–48 hours of your shoot via an online gallery. Rush delivery (same day) is available upon request for an additional fee.',
+			a: 'We guarantee a 24-hour turnaround — your edited photos are delivered within 24 hours of your shoot via an online gallery. Same-day rush delivery is also available upon request for an additional fee.',
 		},
 		{
 			q: 'What is included in each shoot?',
@@ -12,7 +12,7 @@
 		},
 		{
 			q: 'Do you offer video tours, aerial drone, and Matterport 3D?',
-			a: 'Yes. Alongside photography we offer cinematic video tours, FAA-licensed aerial drone footage, floorplans, and Matterport 3D walkthroughs. These can be booked individually or bundled — see our Pricing page for package details.',
+			a: 'Yes. Alongside photography we offer cinematic video tours, FAA-licensed aerial drone footage, floor plans, virtual staging, and Matterport 3D walkthroughs. These can be booked individually or bundled — see our Pricing page for package details.',
 		},
 		{
 			q: 'How should I prepare the property for the shoot?',
@@ -36,7 +36,7 @@
 		},
 		{
 			q: 'Do you shoot outside of East Lansing?',
-			a: 'Our primary service area is greater Michigan — including Lansing, Okemos, Grand Ledge, and Metro Detroit. We do travel for larger projects — contact us to discuss travel fees.',
+			a: 'Absolutely. Our service area spans greater Michigan — Lansing, Okemos, Grand Ledge, and across Mid-Michigan to Bay City, Saginaw, and Midland, as well as Ann Arbor and the Metro Detroit area. We travel for larger projects — contact us to discuss any travel fees.',
 		},
 	];
 
