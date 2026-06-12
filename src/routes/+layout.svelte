@@ -37,6 +37,15 @@
 	<link rel="icon" href={logo} />
 	<!-- Per-page title/description/OG are rendered by the <Seo> component on each route. -->
 
+	<!-- Google Analytics (GA4) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ7RML6RGX"></script>
+	{@html `<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-HJ7RML6RGX');
+	</script>`}
+
 	<!-- Local Business JSON-LD -->
 	{@html `<script type="application/ld+json">${JSON.stringify({
 		"@context": "https://schema.org",
@@ -50,7 +59,13 @@
 			"@type": "PostalAddress",
 			"addressLocality": "East Lansing",
 			"addressRegion": "MI",
+			"postalCode": "48823",
 			"addressCountry": "US"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 42.7370,
+			"longitude": -84.4839
 		},
 		"areaServed": ["East Lansing", "Lansing", "Okemos", "Grand Ledge", "Mid-Michigan", "Bay City", "Saginaw", "Midland", "Kalamazoo", "Battle Creek", "Ann Arbor", "Jackson", "Metro Detroit", "Michigan"],
 		"serviceType": ["Real Estate Photography", "Cinematic Video Tours", "Aerial Drone Photography", "Matterport 3D Tours", "Floor Plans", "Virtual Staging"],

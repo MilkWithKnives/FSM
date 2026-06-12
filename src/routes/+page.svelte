@@ -46,10 +46,10 @@
 </script>
 
 <Seo
-	title="Full Scope Media LLC | Real Estate Photography & Video · East Lansing, MI"
-	description="Full-service real estate media by Full Scope Media LLC — photography, cinematic video, aerial drone, floor plans, Matterport & virtual staging serving East Lansing, Mid-Michigan, Ann Arbor & the Metro Detroit area."
-	ogTitle="Full Scope Media LLC | Real Estate Photography & Video"
-	ogDescription="Elevating real estate listings through exceptional photography, video, and drone services in East Lansing, MI."
+	title="Real Estate Photographer · East Lansing, MI | Full Scope Media"
+	description="Full Scope Media is a professional real estate photographer in East Lansing, MI — photography, cinematic video, aerial drone, floor plans & virtual staging. Edited photos delivered in 24 hours for listings across Greater Lansing."
+	ogTitle="East Lansing Real Estate Photographer | Full Scope Media"
+	ogDescription="Professional real estate photography, video & drone in East Lansing, MI. Edited photos delivered in 24 hours."
 />
 
 <!-- HERO -->
@@ -68,10 +68,13 @@
 		/>
 	</picture>
 	<div class="absolute inset-0 bg-black/35 flex flex-col items-center justify-center text-white text-center px-5">
-		<p class="hero-line-1 text-xs tracking-[0.4em] uppercase mb-5 opacity-80">Real Estate Media Studio · East Lansing, MI</p>
+		<p class="hero-line-1 text-xs tracking-[0.4em] uppercase mb-5 opacity-80">Full Scope Media · East Lansing, MI</p>
 		<h1 class="hero-line-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light max-w-3xl leading-tight" style="font-family: var(--font-serif)">
-			Passionate about telling your home's story.
+			East Lansing Real Estate Photographer
 		</h1>
+		<p class="hero-line-2 text-base sm:text-lg md:text-xl font-light max-w-xl leading-relaxed mt-5 opacity-90" style="font-family: var(--font-serif)">
+			Passionate about telling your home's story.
+		</p>
 		<a href="/portfolio" class="hero-line-3 btn btn-outline btn-sm mt-8 rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-8 transition-all duration-300">
 			VIEW PORTFOLIO
 		</a>
@@ -189,7 +192,7 @@
 				We take pride in the value we bring to your properties.
 			</h2>
 			<p class="text-sm text-gray-500 leading-relaxed mb-4">
-				At Full Scope Media, we are a full-service real estate media studio. We work alongside agents, developers, and homeowners across East Lansing and greater Michigan to create imagery that moves markets.
+				Full Scope Media is a professional real estate photographer based in East Lansing, MI. We work alongside agents, developers, and homeowners across Greater Lansing and Mid-Michigan to create imagery that moves markets.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-8">
 				Great photography doesn't just document a property — it sells a lifestyle.
