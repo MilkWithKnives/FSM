@@ -197,7 +197,7 @@
 
 			<!-- SOCIAL ICONS -->
 			<div class="max-w-6xl mx-auto mt-10 pt-8 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center gap-6">
-				<p class="text-xs text-gray-500">© 2025 Full Scope Media LLC. All rights reserved.</p>
+				<p class="text-xs text-gray-500">© 2026 Full Scope Media LLC. All rights reserved.</p>
 
 				<div class="social-login-icons">
 					<!-- X / Twitter -->

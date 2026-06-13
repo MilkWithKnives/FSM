@@ -11,7 +11,6 @@
 		PHOTO_SIZES_HALF,
 	} from '$lib/images';
 
-	const listings = properties.slice(0, 3);
 	const heroProperty = properties[0];
 	const quoteProperty = properties[1];
 	const aboutProperty = properties[2];
@@ -105,40 +104,6 @@
 		to   { transform: scale(1); }
 	}
 </style>
-
-<!-- FEATURED LISTINGS -->
-<section class="py-16 md:py-24 px-5 md:px-10 lg:px-20 max-w-7xl mx-auto">
-	<div class="reveal flex items-end justify-between mb-10 md:mb-14" use:inView>
-		<h2 class="text-3xl md:text-5xl font-light" style="font-family: var(--font-serif)">Featured Work</h2>
-		<a href="/portfolio" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity hidden sm:block">View All</a>
-	</div>
-	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
-		{#each listings as listing, i (listing.slug)}
-			<a href="/portfolio/{listing.slug}" class="group block" use:inView={{ delay: i * 120 }}>
-				<div class="reveal overflow-hidden aspect-[4/5] mb-3">
-					<picture>
-						<source type="image/avif" srcset={photoSrcset(listing.slug, listing.selected[0], 'avif')} sizes={PHOTO_SIZES_GALLERY} />
-						<source type="image/webp" srcset={photoSrcset(listing.slug, listing.selected[0], 'webp')} sizes={PHOTO_SIZES_GALLERY} />
-						<img
-							src={photoFallback(listing.slug, listing.selected[0])}
-							srcset={photoSrcset(listing.slug, listing.selected[0], 'jpg')}
-							sizes={PHOTO_SIZES_GALLERY}
-							alt="{listing.address}, {propertyArea(listing)}"
-							loading="lazy"
-							decoding="async"
-							class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-						/>
-					</picture>
-				</div>
-				<p class="reveal text-base font-light" style="font-family: var(--font-serif)">{listing.address}</p>
-				<p class="text-sm text-gray-500">{propertyArea(listing)} · {listing.tag}</p>
-			</a>
-		{/each}
-	</div>
-	<div class="text-center mt-8 sm:hidden">
-		<a href="/portfolio" class="text-xs tracking-widest uppercase border-b border-black pb-1">View All Work</a>
-	</div>
-</section>
 
 <!-- SERVICES -->
 <section class="bg-gray-50 py-16 md:py-24 px-5 md:px-10 lg:px-20">
