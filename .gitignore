@@ -24,3 +24,6 @@ vite.config.ts.timestamp-*
 
 # Aider
 .aider*
+
+# Loose Python scripts (report/asset tooling, not part of the site build)
+/*.py
