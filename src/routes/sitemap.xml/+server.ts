@@ -1,5 +1,6 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import { properties } from '$lib/properties';
+import { locations } from '$lib/locations';
 
 const siteUrl = 'https://fullscope-media.com';
 
@@ -15,6 +16,13 @@ const staticPages = [
 	{ path: '/contact', priority: '0.6', changefreq: 'yearly' },
 ];
 
+// City landing pages — each targets a secondary-city "real estate photographer" query.
+const locationPages = locations.map((l) => ({
+	path: `/real-estate-photographer/${l.slug}`,
+	priority: '0.8',
+	changefreq: 'monthly',
+}));
+
 // Individual portfolio detail pages — each carries its own address/city keywords.
 const portfolioPages = properties.map((p) => ({
 	path: `/portfolio/${p.slug}`,
@@ -22,7 +30,7 @@ const portfolioPages = properties.map((p) => ({
 	changefreq: 'monthly',
 }));
 
-const pages = [...staticPages, ...portfolioPages];
+const pages = [...staticPages, ...locationPages, ...portfolioPages];
 
 export const GET: RequestHandler = () => {
 	// No <lastmod>: without a real per-page modified date, stamping "today" on every

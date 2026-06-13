@@ -2,6 +2,7 @@
 	import logo from '$lib/assets/logo.svg';
 	import '../app.css';
 	import { page } from '$app/stores';
+	import { locations } from '$lib/locations';
 
 	let { children } = $props();
 
@@ -178,6 +179,20 @@
 					<p class="text-sm text-gray-600 mt-1">East Lansing, MI</p>
 					<a href="https://instagram.com/full.scope.media" class="text-xs tracking-widest uppercase text-gray-500 hover:text-black transition-colors mt-3 inline-block">@full.scope.media</a>
 				</div>
+			</div>
+
+			<!-- AREAS WE SERVE -->
+			<div class="max-w-6xl mx-auto mt-10 pt-8 border-t border-gray-100">
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Areas We Serve</p>
+				<ul class="flex flex-wrap gap-x-6 gap-y-2">
+					{#each locations as loc}
+						<li>
+							<a href="/real-estate-photographer/{loc.slug}" class="text-sm text-gray-600 hover:text-black transition-colors">
+								Real Estate Photographer in {loc.city}
+							</a>
+						</li>
+					{/each}
+				</ul>
 			</div>
 
 			<!-- SOCIAL ICONS -->
