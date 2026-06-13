@@ -34,7 +34,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={logo} />
+	<!-- Favicons are declared in app.html. -->
 	<!-- Per-page title/description/OG are rendered by the <Seo> component on each route. -->
 	<!-- Analytics is handled by Google Tag Manager (GTM-N8RVSFDH) in app.html. -->
 
