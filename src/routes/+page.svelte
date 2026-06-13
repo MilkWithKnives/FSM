@@ -40,6 +40,30 @@
 			photoIndex: properties[0].selected[0],
 			href: '/pricing',
 		},
+		{
+			title: '3D Tours',
+			description:
+				'Interactive Matterport & Zillow 3D walkthroughs that let buyers explore every room online, anytime.',
+			slug: properties[1].slug,
+			photoIndex: properties[1].selected[3] ?? properties[1].selected[0],
+			href: '/3d-tours',
+		},
+		{
+			title: 'Floor Plans',
+			description:
+				'Accurately scaled CubiCasa floor plans with room dimensions, so buyers grasp the layout at a glance.',
+			slug: properties[4].slug,
+			photoIndex: properties[4].selected[2] ?? properties[4].selected[0],
+			href: '/floor-plans',
+		},
+		{
+			title: 'Virtual Staging',
+			description:
+				'Photorealistic digital furniture that turns empty rooms into homes buyers can picture themselves in.',
+			slug: properties[2].slug,
+			photoIndex: properties[2].selected[4] ?? properties[2].selected[0],
+			href: '/virtual-staging',
+		},
 	];
 
 </script>

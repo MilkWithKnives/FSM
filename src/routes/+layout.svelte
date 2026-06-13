@@ -61,7 +61,7 @@
 			"longitude": -84.4839
 		},
 		"areaServed": ["East Lansing", "Lansing", "Okemos", "Grand Ledge", "Mid-Michigan", "Bay City", "Saginaw", "Midland", "Kalamazoo", "Battle Creek", "Ann Arbor", "Jackson", "Metro Detroit", "Michigan"],
-		"serviceType": ["Real Estate Photography", "Cinematic Video Tours", "Aerial Drone Photography", "Matterport 3D Tours", "Floor Plans", "Virtual Staging"],
+		"serviceType": ["Real Estate Photography", "Cinematic Video Tours", "Aerial Drone Photography", "3D Tours (Matterport & Zillow 3D Home)", "Floor Plans (CubiCasa)", "Virtual Staging"],
 		"priceRange": "$$",
 		"image": defaultImage,
 		"sameAs": ["https://instagram.com/full.scope.media"]
@@ -108,9 +108,12 @@
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 								</svg>
 							</div>
-							<ul class="dropdown-content z-10 menu bg-white shadow-lg border border-gray-100 rounded-none p-2 w-36 mt-1">
+							<ul class="dropdown-content z-10 menu bg-white shadow-lg border border-gray-100 rounded-none p-2 w-44 mt-1">
 								<li><a href="/photos" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Photos</a></li>
 								<li><a href="/videos" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Videos</a></li>
+								<li><a href="/3d-tours" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">3D Tours</a></li>
+								<li><a href="/floor-plans" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Floor Plans</a></li>
+								<li><a href="/virtual-staging" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Virtual Staging</a></li>
 							</ul>
 						</div>
 					</li>
@@ -169,6 +172,9 @@
 					<ul class="space-y-2.5">
 						<li><a href="/photos" class="text-sm text-gray-600 hover:text-black transition-colors">Photography</a></li>
 						<li><a href="/videos" class="text-sm text-gray-600 hover:text-black transition-colors">Video Tours</a></li>
+						<li><a href="/3d-tours" class="text-sm text-gray-600 hover:text-black transition-colors">3D Tours</a></li>
+						<li><a href="/floor-plans" class="text-sm text-gray-600 hover:text-black transition-colors">Floor Plans</a></li>
+						<li><a href="/virtual-staging" class="text-sm text-gray-600 hover:text-black transition-colors">Virtual Staging</a></li>
 						<li><a href="/pricing" class="text-sm text-gray-600 hover:text-black transition-colors">Pricing</a></li>
 					</ul>
 				</div>
@@ -282,6 +288,9 @@
 					<ul class="flex flex-col gap-3 pl-3">
 						<li><a href="/photos" class="text-sm tracking-wider text-gray-700" onclick={() => mobileOpen = false}>Photos</a></li>
 						<li><a href="/videos" class="text-sm tracking-wider text-gray-700" onclick={() => mobileOpen = false}>Videos</a></li>
+						<li><a href="/3d-tours" class="text-sm tracking-wider text-gray-700" onclick={() => mobileOpen = false}>3D Tours</a></li>
+						<li><a href="/floor-plans" class="text-sm tracking-wider text-gray-700" onclick={() => mobileOpen = false}>Floor Plans</a></li>
+						<li><a href="/virtual-staging" class="text-sm tracking-wider text-gray-700" onclick={() => mobileOpen = false}>Virtual Staging</a></li>
 					</ul>
 				</li>
 				<li><a href="/pricing" class="text-base tracking-wider text-gray-800" onclick={() => mobileOpen = false}>Pricing</a></li>
