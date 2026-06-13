@@ -1,6 +1,16 @@
 @import "tailwindcss";
 @import "daisyui/daisyui.css";
 
+/* Self-hosted brand font — avoids the cross-origin FontShare request chain.
+   Only the 600 weight is used (the FULL SCOPE MEDIA wordmark). */
+@font-face {
+  font-family: "Chillax";
+  src: url("/fonts/chillax-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --font-brand:  "Chillax", system-ui, sans-serif;
