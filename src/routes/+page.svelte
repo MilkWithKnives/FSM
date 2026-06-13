@@ -167,7 +167,7 @@
 					</div>
 					<h3 class="text-xl md:text-2xl font-light mb-2" style="font-family: var(--font-serif)">{service.title}</h3>
 					<p class="text-sm text-gray-500 leading-relaxed mb-4">{service.description}</p>
-					<a href={service.href} class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity">Learn More</a>
+					<a href={service.href} class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity">Learn More<span class="sr-only"> about real estate {service.title.toLowerCase()}</span></a>
 				</div>
 			{/each}
 		</div>
