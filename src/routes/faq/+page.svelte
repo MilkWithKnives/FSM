@@ -63,7 +63,7 @@
 
 <!-- HEADER -->
 <section class="pt-20 pb-4 px-8 lg:px-20 max-w-4xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4">Common Questions</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Common Questions</p>
 	<h1 class="text-5xl md:text-7xl font-light" style="font-family: var(--font-serif)">FAQ</h1>
 </section>
 
@@ -84,7 +84,7 @@
 					onclick={() => openFaq = openFaq === i ? null : i}
 				>
 					<span class="text-base font-light pr-8" style="font-family: var(--font-serif)">{faq.q}</span>
-					<span class="text-gray-400 text-lg flex-shrink-0">{openFaq === i ? '−' : '+'}</span>
+					<span class="text-gray-500 text-lg flex-shrink-0">{openFaq === i ? '−' : '+'}</span>
 				</button>
 				{#if openFaq === i}
 					<p class="text-sm text-gray-500 leading-relaxed pb-6">{faq.a}</p>

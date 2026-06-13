@@ -42,7 +42,7 @@
 
 <!-- HEADER -->
 <section class="pt-20 pb-16 px-8 lg:px-20 max-w-6xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4">Insights & Ideas</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Insights & Ideas</p>
 	<h1 class="text-5xl md:text-7xl font-light" style="font-family: var(--font-serif)">Journal</h1>
 	<p class="text-sm text-gray-500 mt-6 max-w-md leading-relaxed">Tips, stories, and resources from the Full Scope Media team — for agents, developers, and anyone passionate about beautiful spaces.</p>
 </section>
@@ -61,7 +61,7 @@
 						class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 					/>
 				</a>
-				<p class="text-xs tracking-widest uppercase text-gray-400 mb-3">{post.date}</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-3">{post.date}</p>
 				<h2 class="text-2xl font-light mb-3 leading-snug" style="font-family: var(--font-serif)">
 					<a href="/journal/{post.slug}" class="hover:opacity-60 transition-opacity">{post.title}</a>
 				</h2>
@@ -74,7 +74,7 @@
 
 <!-- NEWSLETTER -->
 <section class="bg-gray-50 py-20 px-8 text-center border-t border-gray-100">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4">Never Miss a Post</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Never Miss a Post</p>
 	<h2 class="text-3xl font-light mb-6" style="font-family: var(--font-serif)">Stay Up To Date</h2>
 	<form class="flex flex-col sm:flex-row gap-0 max-w-md mx-auto" onsubmit={(e) => e.preventDefault()}>
 		<input

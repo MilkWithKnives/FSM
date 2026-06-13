@@ -144,7 +144,7 @@
 <section class="bg-gray-50 py-16 md:py-24 px-5 md:px-10 lg:px-20">
 	<div class="max-w-7xl mx-auto">
 		<div use:inView class="reveal text-center mb-12 md:mb-16">
-			<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-3">What We Offer</p>
+			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">What We Offer</p>
 			<h2 class="text-3xl md:text-5xl font-light" style="font-family: var(--font-serif)">Our Services</h2>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
@@ -201,7 +201,7 @@
 <section class="py-16 md:py-24 px-5 md:px-10 lg:px-20 max-w-7xl mx-auto">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
 		<div class="order-2 md:order-1 reveal" use:inView>
-			<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-5">About Full Scope Media</p>
+			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-5">About Full Scope Media</p>
 			<h2 class="text-3xl md:text-4xl lg:text-5xl font-light leading-snug mb-6" style="font-family: var(--font-serif)">
 				We take pride in the value we bring to your properties.
 			</h2>
@@ -234,7 +234,7 @@
 <!-- NEWSLETTER -->
 <section class="bg-gray-50 py-16 md:py-20 px-5 text-center">
 	<div class="reveal" use:inView>
-		<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-3">Stay In Touch</p>
+		<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">Stay In Touch</p>
 		<h2 class="text-2xl md:text-4xl font-light mb-6" style="font-family: var(--font-serif)">Stay Up To Date</h2>
 		<p class="text-sm text-gray-500 mb-6">Get the latest listings, tips, and studio news.</p>
 		<form class="flex flex-col sm:flex-row max-w-md mx-auto" onsubmit={(e) => e.preventDefault()}>

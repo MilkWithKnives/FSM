@@ -52,7 +52,7 @@
 
 <!-- HEADER -->
 <section class="pt-20 pb-16 px-8 lg:px-20 max-w-6xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4">Get In Touch</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Get In Touch</p>
 	<h1 class="text-5xl md:text-7xl font-light mb-10" style="font-family: var(--font-serif)">Book a Shoot</h1>
 
 	<div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
@@ -64,7 +64,7 @@
 		>
 			SCHEDULE A SHOOT
 		</button>
-		<p class="text-xs text-gray-400 tracking-wide">Opens availability calendar — confirmation sent automatically</p>
+		<p class="text-xs text-gray-500 tracking-wide">Opens availability calendar — confirmation sent automatically</p>
 	</div>
 </section>
 
@@ -72,7 +72,7 @@
 
 <!-- INQUIRY FORM + INFO -->
 <section class="px-8 lg:px-20 py-20 max-w-6xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-2">Have Questions First?</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-2">Have Questions First?</p>
 	<p class="text-sm text-gray-500 mb-12">Send us a detailed inquiry and we'll follow up within 1–2 business days.</p>
 
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
@@ -97,33 +97,33 @@
 
 					<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 						<div class="flex flex-col gap-1">
-							<label for="name" class="text-xs tracking-widest uppercase text-gray-400">Full Name *</label>
+							<label for="name" class="text-xs tracking-widest uppercase text-gray-500">Full Name *</label>
 							<input id="name" name="name" type="text" bind:value={formData.name} required class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" placeholder="Jane Smith" />
 						</div>
 						<div class="flex flex-col gap-1">
-							<label for="email" class="text-xs tracking-widest uppercase text-gray-400">Email *</label>
+							<label for="email" class="text-xs tracking-widest uppercase text-gray-500">Email *</label>
 							<input id="email" name="email" type="email" bind:value={formData.email} required class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" placeholder="jane@example.com" />
 						</div>
 					</div>
 
 					<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 						<div class="flex flex-col gap-1">
-							<label for="phone" class="text-xs tracking-widest uppercase text-gray-400">Phone</label>
+							<label for="phone" class="text-xs tracking-widest uppercase text-gray-500">Phone</label>
 							<input id="phone" name="phone" type="tel" bind:value={formData.phone} class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" placeholder="(989) 555-0100" />
 						</div>
 						<div class="flex flex-col gap-1">
-							<label for="date" class="text-xs tracking-widest uppercase text-gray-400">Preferred Shoot Date</label>
+							<label for="date" class="text-xs tracking-widest uppercase text-gray-500">Preferred Shoot Date</label>
 							<input id="date" name="date" type="date" bind:value={formData.date} class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" />
 						</div>
 					</div>
 
 					<div class="flex flex-col gap-1">
-						<label for="address" class="text-xs tracking-widest uppercase text-gray-400">Property Address *</label>
+						<label for="address" class="text-xs tracking-widest uppercase text-gray-500">Property Address *</label>
 						<input id="address" name="address" type="text" bind:value={formData.address} required class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" placeholder="123 Hagadorn Rd, East Lansing, MI" />
 					</div>
 
 					<div class="flex flex-col gap-2">
-						<p class="text-xs tracking-widest uppercase text-gray-400">Services Needed</p>
+						<p class="text-xs tracking-widest uppercase text-gray-500">Services Needed</p>
 						<div class="flex flex-wrap gap-2">
 							{#each serviceOptions as service}
 								<button
@@ -138,7 +138,7 @@
 					</div>
 
 					<div class="flex flex-col gap-1">
-						<label for="message" class="text-xs tracking-widest uppercase text-gray-400">Additional Notes</label>
+						<label for="message" class="text-xs tracking-widest uppercase text-gray-500">Additional Notes</label>
 						<textarea id="message" name="message" bind:value={formData.message} rows="5" class="textarea textarea-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm resize-none" placeholder="Tell us about the property, any special requests, or questions you have..."></textarea>
 					</div>
 
@@ -152,24 +152,24 @@
 		<!-- INFO SIDEBAR -->
 		<div class="flex flex-col gap-10">
 			<div>
-				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Call Us</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Call Us</p>
 				<a href="tel:+19895779513" class="text-sm text-gray-700 hover:text-black transition-colors">(989) 577-9513</a>
 			</div>
 			<div>
-				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Email Us</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Email Us</p>
 				<a href="mailto:info@fullscope-media.com" class="text-sm text-gray-700 hover:text-black transition-colors">info@fullscope-media.com</a>
 			</div>
 			<div>
-				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Based In</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Based In</p>
 				<p class="text-sm text-gray-700">East Lansing, Michigan</p>
-				<p class="text-xs text-gray-400 mt-1">Serving East Lansing · Lansing · Mid-Michigan · Ann Arbor · Metro Detroit</p>
+				<p class="text-xs text-gray-500 mt-1">Serving East Lansing · Lansing · Mid-Michigan · Ann Arbor · Metro Detroit</p>
 			</div>
 			<div>
-				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Turnaround</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Turnaround</p>
 				<p class="text-sm text-gray-700">Guaranteed 24-hour turnaround — edited photos delivered within 24 hours of your shoot.</p>
 			</div>
 			<div class="border-t border-gray-100 pt-8">
-				<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Follow Along</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Follow Along</p>
 				<a href="https://instagram.com/full.scope.media" class="text-sm text-gray-700 hover:text-black transition-colors">@full.scope.media</a>
 			</div>
 			<div class="overflow-hidden aspect-[4/5]">

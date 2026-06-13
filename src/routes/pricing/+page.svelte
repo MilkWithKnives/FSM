@@ -63,7 +63,7 @@
 
 <!-- HEADER -->
 <section class="pt-20 pb-4 px-8 lg:px-20 max-w-6xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4">Transparent Pricing</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Transparent Pricing</p>
 	<h1 class="text-5xl md:text-7xl font-light" style="font-family: var(--font-serif)">Pricing</h1>
 </section>
 
@@ -94,7 +94,7 @@
 				</picture>
 			</div>
 			<div class="flex flex-col justify-center px-8 md:px-14 py-14 {i % 2 === 1 ? 'md:order-1' : ''}">
-				<p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">{tier.sqft}</p>
+				<p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-4">{tier.sqft}</p>
 				<div class="flex flex-col gap-4 mb-8">
 					{#each tier.services as service}
 						<div class="flex items-center justify-between border-b border-gray-100 pb-4">
@@ -112,11 +112,11 @@
 
 <!-- ADD-ONS -->
 <section class="px-8 lg:px-20 pb-24 max-w-6xl mx-auto">
-	<p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">Add-Ons</p>
+	<p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">Add-Ons</p>
 	<div class="flex items-center justify-between border-t border-b border-gray-100 py-6 gap-6">
 		<div>
 			<p class="text-base font-light" style="font-family: var(--font-serif)">Virtual Staging</p>
-			<p class="text-xs text-gray-400 mt-1 max-w-md">Digitally furnish empty rooms so vacant listings feel like a home buyers can picture themselves in.</p>
+			<p class="text-xs text-gray-500 mt-1 max-w-md">Digitally furnish empty rooms so vacant listings feel like a home buyers can picture themselves in.</p>
 		</div>
 		<a href="/contact" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity whitespace-nowrap">Inquire for Pricing</a>
 	</div>
@@ -124,7 +124,7 @@
 
 <!-- FAQ -->
 <section class="py-24 px-8 lg:px-20 max-w-4xl mx-auto text-center">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4">Common Questions</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Common Questions</p>
 	<h2 class="text-3xl md:text-4xl font-light mb-6" style="font-family: var(--font-serif)">Have Questions?</h2>
 	<p class="text-sm text-gray-500 max-w-md mx-auto leading-relaxed mb-8">
 		Turnaround times, what's included, payment, service area, and more — we've answered the questions we hear most.

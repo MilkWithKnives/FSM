@@ -60,7 +60,7 @@
 <section class="py-24 px-8 lg:px-20 max-w-6xl mx-auto">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
 		<div>
-			<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-6">Cinematic Property Films</p>
+			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Cinematic Property Films</p>
 			<h2 class="text-3xl md:text-4xl font-light leading-snug mb-8" style="font-family: var(--font-serif)">
 				Move buyers before they ever visit.
 			</h2>
@@ -73,7 +73,7 @@
 			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK A VIDEO SHOOT</a>
 		</div>
 		<div>
-			<p class="text-xs tracking-widest uppercase text-gray-400 mb-6">Every Video Includes</p>
+			<p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Every Video Includes</p>
 			<ul class="flex flex-col gap-3 mb-10">
 				{#each includes as item}
 					<li class="flex items-start gap-3 text-sm text-gray-600">
@@ -83,7 +83,7 @@
 				{/each}
 			</ul>
 			<div class="pt-8 border-t border-gray-100">
-				<p class="text-xs tracking-widest uppercase text-gray-400 mb-2">Starting At</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
 				<p class="text-3xl font-light" style="font-family: var(--font-serif)">$480</p>
 				<a href="/pricing" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity mt-4 inline-block">View Full Pricing</a>
 			</div>
@@ -93,7 +93,7 @@
 
 <!-- VIDEO SHOWCASE -->
 <section class="px-8 lg:px-20 pb-28 max-w-6xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-10 text-center">Recent Productions</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-10 text-center">Recent Productions</p>
 	<div class="flex flex-col gap-8">
 		{#each videos as video (video.slug)}
 			<a href="/portfolio/{video.slug}" class="group relative overflow-hidden aspect-[16/9] block">

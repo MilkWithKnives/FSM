@@ -40,7 +40,7 @@
 <section class="py-24 px-8 lg:px-20 max-w-6xl mx-auto">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 		<div>
-			<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-6">Based in East Lansing, Michigan</p>
+			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Based in East Lansing, Michigan</p>
 			<h2 class="text-4xl md:text-5xl font-light leading-snug mb-8" style="font-family: var(--font-serif)">
 				At Full Scope Media, we take pride in our work and the added value we bring to your properties.
 			</h2>
@@ -73,7 +73,7 @@
 <!-- VALUES -->
 <section class="bg-gray-50 py-20 px-8 lg:px-20">
 	<div class="max-w-6xl mx-auto">
-		<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 text-center">What Drives Us</p>
+		<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4 text-center">What Drives Us</p>
 		<h2 class="text-3xl md:text-4xl font-light text-center mb-16" style="font-family: var(--font-serif)">Our Values</h2>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 			<div class="text-center">

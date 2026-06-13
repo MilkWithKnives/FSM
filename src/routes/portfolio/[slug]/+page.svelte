@@ -58,14 +58,14 @@
 
 <!-- BREADCRUMB + TITLE -->
 <section class="px-5 md:px-10 lg:px-20 max-w-7xl mx-auto pt-10 pb-8">
-	<a href="/portfolio" class="text-xs tracking-widest uppercase text-gray-400 hover:text-black transition-colors">← All Work</a>
+	<a href="/portfolio" class="text-xs tracking-widest uppercase text-gray-500 hover:text-black transition-colors">← All Work</a>
 	<div class="mt-6 flex flex-col md:flex-row md:items-end md:justify-between gap-3">
 		<div>
-			<p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-2">{p.tag}</p>
+			<p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-2">{p.tag}</p>
 			<h1 class="text-3xl md:text-5xl font-light" style="font-family: var(--font-serif)">{p.address}</h1>
 			<p class="text-sm text-gray-500 mt-2">{propertyArea(p)} · {p.zip}</p>
 		</div>
-		<p class="text-xs tracking-widest text-gray-400">{String(current + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}</p>
+		<p class="text-xs tracking-widest text-gray-500">{String(current + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}</p>
 	</div>
 </section>
 

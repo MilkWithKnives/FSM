@@ -154,7 +154,7 @@
 					<p class="text-sm text-gray-500 leading-relaxed">Luxury real estate photography & media. East Lansing, MI.</p>
 				</div>
 				<div>
-					<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Navigate</p>
+					<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Navigate</p>
 					<ul class="space-y-2.5">
 						<li><a href="/portfolio" class="text-sm text-gray-600 hover:text-black transition-colors">Portfolio</a></li>
 						<li><a href="/about" class="text-sm text-gray-600 hover:text-black transition-colors">About</a></li>
@@ -164,7 +164,7 @@
 					</ul>
 				</div>
 				<div>
-					<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Services</p>
+					<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Services</p>
 					<ul class="space-y-2.5">
 						<li><a href="/photos" class="text-sm text-gray-600 hover:text-black transition-colors">Photography</a></li>
 						<li><a href="/videos" class="text-sm text-gray-600 hover:text-black transition-colors">Video Tours</a></li>
@@ -172,17 +172,17 @@
 					</ul>
 				</div>
 				<div>
-					<p class="text-xs tracking-widest uppercase text-gray-400 mb-4">Contact</p>
+					<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Contact</p>
 					<a href="tel:+19895779513" class="text-sm text-gray-600 hover:text-black transition-colors block">(989) 577-9513</a>
 					<a href="mailto:info@fullscope-media.com" class="text-sm text-gray-600 hover:text-black transition-colors block mt-1">info@fullscope-media.com</a>
 					<p class="text-sm text-gray-600 mt-1">East Lansing, MI</p>
-					<a href="https://instagram.com/full.scope.media" class="text-xs tracking-widest uppercase text-gray-400 hover:text-black transition-colors mt-3 inline-block">@full.scope.media</a>
+					<a href="https://instagram.com/full.scope.media" class="text-xs tracking-widest uppercase text-gray-500 hover:text-black transition-colors mt-3 inline-block">@full.scope.media</a>
 				</div>
 			</div>
 
 			<!-- SOCIAL ICONS -->
 			<div class="max-w-6xl mx-auto mt-10 pt-8 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center gap-6">
-				<p class="text-xs text-gray-400">© 2025 Full Scope Media LLC. All rights reserved.</p>
+				<p class="text-xs text-gray-500">© 2025 Full Scope Media LLC. All rights reserved.</p>
 
 				<div class="social-login-icons">
 					<!-- X / Twitter -->
@@ -239,7 +239,7 @@
 					</div>
 				</div>
 
-				<p class="text-xs text-gray-400">East Lansing, MI</p>
+				<p class="text-xs text-gray-500">East Lansing, MI</p>
 			</div>
 		</footer>
 
@@ -263,7 +263,7 @@
 			<ul class="flex flex-col gap-5">
 				<li><a href="/portfolio" class="text-base tracking-wider text-gray-800" onclick={() => mobileOpen = false}>Portfolio</a></li>
 				<li>
-					<p class="text-xs tracking-widest uppercase text-gray-400 mb-3">Services</p>
+					<p class="text-xs tracking-widest uppercase text-gray-500 mb-3">Services</p>
 					<ul class="flex flex-col gap-3 pl-3">
 						<li><a href="/photos" class="text-sm tracking-wider text-gray-700" onclick={() => mobileOpen = false}>Photos</a></li>
 						<li><a href="/videos" class="text-sm tracking-wider text-gray-700" onclick={() => mobileOpen = false}>Videos</a></li>

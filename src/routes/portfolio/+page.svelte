@@ -61,7 +61,7 @@
 
 <!-- PAGE HEADER -->
 <section class="pt-16 pb-6 px-5 md:px-10 lg:px-20 max-w-7xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-3">Our Work</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">Our Work</p>
 	<h1 class="text-4xl md:text-6xl font-light" style="font-family: var(--font-serif)">Portfolio</h1>
 </section>
 
@@ -158,7 +158,7 @@
 
 <!-- SIMPLER PORTFOLIO CARDS -->
 <section class="px-5 md:px-10 lg:px-20 py-16 md:py-24 max-w-7xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-3 text-center">All Projects</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3 text-center">All Projects</p>
 	<h2 class="text-2xl md:text-3xl font-light text-center mb-12" style="font-family: var(--font-serif)">Selected Work</h2>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
@@ -180,7 +180,7 @@
 					</picture>
 				</div>
 				<div class="pt-5">
-					<p class="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-1.5">{project.tag}</p>
+					<p class="text-[10px] tracking-[0.3em] uppercase text-gray-500 mb-1.5">{project.tag}</p>
 					<p class="text-xl font-light" style="font-family: var(--font-serif)">{project.address}</p>
 					<p class="text-xs text-gray-500 mt-1">{propertyArea(project)}</p>
 				</div>
@@ -191,7 +191,7 @@
 
 <!-- INSTAGRAM SOCIAL -->
 <section class="bg-gray-50 py-16 md:py-20 px-5 text-center border-t border-gray-100">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4">Follow Along</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Follow Along</p>
 	<h2 class="text-2xl md:text-3xl font-light mb-6" style="font-family: var(--font-serif)">@full.scope.media</h2>
 	<a href="https://instagram.com/full.scope.media" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs px-8">FOLLOW ON INSTAGRAM</a>
 </section>
