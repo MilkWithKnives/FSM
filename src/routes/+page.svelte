@@ -52,6 +52,20 @@
 	ogDescription="Professional real estate photography, video & drone in East Lansing, MI. Edited photos delivered in 24 hours."
 />
 
+<!-- Preload the LCP hero image so the browser fetches it immediately,
+     in parallel with CSS/fonts, instead of discovering it after parse.
+     Matches the <picture> AVIF source exactly so there's no double-download. -->
+<svelte:head>
+	<link
+		rel="preload"
+		as="image"
+		type="image/avif"
+		imagesrcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'avif')}
+		imagesizes={PHOTO_SIZES_FULL}
+		fetchpriority="high"
+	/>
+</svelte:head>
+
 <!-- HERO -->
 <section class="relative h-[100dvh] min-h-[500px] overflow-hidden">
 	<picture>
