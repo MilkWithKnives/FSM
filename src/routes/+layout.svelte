@@ -36,15 +36,7 @@
 <svelte:head>
 	<link rel="icon" href={logo} />
 	<!-- Per-page title/description/OG are rendered by the <Seo> component on each route. -->
-
-	<!-- Google Analytics (GA4) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ7RML6RGX"></script>
-	{@html `<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-HJ7RML6RGX');
-	</script>`}
+	<!-- Analytics is handled by Google Tag Manager (GTM-N8RVSFDH) in app.html. -->
 
 	<!-- Local Business JSON-LD -->
 	{@html `<script type="application/ld+json">${JSON.stringify({
