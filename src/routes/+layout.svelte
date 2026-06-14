@@ -3,14 +3,11 @@
 	import '../app.css';
 	import { page } from '$app/stores';
 	import { locations } from '$lib/locations';
+	import { businessJsonLd } from '$lib/business';
 
 	let { children } = $props();
 
 	let mobileOpen = $state(false);
-
-	const siteUrl = 'https://fullscope-media.com';
-	const defaultDescription = 'Full Scope Media LLC is a full-service real estate media studio — photography, cinematic video tours, aerial drone, floor plans, Matterport 3D tours, and virtual staging — serving East Lansing, Mid-Michigan, and the Metro Detroit area.';
-	const defaultImage = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg`;
 
 	const navLinks = [
 		{ href: '/portfolio', label: 'Portfolio' },
@@ -39,33 +36,8 @@
 	<!-- Per-page title/description/OG are rendered by the <Seo> component on each route. -->
 	<!-- Analytics is handled by Google Tag Manager (GTM-N8RVSFDH) in app.html. -->
 
-	<!-- Local Business JSON-LD -->
-	{@html `<script type="application/ld+json">${JSON.stringify({
-		"@context": "https://schema.org",
-		"@type": "LocalBusiness",
-		"name": "Full Scope Media LLC",
-		"description": defaultDescription,
-		"url": siteUrl,
-		"email": "info@fullscope-media.com",
-		"telephone": "+1-989-577-9513",
-		"address": {
-			"@type": "PostalAddress",
-			"addressLocality": "East Lansing",
-			"addressRegion": "MI",
-			"postalCode": "48823",
-			"addressCountry": "US"
-		},
-		"geo": {
-			"@type": "GeoCoordinates",
-			"latitude": 42.7370,
-			"longitude": -84.4839
-		},
-		"areaServed": ["East Lansing", "Lansing", "Okemos", "Grand Ledge", "Mid-Michigan", "Bay City", "Saginaw", "Midland", "Kalamazoo", "Battle Creek", "Ann Arbor", "Jackson", "Metro Detroit", "Michigan"],
-		"serviceType": ["Real Estate Photography", "Cinematic Video Tours", "Aerial Drone Photography", "3D Tours (Matterport & Zillow 3D Home)", "Floor Plans (CubiCasa)", "Virtual Staging"],
-		"priceRange": "$$",
-		"image": defaultImage,
-		"sameAs": ["https://instagram.com/full.scope.media"]
-	})}<\/script>`}
+	<!-- Local Business JSON-LD (single source of truth in $lib/business.ts) -->
+	{@html `<script type="application/ld+json">${JSON.stringify(businessJsonLd)}<\/script>`}
 </svelte:head>
 
 <div class="drawer">
