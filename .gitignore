@@ -27,3 +27,4 @@ vite.config.ts.timestamp-*
 
 # Loose Python scripts (report/asset tooling, not part of the site build)
 /*.py
+.svelte-doctor/*
