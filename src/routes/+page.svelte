@@ -1,247 +1,62 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
-	import { inView } from '$lib/actions/inView';
-	import { properties, propertyArea } from '$lib/properties';
-	import {
-		photoSrcset,
-		photoFallback,
-		heroFallback,
-		PHOTO_SIZES_FULL,
-		PHOTO_SIZES_GALLERY,
-		PHOTO_SIZES_HALF,
-	} from '$lib/images';
-
-	const heroProperty = properties[0];
-	const quoteProperty = properties[1];
-	const aboutProperty = properties[2];
-
-	const services = [
-		{
-			title: 'Photography',
-			description:
-				'High-resolution, fully edited images that capture every detail — from wide-angle architectural shots to intimate interior moments.',
-			slug: properties[2].slug,
-			photoIndex: properties[2].selected[2] ?? properties[2].selected[0],
-			href: '/photos',
-		},
-		{
-			title: 'Video Tours',
-			description:
-				'Cinematic property walkthroughs that immerse buyers in the experience before they ever set foot inside.',
-			slug: properties[3].slug,
-			photoIndex: properties[3].selected[2] ?? properties[3].selected[0],
-			href: '/videos',
-		},
-		{
-			title: 'Aerial Drone',
-			description:
-				"Stunning bird's-eye perspectives that showcase location, lot size, and surrounding amenities.",
-			slug: properties[0].slug,
-			photoIndex: properties[0].selected[0],
-			href: '/pricing',
-		},
-		{
-			title: '3D Tours',
-			description:
-				'Interactive Matterport & Zillow 3D walkthroughs that let buyers explore every room online, anytime.',
-			slug: properties[1].slug,
-			photoIndex: properties[1].selected[3] ?? properties[1].selected[0],
-			href: '/3d-tours',
-		},
-		{
-			title: 'Floor Plans',
-			description:
-				'Accurately scaled CubiCasa floor plans with room dimensions, so buyers grasp the layout at a glance.',
-			slug: properties[4].slug,
-			photoIndex: properties[4].selected[2] ?? properties[4].selected[0],
-			href: '/floor-plans',
-		},
-		{
-			title: 'Virtual Staging',
-			description:
-				'Photorealistic digital furniture that turns empty rooms into homes buyers can picture themselves in.',
-			slug: properties[2].slug,
-			photoIndex: properties[2].selected[4] ?? properties[2].selected[0],
-			href: '/virtual-staging',
-		},
-	];
-
 </script>
 
 <Seo
-	title="Real Estate Photographer · East Lansing, MI | Full Scope Media"
-	description="Full Scope Media is a professional real estate photographer in East Lansing, MI — photography, cinematic video, aerial drone, floor plans & virtual staging. Edited photos delivered in 24 hours for listings across Greater Lansing."
-	ogTitle="East Lansing Real Estate Photographer | Full Scope Media"
-	ogDescription="Professional real estate photography, video & drone in East Lansing, MI. Edited photos delivered in 24 hours."
+	title="Full Scope Media — Real Estate Photography & Web Studio · East Lansing, MI"
+	description="Full Scope Media is an East Lansing, MI media studio: real estate photography, video and 3D tours for listings — plus web design, SEO, and systems integration for small businesses across Michigan."
 />
 
-<!-- Preload the LCP hero image so the browser fetches it immediately,
-     in parallel with CSS/fonts, instead of discovering it after parse.
-     Matches the <picture> AVIF source exactly so there's no double-download. -->
-<svelte:head>
-	<link
-		rel="preload"
-		as="image"
-		type="image/avif"
-		imagesrcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'avif')}
-		imagesizes={PHOTO_SIZES_FULL}
-		fetchpriority="high"
-	/>
-</svelte:head>
-
-<!-- HERO -->
-<section class="relative h-[100dvh] min-h-[500px] overflow-hidden">
-	<picture>
-		<source type="image/avif" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_FULL} />
-		<source type="image/webp" srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
-		<img
-			src={heroFallback(heroProperty)}
-			srcset={photoSrcset(heroProperty.slug, heroProperty.selected[0], 'jpg')}
-			sizes={PHOTO_SIZES_FULL}
-			alt="{heroProperty.address}, {propertyArea(heroProperty)}"
-			fetchpriority="high"
-			class="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[8s] ease-out"
-			style="animation: heroZoom 8s ease forwards;"
-		/>
-	</picture>
-	<div class="absolute inset-0 bg-black/35 flex flex-col items-center justify-center text-white text-center px-5">
-		<p class="hero-line-1 text-xs tracking-[0.4em] uppercase mb-5 opacity-80">Full Scope Media · East Lansing, MI</p>
-		<h1 class="hero-line-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light max-w-3xl leading-tight" style="font-family: var(--font-serif)">
-			East Lansing Real Estate Photographer
-		</h1>
-		<p class="hero-line-2 text-base sm:text-lg md:text-xl font-light max-w-xl leading-relaxed mt-5 opacity-90" style="font-family: var(--font-serif)">
-			Passionate about telling your home's story.
-		</p>
-		<a href="/portfolio" class="hero-line-3 btn btn-outline btn-sm mt-8 rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-8 transition-all duration-300">
-			VIEW PORTFOLIO
-		</a>
-	</div>
-	<div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white opacity-50 hidden sm:flex flex-col items-center gap-2 hero-line-3">
-		<span class="text-xs tracking-widest uppercase">Scroll</span>
-		<div class="w-px h-6 bg-white/60 animate-bounce" style="animation-duration:2s"></div>
-	</div>
-</section>
+<!-- The eye gate (rendered by the root layout) covers this page; this content exists
+     for crawlers and no-JS visitors, and mirrors the gate's two destinations. -->
+<main class="gateway">
+	<h1>Full Scope Media</h1>
+	<p>
+		An East Lansing, Michigan media studio. Pick a side of the house: real estate photography,
+		video, aerial drone and 3D tours for listings — or the studio: web design &amp; build, SEO,
+		and the systems that tie a small business together.
+	</p>
+	<ul>
+		<li><a href="/real-estate-photography">Real Estate Media — photography, video &amp; 3D tours for listings</a></li>
+		<li><a href="/studio">Studio — web design, SEO &amp; systems for small businesses</a></li>
+	</ul>
+</main>
 
 <style>
-	@keyframes heroZoom {
-		from { transform: scale(1.05); }
-		to   { transform: scale(1); }
+	.gateway {
+		min-height: 100dvh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 18px;
+		padding: 48px clamp(20px, 6vw, 80px);
+		background: #1f1d1b;
+		color: #ecebe9;
+		font-family: var(--font-studio, monospace);
+	}
+	h1 {
+		font-family: var(--font-studio, monospace);
+		font-size: clamp(28px, 4vw, 48px);
+		font-weight: 700;
+		letter-spacing: 0.08em;
+	}
+	p {
+		max-width: 620px;
+		line-height: 1.6;
+		font-size: 15px;
+		color: #b6b3af;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	a {
+		color: #ecebe9;
+		text-decoration: underline;
+		text-underline-offset: 4px;
+	}
+	a:hover {
+		color: #ff5a00;
 	}
 </style>
-
-<!-- SERVICES -->
-<section class="bg-gray-50 py-16 md:py-24 px-5 md:px-10 lg:px-20">
-	<div class="max-w-7xl mx-auto">
-		<div use:inView class="reveal text-center mb-12 md:mb-16">
-			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">What We Offer</p>
-			<h2 class="text-3xl md:text-5xl font-light" style="font-family: var(--font-serif)">Our Services</h2>
-		</div>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
-			{#each services as service, i (service.title)}
-				<div class="group reveal" use:inView={{ delay: i * 150 }}>
-					<div class="overflow-hidden aspect-[4/3] mb-5">
-						<picture>
-							<source type="image/avif" srcset={photoSrcset(service.slug, service.photoIndex, 'avif')} sizes={PHOTO_SIZES_GALLERY} />
-							<source type="image/webp" srcset={photoSrcset(service.slug, service.photoIndex, 'webp')} sizes={PHOTO_SIZES_GALLERY} />
-							<img
-								src={photoFallback(service.slug, service.photoIndex)}
-								srcset={photoSrcset(service.slug, service.photoIndex, 'jpg')}
-								sizes={PHOTO_SIZES_GALLERY}
-								alt="Real estate {service.title.toLowerCase()} by Full Scope Media LLC"
-								loading="lazy"
-								decoding="async"
-								class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-							/>
-						</picture>
-					</div>
-					<h3 class="text-xl md:text-2xl font-light mb-2" style="font-family: var(--font-serif)">{service.title}</h3>
-					<p class="text-sm text-gray-500 leading-relaxed mb-4">{service.description}</p>
-					<a href={service.href} class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity">Learn More<span class="sr-only"> about real estate {service.title.toLowerCase()}</span></a>
-				</div>
-			{/each}
-		</div>
-	</div>
-</section>
-
-<!-- FULL-BLEED QUOTE -->
-<section class="relative h-[50vh] md:h-[60vh] min-h-[300px] overflow-hidden">
-	<picture>
-		<source type="image/avif" srcset={photoSrcset(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_FULL} />
-		<source type="image/webp" srcset={photoSrcset(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_FULL} />
-		<img
-			src={photoFallback(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0])}
-			srcset={photoSrcset(quoteProperty.slug, quoteProperty.selected[1] ?? quoteProperty.selected[0], 'jpg')}
-			sizes={PHOTO_SIZES_FULL}
-			alt="Interior at {quoteProperty.address}"
-			loading="lazy"
-			decoding="async"
-			class="absolute inset-0 w-full h-full object-cover"
-		/>
-	</picture>
-	<div class="absolute inset-0 bg-black/30 flex items-center justify-center px-5">
-		<blockquote class="text-white text-center max-w-2xl reveal" use:inView>
-			<p class="text-2xl sm:text-3xl md:text-5xl font-light italic" style="font-family: var(--font-serif)">"Every property has a story worth telling beautifully."</p>
-		</blockquote>
-	</div>
-</section>
-
-
-<!-- ABOUT TEASER -->
-<section class="py-16 md:py-24 px-5 md:px-10 lg:px-20 max-w-7xl mx-auto">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-		<div class="order-2 md:order-1 reveal" use:inView>
-			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-5">About Full Scope Media</p>
-			<h2 class="text-3xl md:text-4xl lg:text-5xl font-light leading-snug mb-6" style="font-family: var(--font-serif)">
-				We take pride in the value we bring to your properties.
-			</h2>
-			<p class="text-sm text-gray-500 leading-relaxed mb-4">
-				Full Scope Media is a professional real estate photographer based in East Lansing, MI. We work alongside agents, developers, and homeowners across Greater Lansing and Mid-Michigan to create imagery that moves markets.
-			</p>
-			<p class="text-sm text-gray-500 leading-relaxed mb-8">
-				Great photography doesn't just document a property — it sells a lifestyle.
-			</p>
-			<a href="/about" class="btn btn-neutral rounded-none tracking-widest text-xs px-8 hover:scale-105 transition-transform duration-200">MEET THE TEAM</a>
-		</div>
-		<div class="overflow-hidden aspect-[4/5] order-1 md:order-2 reveal-scale" use:inView>
-			<picture>
-				<source type="image/avif" srcset={photoSrcset(aboutProperty.slug, aboutProperty.selected[0], 'avif')} sizes={PHOTO_SIZES_HALF} />
-				<source type="image/webp" srcset={photoSrcset(aboutProperty.slug, aboutProperty.selected[0], 'webp')} sizes={PHOTO_SIZES_HALF} />
-				<img
-					src={heroFallback(aboutProperty)}
-					srcset={photoSrcset(aboutProperty.slug, aboutProperty.selected[0], 'jpg')}
-					sizes={PHOTO_SIZES_HALF}
-					alt="{aboutProperty.address}, {propertyArea(aboutProperty)}"
-					loading="lazy"
-					decoding="async"
-					class="w-full h-full object-cover"
-				/>
-			</picture>
-		</div>
-	</div>
-</section>
-
-<!-- NEWSLETTER -->
-<section class="bg-gray-50 py-16 md:py-20 px-5 text-center">
-	<div class="reveal" use:inView>
-		<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">Stay In Touch</p>
-		<h2 class="text-2xl md:text-4xl font-light mb-6" style="font-family: var(--font-serif)">Stay Up To Date</h2>
-		<p class="text-sm text-gray-500 mb-6">Get the latest listings, tips, and studio news.</p>
-		<form class="flex flex-col sm:flex-row max-w-md mx-auto" onsubmit={(e) => e.preventDefault()}>
-			<input
-				type="email"
-				placeholder="Your email address"
-				class="input input-bordered rounded-none flex-1 border-gray-300 focus:outline-none focus:border-black text-sm transition-colors duration-200"
-			/>
-			<button type="submit" class="btn btn-neutral rounded-none tracking-widest text-xs px-8 hover:scale-105 transition-transform duration-200">SUBSCRIBE</button>
-		</form>
-	</div>
-</section>
-
-<!-- WORK WITH US CTA -->
-<section class="bg-neutral text-white py-20 md:py-28 px-5 text-center">
-	<div class="reveal" use:inView>
-		<p class="text-xs tracking-[0.4em] uppercase mb-5 opacity-60">Ready to get started?</p>
-		<h2 class="text-3xl md:text-5xl lg:text-6xl font-light mb-8" style="font-family: var(--font-serif)">Let's Work Together</h2>
-		<a href="/contact" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-10 transition-all duration-300">GET IN TOUCH</a>
-	</div>
-</section>

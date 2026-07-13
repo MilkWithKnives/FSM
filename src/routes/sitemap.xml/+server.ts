@@ -6,6 +6,12 @@ const siteUrl = 'https://fullscope-media.com';
 
 const staticPages = [
 	{ path: '/', priority: '1.0', changefreq: 'weekly' },
+	{ path: '/real-estate-photography', priority: '1.0', changefreq: 'weekly' },
+	{ path: '/studio', priority: '0.9', changefreq: 'monthly' },
+	{ path: '/studio/web-design', priority: '0.9', changefreq: 'monthly' },
+	{ path: '/studio/systems', priority: '0.8', changefreq: 'monthly' },
+	{ path: '/studio/photography', priority: '0.8', changefreq: 'monthly' },
+	{ path: '/studio/contact', priority: '0.6', changefreq: 'yearly' },
 	{ path: '/portfolio', priority: '0.9', changefreq: 'weekly' },
 	{ path: '/photos', priority: '0.8', changefreq: 'monthly' },
 	{ path: '/videos', priority: '0.8', changefreq: 'monthly' },

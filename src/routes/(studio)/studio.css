@@ -1,0 +1,206 @@
+/* ── Studio design system (Ionofolio-style) ──────────────────────────────
+   Loaded once by (studio)/+layout.svelte. Off-white canvas, near-black mono
+   type, hairline grid cells, orange registration-mark accents, sharp corners.
+   All classes are prefixed .st- to stay clear of Tailwind/daisyUI. */
+
+.studio {
+	--st-bg: #ecebe8;
+	--st-ink: #1f1d1b;
+	--st-dim: #8f8c86;
+	--st-line: #c9c7c1;
+	--st-accent: #ff5a00;
+
+	background: var(--st-bg);
+	color: var(--st-ink);
+	font-family: var(--font-studio);
+	font-weight: 400;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	/* corner registration marks intentionally hang past section edges */
+	overflow-x: clip;
+}
+
+/* app.css sets serif headings site-wide; the studio is mono throughout */
+.studio :is(h1, h2, h3, h4) {
+	font-family: var(--font-studio);
+}
+
+.studio a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* ── grid frame ── */
+.st-frame {
+	border-bottom: 1px solid var(--st-line);
+	position: relative;
+}
+
+.st-pad {
+	padding: clamp(28px, 5vw, 64px) clamp(20px, 5vw, 72px);
+}
+
+/* ── type ── */
+.st-kicker {
+	color: var(--st-accent);
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.28em;
+	text-transform: uppercase;
+}
+
+.st-h1 {
+	font-size: clamp(30px, 5.2vw, 74px);
+	font-weight: 800;
+	line-height: 1.06;
+	letter-spacing: -0.01em;
+	text-wrap: pretty;
+}
+
+.st-h2 {
+	font-size: clamp(24px, 3.4vw, 44px);
+	font-weight: 800;
+	line-height: 1.1;
+}
+
+.st-dim {
+	color: var(--st-dim);
+}
+
+.st-body {
+	font-size: 14px;
+	line-height: 1.75;
+	color: #4c4945;
+	max-width: 62ch;
+	text-wrap: pretty;
+}
+
+.st-num {
+	color: var(--st-accent);
+	font-size: 13px;
+	font-weight: 500;
+}
+
+/* ── buttons ──
+   Prefixed with .studio so they out-specify the `.studio a { color: inherit }` reset. */
+.studio .st-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 15px 26px;
+	border: 1px solid var(--st-ink);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s, border-color 0.2s;
+	background: transparent;
+	color: var(--st-ink);
+}
+.studio .st-btn:hover {
+	background: var(--st-ink);
+	color: var(--st-bg);
+}
+.studio .st-btn-solid {
+	background: var(--st-ink);
+	color: var(--st-bg);
+}
+.studio .st-btn-solid:hover {
+	background: var(--st-accent);
+	border-color: var(--st-accent);
+	color: #fff;
+}
+
+/* ── bullet lists (Ionofolio square markers) ── */
+.st-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #4c4945;
+}
+.st-list li {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+}
+.st-list li::before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	background: var(--st-ink);
+	flex-shrink: 0;
+	transform: translateY(-2px);
+}
+
+/* ── common sections ── */
+.st-hero {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-top: clamp(56px, 9vw, 130px) !important;
+	padding-bottom: clamp(56px, 9vw, 130px) !important;
+}
+.st-hero .st-h1 {
+	max-width: 18ch;
+}
+.st-ctas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+	margin-top: 8px;
+}
+
+/* full-width black band (page-closing CTA) */
+.st-band {
+	background: var(--st-ink);
+	color: var(--st-bg);
+}
+.st-band-inner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+.studio .st-btn-invert {
+	border-color: var(--st-bg);
+	color: var(--st-bg);
+}
+.studio .st-btn-invert:hover {
+	background: var(--st-accent);
+	border-color: var(--st-accent);
+	color: #fff;
+}
+
+/* ── registration marks ── */
+.st-cross {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	pointer-events: none;
+	z-index: 1;
+}
+.st-cross::before,
+.st-cross::after {
+	content: '';
+	position: absolute;
+	background: var(--st-accent);
+}
+.st-cross::before {
+	width: 15px;
+	height: 1px;
+	top: 7px;
+}
+.st-cross::after {
+	width: 1px;
+	height: 15px;
+	left: 7px;
+}
+.st-cross.tl { top: -8px; left: -8px; }
+.st-cross.tr { top: -8px; right: -8px; }
+.st-cross.bl { bottom: -8px; left: -8px; }
+.st-cross.br { bottom: -8px; right: -8px; }

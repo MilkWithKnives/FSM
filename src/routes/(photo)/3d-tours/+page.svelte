@@ -61,7 +61,7 @@
 		<div>
 			<p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Every 3D Tour Includes</p>
 			<ul class="flex flex-col gap-3 mb-10">
-				{#each includes as item}
+				{#each includes as item (item)}
 					<li class="flex items-start gap-3 text-sm text-gray-600">
 						<span class="text-black mt-1">—</span>
 						{item}
