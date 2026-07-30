@@ -157,7 +157,7 @@
 			</div>
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Email Us</p>
-				<a href="mailto:info@fullscope-media.com" class="text-sm text-gray-700 hover:text-black transition-colors">info@fullscope-media.com</a>
+				<a href="mailto:rchampion@fullscope-media.com" class="text-sm text-gray-700 hover:text-black transition-colors">rchampion@fullscope-media.com</a>
 			</div>
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Based In</p>

@@ -19,7 +19,7 @@ export const businessJsonLd = {
 	name: 'Full Scope Media LLC',
 	description,
 	url: siteUrl,
-	email: 'info@fullscope-media.com',
+	email: 'rchampion@fullscope-media.com',
 	telephone: '+1-989-577-9513',
 	address: {
 		'@type': 'PostalAddress',
