@@ -123,7 +123,7 @@
 		</div>
 		<div class="info-cell">
 			<p class="foot-label">Email</p>
-			<a href="mailto:info@fullscope-media.com">info@fullscope-media.com</a>
+			<a href="mailto:rchampion@fullscope-media.com">rchampion@fullscope-media.com</a>
 		</div>
 		<div class="info-cell">
 			<p class="foot-label">Based in</p>
