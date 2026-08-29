@@ -65,7 +65,7 @@
 		<div class="foot-cell">
 			<p class="foot-label">Contact</p>
 			<ul>
-				<li><a href="tel:+19895779513">(989) 577-9513</a></li>
+				<li><a href="tel:+19895257768">(989) 525-7768</a></li>
 				<li><a href="mailto:rchampion@fullscope-media.com">rchampion@fullscope-media.com</a></li>
 			</ul>
 		</div>

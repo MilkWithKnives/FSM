@@ -20,7 +20,7 @@ export const businessJsonLd = {
 	description,
 	url: siteUrl,
 	email: 'rchampion@fullscope-media.com',
-	telephone: '+1-989-577-9513',
+	telephone: '+1-989-525-7768',
 	address: {
 		'@type': 'PostalAddress',
 		addressLocality: 'East Lansing',

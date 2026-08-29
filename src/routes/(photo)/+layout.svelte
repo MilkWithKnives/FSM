@@ -143,7 +143,7 @@
 				</div>
 				<div>
 					<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Contact</p>
-					<a href="tel:+19895779513" class="text-sm text-gray-600 hover:text-black transition-colors block">(989) 577-9513</a>
+					<a href="tel:+19895257768" class="text-sm text-gray-600 hover:text-black transition-colors block">(989) 525-7768</a>
 					<a href="mailto:rchampion@fullscope-media.com" class="text-sm text-gray-600 hover:text-black transition-colors block mt-1">rchampion@fullscope-media.com</a>
 					<p class="text-sm text-gray-600 mt-1">East Lansing, MI</p>
 					<a href="https://instagram.com/full.scope.media" class="text-xs tracking-widest uppercase text-gray-500 hover:text-black transition-colors mt-3 inline-block">@full.scope.media</a>

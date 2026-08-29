@@ -119,7 +119,7 @@
 	<aside>
 		<div class="info-cell">
 			<p class="foot-label">Call</p>
-			<a href="tel:+19895779513">(989) 577-9513</a>
+			<a href="tel:+19895257768">(989) 525-7768</a>
 		</div>
 		<div class="info-cell">
 			<p class="foot-label">Email</p>

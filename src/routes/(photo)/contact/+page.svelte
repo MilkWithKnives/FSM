@@ -153,7 +153,7 @@
 		<div class="flex flex-col gap-10">
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Call Us</p>
-				<a href="tel:+19895779513" class="text-sm text-gray-700 hover:text-black transition-colors">(989) 577-9513</a>
+				<a href="tel:+19895257768" class="text-sm text-gray-700 hover:text-black transition-colors">(989) 525-7768</a>
 			</div>
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Email Us</p>
