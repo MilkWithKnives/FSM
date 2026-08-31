@@ -1,0 +1,4 @@
+# pnpm settings live here in pnpm 11 (no longer the "pnpm" field in package.json).
+# sharp ships a native binary and needs its install script to run.
+allowBuilds:
+  sharp: true

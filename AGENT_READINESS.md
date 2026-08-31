@@ -46,14 +46,14 @@ honest relation type and satisfies the skill (it accepts any of `api-catalog`,
 `service-desc`, `service-doc`, `describedby`).
 
 ### Verification (the gotcha that matters)
-Must be tested against a **production build**, not `npm run dev`. With `adapter-node`,
+Must be tested against a **production build**, not `pnpm dev`. With `adapter-node`,
 prerendered pages are served before `hooks.server.ts` runs — dev never prerenders and
 always runs hooks, so dev can give a false pass. (Confirmed nothing in this project sets
 `prerender`, so the hook does run for the homepage.)
 
 ```bash
 # build needs dummy SMTP creds (see "build blocker" note below)
-SMTP_USER=test@example.com SMTP_PASS=dummy npm run build
+SMTP_USER=test@example.com SMTP_PASS=dummy pnpm build
 SMTP_USER=test@example.com SMTP_PASS=dummy PORT=4173 node build/index.js &
 curl -sD - -o /dev/null http://localhost:4173/ | grep -i '^link:'
 curl -sD - -o /dev/null http://localhost:4173/business.jsonld | grep -i content-type
@@ -116,7 +116,7 @@ actually responds. Not required for the scanner (DNS-only check), but honest.
 ---
 
 ## Build blocker note
-`npm run build` fails type-check/build without `SMTP_USER` / `SMTP_PASS` because
+`pnpm build` fails type-check/build without `SMTP_USER` / `SMTP_PASS` because
 `src/routes/contact/+page.server.ts` imports them from `$env/static/private`. The user
 runs the real build with these set in `.env`; for header-only verification, dummy values
 are fine (email isn't exercised).
