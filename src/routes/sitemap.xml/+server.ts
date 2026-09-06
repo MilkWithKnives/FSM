@@ -11,6 +11,7 @@ const staticPages = [
 	{ path: '/studio/web-design', priority: '0.9', changefreq: 'monthly' },
 	{ path: '/studio/systems', priority: '0.8', changefreq: 'monthly' },
 	{ path: '/studio/photography', priority: '0.8', changefreq: 'monthly' },
+	{ path: '/studio/faq', priority: '0.6', changefreq: 'monthly' },
 	{ path: '/studio/contact', priority: '0.6', changefreq: 'yearly' },
 	{ path: '/portfolio', priority: '0.9', changefreq: 'weekly' },
 	{ path: '/photos', priority: '0.8', changefreq: 'monthly' },

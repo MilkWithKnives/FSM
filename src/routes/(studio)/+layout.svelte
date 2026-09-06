@@ -9,6 +9,7 @@
 		{ href: '/studio/web-design', label: 'Web Design' },
 		{ href: '/studio/systems', label: 'Systems' },
 		{ href: '/studio/photography', label: 'Photography' },
+		{ href: '/studio/faq', label: 'FAQ' },
 	];
 
 	function isActive(href: string) {
@@ -29,7 +30,7 @@
 		</a>
 		<nav aria-label="Studio">
 			{#each navLinks as link (link.href)}
-				<a href={link.href} class="cell" class:active={isActive(link.href)}>{link.label}</a>
+				<a href={link.href} class="cell" class:active={isActive(link.href)} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
 			{/each}
 		</nav>
 		<a href="/studio/contact" class="contact">Contact</a>

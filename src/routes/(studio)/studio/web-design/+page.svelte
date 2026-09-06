@@ -33,28 +33,6 @@
 			{ num: '04', name: 'Launch', blurb: 'We prepare indexing, analytics, and the technical SEO foundation, then support the site as it grows.' },
 	];
 
-	const faqs = [
-			{
-				question: 'Do you build websites for businesses in both Lansing and East Lansing?',
-				answer:
-					'Yes. Full Scope Media is based in East Lansing and works with small businesses in Lansing, East Lansing, and elsewhere in Michigan.',
-			},
-			{
-				question: 'Are your websites responsive and accessible?',
-				answer:
-					'Yes. Responsive layouts, keyboard-friendly navigation, readable content, and performance-conscious development are part of the build process.',
-			},
-			{
-				question: 'What SEO work is included in a website build?',
-				answer:
-					'Each build starts with crawlable page structure, descriptive titles and metadata, structured data where appropriate, performance fundamentals, and indexing setup. Ongoing content and search work can continue after launch.',
-			},
-			{
-				question: 'Can you help with an existing small-business website?',
-				answer:
-					'Yes. The first step is to review the current site, business goals, content, and technical constraints so we can recommend whether focused improvements or a new build makes more sense.',
-			},
-	];
 
 	const webDesignJsonLd = {
 			'@context': 'https://schema.org',
@@ -77,14 +55,6 @@
 						{ '@type': 'ListItem', position: 2, name: 'Studio', item: `${siteUrl}/studio` },
 						{ '@type': 'ListItem', position: 3, name: 'Web Design', item: `${siteUrl}/studio/web-design` },
 					],
-				},
-				{
-					'@type': 'FAQPage',
-					mainEntity: faqs.map((faq) => ({
-						'@type': 'Question',
-						name: faq.question,
-						acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-					})),
 				},
 			],
 	};
@@ -189,19 +159,11 @@
 	</div>
 </section>
 
-<!-- FAQ -->
-<section class="st-frame" aria-labelledby="faq-heading">
-	<div class="st-pad section-heading">
-		<p class="st-kicker">Common questions</p>
-		<h2 id="faq-heading" class="st-h2">What to know before starting a website project.</h2>
-	</div>
-	<div class="faq-grid">
-		{#each faqs as faq}
-			<article class="faq-item">
-				<h3>{faq.question}</h3>
-				<p class="st-body">{faq.answer}</p>
-			</article>
-		{/each}
+<!-- FAQ LINK -->
+<section class="st-frame">
+	<div class="st-pad st-band-inner">
+		<h2 class="st-h2">Questions about your website project?</h2>
+		<a href="/studio/faq" class="st-btn">Read the studio FAQ</a>
 	</div>
 </section>
 
@@ -278,23 +240,6 @@
 		max-width: 560px;
 	}
 
-	.faq-grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-	.faq-item {
-		padding: clamp(24px, 4vw, 48px) clamp(20px, 5vw, 72px);
-		border-top: 1px solid var(--st-line);
-	}
-	.faq-item:nth-child(odd) {
-		border-right: 1px solid var(--st-line);
-	}
-	.faq-item h3 {
-		font-size: 17px;
-		font-weight: 800;
-		line-height: 1.4;
-		margin-bottom: 14px;
-	}
 
 	@media (max-width: 860px) {
 		.row,
@@ -304,12 +249,6 @@
 		}
 		.steps {
 			grid-template-columns: 1fr 1fr;
-		}
-		.faq-grid {
-			grid-template-columns: 1fr;
-		}
-		.faq-item:nth-child(odd) {
-			border-right: none;
 		}
 		.step {
 			border-bottom: 1px solid var(--st-line);
