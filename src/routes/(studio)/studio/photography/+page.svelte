@@ -74,7 +74,8 @@
 			<p class="st-kicker">Listing a property?</p>
 			<p class="st-body">
 				Real estate photography is its own side of the house — photos, video, 3D tours,
-				floor plans, and virtual staging, delivered in 24 hours.
+				floor plans, and virtual staging. Photos are delivered within 24 hours; video tours,
+				including drone video, within 3–5 business days.
 			</p>
 		</div>
 		<a href="/real-estate-photography" class="st-btn">Visit Real Estate Media</a>

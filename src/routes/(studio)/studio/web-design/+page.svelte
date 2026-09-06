@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import { siteUrl } from '$lib/business';
 
 	const deliverables = [
 		{
@@ -26,31 +27,91 @@
 	];
 
 	const steps = [
-		{ num: '01', name: 'Discover', blurb: 'What you do, who buys it, and what they type into Google.' },
-		{ num: '02', name: 'Design', blurb: 'A look that fits your business — reviewed with you before a line is built.' },
-		{ num: '03', name: 'Build', blurb: 'Hand-coded, fast, accessible. You watch it come together on a live preview.' },
-		{ num: '04', name: 'Rank', blurb: 'Launch is the start: search console, indexing, and tuning until you show up.' },
+			{ num: '01', name: 'Discover', blurb: 'We learn what you do, who needs it, and what a useful website must help them accomplish.' },
+			{ num: '02', name: 'Design', blurb: 'A look that fits your business — reviewed with you before a line is built.' },
+			{ num: '03', name: 'Build', blurb: 'Hand-coded, fast, accessible. You watch it come together on a live preview.' },
+			{ num: '04', name: 'Launch', blurb: 'We prepare indexing, analytics, and the technical SEO foundation, then support the site as it grows.' },
 	];
+
+	const faqs = [
+			{
+				question: 'Do you build websites for businesses in both Lansing and East Lansing?',
+				answer:
+					'Yes. Full Scope Media is based in East Lansing and works with small businesses in Lansing, East Lansing, and elsewhere in Michigan.',
+			},
+			{
+				question: 'Are your websites responsive and accessible?',
+				answer:
+					'Yes. Responsive layouts, keyboard-friendly navigation, readable content, and performance-conscious development are part of the build process.',
+			},
+			{
+				question: 'What SEO work is included in a website build?',
+				answer:
+					'Each build starts with crawlable page structure, descriptive titles and metadata, structured data where appropriate, performance fundamentals, and indexing setup. Ongoing content and search work can continue after launch.',
+			},
+			{
+				question: 'Can you help with an existing small-business website?',
+				answer:
+					'Yes. The first step is to review the current site, business goals, content, and technical constraints so we can recommend whether focused improvements or a new build makes more sense.',
+			},
+	];
+
+	const webDesignJsonLd = {
+			'@context': 'https://schema.org',
+			'@graph': [
+				{
+					'@type': 'Service',
+					'@id': `${siteUrl}/studio/web-design#service`,
+					name: 'Custom web design and development',
+					serviceType: 'Web design and development for small businesses',
+					provider: { '@type': 'LocalBusiness', '@id': `${siteUrl}/#business`, name: 'Full Scope Media LLC' },
+					areaServed: ['East Lansing, MI', 'Lansing, MI', 'Michigan'],
+					url: `${siteUrl}/studio/web-design`,
+					description:
+						'Custom, responsive small-business websites with performance, accessibility, and technical SEO foundations.',
+				},
+				{
+					'@type': 'BreadcrumbList',
+					itemListElement: [
+						{ '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+						{ '@type': 'ListItem', position: 2, name: 'Studio', item: `${siteUrl}/studio` },
+						{ '@type': 'ListItem', position: 3, name: 'Web Design', item: `${siteUrl}/studio/web-design` },
+					],
+				},
+				{
+					'@type': 'FAQPage',
+					mainEntity: faqs.map((faq) => ({
+						'@type': 'Question',
+						name: faq.question,
+						acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+					})),
+				},
+			],
+	};
 </script>
 
 <Seo
-	title="Small Business Website Design & SEO — Michigan | Full Scope Media"
-	description="Full Scope Media designs and builds websites for small businesses in East Lansing, Lansing, and across Michigan — hand-coded, fast, and built to rank. Web design, local SEO, and Google Business Profile optimization from one studio."
+	title="Web Design in Lansing & East Lansing, MI | Full Scope Media"
+	description="Custom web design and development for small businesses in Lansing and East Lansing, MI. Responsive, performance-focused websites with strong SEO foundations."
 />
+
+<svelte:head>
+	{@html `<script type="application/ld+json">${JSON.stringify(webDesignJsonLd).replace(/</g, '\\u003c')}<\/script>`}
+</svelte:head>
 
 <!-- HERO -->
 <section class="st-frame">
 	<span class="st-cross bl"></span><span class="st-cross br"></span>
 	<div class="st-pad st-hero">
-		<p class="st-kicker">Web Design &amp; Build · Michigan</p>
-		<h1 class="st-h1">Small business websites <span class="st-dim">built to be found.</span></h1>
+		<p class="st-kicker">Web Design &amp; Development · Greater Lansing</p>
+		<h1 class="st-h1">Custom web design for <span class="st-dim">Lansing &amp; East Lansing.</span></h1>
 		<p class="st-body">
-			We design and build websites for small businesses in East Lansing, Lansing, and across
-			Michigan — hand-coded, fast, and structured to rank on Google. Not a template with your
-			logo on it: a site that works like a member of staff.
+			Full Scope Media designs and develops responsive websites for small businesses in East Lansing,
+			Lansing, and across Michigan. Each site is shaped around the business, its customers, and the
+			actions visitors need to take — with performance, accessibility, and search fundamentals built in.
 		</p>
 		<div class="st-ctas">
-			<a href="/studio/contact" class="st-btn st-btn-solid">Start a project</a>
+			<a href="/studio/contact" class="st-btn st-btn-solid" data-analytics-event="web-design-contact">Discuss your website</a>
 			<a href="#seo" class="st-btn">About the SEO</a>
 		</div>
 	</div>
@@ -98,14 +159,20 @@
 </section>
 
 <!-- PROCESS -->
-<section class="st-frame steps">
-	{#each steps as step (step.num)}
-		<div class="step">
-			<p class="st-num">{step.num}</p>
-			<h3>{step.name}</h3>
-			<p class="st-body">{step.blurb}</p>
-		</div>
-	{/each}
+<section class="st-frame" aria-labelledby="process-heading">
+	<div class="st-pad section-heading">
+		<p class="st-kicker">How a project works</p>
+		<h2 id="process-heading" class="st-h2">A clear path from first conversation to launch.</h2>
+	</div>
+	<div class="steps">
+		{#each steps as step (step.num)}
+			<div class="step">
+				<p class="st-num">{step.num}</p>
+				<h3>{step.name}</h3>
+				<p class="st-body">{step.blurb}</p>
+			</div>
+		{/each}
+	</div>
 </section>
 
 <!-- PROOF -->
@@ -122,11 +189,27 @@
 	</div>
 </section>
 
+<!-- FAQ -->
+<section class="st-frame" aria-labelledby="faq-heading">
+	<div class="st-pad section-heading">
+		<p class="st-kicker">Common questions</p>
+		<h2 id="faq-heading" class="st-h2">What to know before starting a website project.</h2>
+	</div>
+	<div class="faq-grid">
+		{#each faqs as faq}
+			<article class="faq-item">
+				<h3>{faq.question}</h3>
+				<p class="st-body">{faq.answer}</p>
+			</article>
+		{/each}
+	</div>
+</section>
+
 <!-- CTA -->
 <section class="st-band">
 	<div class="st-pad st-band-inner">
 		<h2 class="st-h2">Ready to be findable?</h2>
-		<a href="/studio/contact" class="st-btn st-btn-invert">Start a project</a>
+		<a href="/studio/contact" class="st-btn st-btn-invert" data-analytics-event="web-design-contact">Start a project</a>
 	</div>
 </section>
 
@@ -168,6 +251,11 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 	}
+	.section-heading {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+	}
 	.step {
 		padding: clamp(22px, 3vw, 40px) clamp(18px, 2.5vw, 34px);
 		border-right: 1px solid var(--st-line);
@@ -190,6 +278,24 @@
 		max-width: 560px;
 	}
 
+	.faq-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.faq-item {
+		padding: clamp(24px, 4vw, 48px) clamp(20px, 5vw, 72px);
+		border-top: 1px solid var(--st-line);
+	}
+	.faq-item:nth-child(odd) {
+		border-right: 1px solid var(--st-line);
+	}
+	.faq-item h3 {
+		font-size: 17px;
+		font-weight: 800;
+		line-height: 1.4;
+		margin-bottom: 14px;
+	}
+
 	@media (max-width: 860px) {
 		.row,
 		.seo-grid {
@@ -198,6 +304,12 @@
 		}
 		.steps {
 			grid-template-columns: 1fr 1fr;
+		}
+		.faq-grid {
+			grid-template-columns: 1fr;
+		}
+		.faq-item:nth-child(odd) {
+			border-right: none;
 		}
 		.step {
 			border-bottom: 1px solid var(--st-line);

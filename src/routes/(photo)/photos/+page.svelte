@@ -23,15 +23,15 @@
 		'Natural and artificial light optimization',
 		'Sky replacement when needed',
 		'Web + print resolution files',
-		'Online gallery delivered in 24–48 hours',
+		'Online gallery delivered within 24 hours',
 	];
 </script>
 
 <Seo
 	title="Real Estate Photography | Full Scope Media LLC · East Lansing, MI"
-	description="Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered in 24–48 hours. Serving Lansing, Okemos, and Metro Detroit."
+	description="Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered within 24 hours. Serving Lansing, Okemos, and Metro Detroit."
 	ogTitle="Real Estate Photography | Full Scope Media LLC"
-	ogDescription="40+ fully edited real estate photos delivered in 24–48 hours. Serving East Lansing and greater Michigan."
+	ogDescription="40+ fully edited real estate photos delivered within 24 hours. Serving East Lansing and greater Michigan."
 />
 
 <!-- HERO -->

@@ -2,6 +2,7 @@
 	import Seo from '$lib/Seo.svelte';
 	import { properties } from '$lib/properties';
 	import { photoSrcset, heroFallback, PHOTO_SIZES_FULL } from '$lib/images';
+	import { floorPlanExample } from '$lib/media';
 
 	const heroProperty = properties[2];
 
@@ -75,6 +76,20 @@
 			</div>
 		</div>
 	</div>
+</section>
+
+<section class="px-8 lg:px-20 pb-24 max-w-6xl mx-auto" aria-labelledby="floor-plan-example-heading">
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">See the layout</p>
+	<h2 id="floor-plan-example-heading" class="text-3xl md:text-4xl font-light mb-8">Example Floor Plan</h2>
+	<figure>
+		<a href={floorPlanExample.src} aria-label="Open the example floor plan at full size">
+			<img src={floorPlanExample.src} alt={floorPlanExample.alt} width={floorPlanExample.width} height={floorPlanExample.height} loading="lazy" decoding="async" class="w-full h-auto border border-gray-100" />
+		</a>
+		<figcaption class="text-sm text-gray-500 leading-relaxed mt-4">{floorPlanExample.caption} Select the image to view it at full size.</figcaption>
+	</figure>
+	<p class="text-sm text-gray-600 mt-6">
+		Learn <a href="/journal/why-every-listing-needs-floorplan" class="underline underline-offset-4">why a floor plan belongs alongside your listing photography</a>.
+	</p>
 </section>
 
 <!-- CTA -->

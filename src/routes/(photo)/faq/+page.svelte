@@ -7,6 +7,10 @@
 			a: 'We guarantee a 24-hour turnaround — your edited photos are delivered within 24 hours of your shoot via an online gallery. Same-day rush delivery is also available upon request for an additional fee.',
 		},
 		{
+			q: 'How quickly will I receive my video tour or drone video?',
+			a: 'Video tours, including drone video, are delivered within 3–5 business days of your shoot.',
+		},
+		{
 			q: 'What is included in each shoot?',
 			a: 'Each photography package includes 1 location, a 2–2.5 hour shoot, and 40 fully edited, high-resolution photos delivered in web and print formats.',
 		},
@@ -39,8 +43,6 @@
 			a: 'Absolutely. Our service area spans greater Michigan — Lansing, Okemos, Grand Ledge, and across Mid-Michigan to Bay City, Saginaw, and Midland, as well as Ann Arbor and the Metro Detroit area. We travel for larger projects — contact us to discuss any travel fees.',
 		},
 	];
-
-	let openFaq = $state<number | null>(null);
 </script>
 
 <Seo
@@ -50,7 +52,7 @@
 	ogDescription="Common questions about real estate photography and video with Full Scope Media LLC — turnaround, pricing, service area, and more."
 />
 
-<!-- FAQPage structured data for rich results -->
+<!-- FAQPage structured data mirrors the questions and answers below. -->
 {@html `<script type="application/ld+json">${JSON.stringify({
 	'@context': 'https://schema.org',
 	'@type': 'FAQPage',
@@ -77,19 +79,17 @@
 <!-- FAQ ACCORDION -->
 <section class="px-8 lg:px-20 pb-24 max-w-4xl mx-auto">
 	<div class="flex flex-col">
-		{#each faqs as faq, i}
-			<div class="border-t border-gray-100 {i === faqs.length - 1 ? 'border-b' : ''}">
-				<button
-					class="w-full flex items-center justify-between py-5 text-left"
-					onclick={() => openFaq = openFaq === i ? null : i}
-				>
+		{#each faqs as faq, i (faq.q)}
+			<details name="faq" class="group border-t border-gray-100 {i === faqs.length - 1 ? 'border-b' : ''}">
+				<summary class="w-full flex items-center justify-between py-5 text-left list-none cursor-pointer">
 					<span class="text-base font-light pr-8" style="font-family: var(--font-serif)">{faq.q}</span>
-					<span class="text-gray-500 text-lg flex-shrink-0">{openFaq === i ? '−' : '+'}</span>
-				</button>
-				{#if openFaq === i}
-					<p class="text-sm text-gray-500 leading-relaxed pb-6">{faq.a}</p>
-				{/if}
-			</div>
+					<span class="text-gray-500 text-lg flex-shrink-0" aria-hidden="true">
+						<span class="group-open:hidden">+</span>
+						<span class="hidden group-open:inline">−</span>
+					</span>
+				</summary>
+				<p class="text-sm text-gray-500 leading-relaxed pb-6">{faq.a}</p>
+			</details>
 		{/each}
 	</div>
 </section>

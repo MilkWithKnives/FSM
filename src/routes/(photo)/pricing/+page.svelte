@@ -70,7 +70,7 @@
 <!-- INTRO -->
 <section class="px-8 lg:px-20 pb-16 max-w-6xl mx-auto">
 	<p class="text-sm text-gray-500 max-w-xl leading-relaxed mt-4">
-		All packages include 1 location, a 2–2.5 hour shoot, and 40 fully edited photos delivered with a guaranteed 24-hour turnaround. Custom packages available for larger estates.
+		Photography packages include 1 location, a 2–2.5 hour shoot, and 40 fully edited photos delivered with a guaranteed 24-hour turnaround. Video tours, including drone video, are delivered within 3–5 business days. Custom packages available for larger estates.
 	</p>
 </section>
 

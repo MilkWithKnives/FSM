@@ -82,7 +82,8 @@
 			<h2 class="st-h2">Listing photography lives on <span class="st-dim">the other side.</span></h2>
 			<p class="st-body">
 				Real estate photography, cinematic video, aerial drone, 3D tours, floor plans and
-				virtual staging — edited and delivered in 24 hours across Greater Lansing.
+				virtual staging across Greater Lansing. Photos are delivered within 24 hours;
+				video tours, including drone video, within 3–5 business days.
 			</p>
 		</div>
 		<a href="/real-estate-photography" class="st-btn">Visit Real Estate Media</a>

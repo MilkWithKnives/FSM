@@ -165,7 +165,10 @@
 			<span class="reg tl"></span><span class="reg tr"></span><span class="reg bl"></span><span class="reg br"></span>
 		</div>
 
-		<div class="wordmark" style="opacity: {chromeO};">FULL SCOPE MEDIA</div>
+		<div class="wordmark" style="opacity: {chromeO};">
+			FULL SCOPE MEDIA
+			<p class="tagline">Every detail under our eye</p>
+		</div>
 
 		<nav class="choices" style="opacity: {chromeO}; pointer-events: {phase === 'idle' ? 'auto' : 'none'};" aria-label="Choose a site">
 			{#each choices as choice, i (choice.href)}
@@ -213,6 +216,15 @@
 		font-weight: 700;
 		letter-spacing: 0.34em;
 		transition: opacity 0.3s;
+	}
+
+	.tagline {
+		margin: 10px 20px 0;
+		color: #b6b3af;
+		font-size: clamp(11px, 1.2vw, 13px);
+		font-weight: 400;
+		letter-spacing: 0.08em;
+		line-height: 1.5;
 	}
 
 	.choices {

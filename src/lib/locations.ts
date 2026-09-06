@@ -26,7 +26,7 @@ export const locations: Location[] = [
 		state: 'MI',
 		title: 'Real Estate Photographer in Okemos, MI | Full Scope Media',
 		description:
-			'Professional real estate photographer serving Okemos, MI. Full Scope Media shoots photography, video, and aerial drone for Okemos listings — edited and delivered in 24 hours. See our recent Okemos work.',
+			'Real estate photographer in Okemos, MI. Photos delivered in 24 hours; video and drone video in 3–5 business days. View local work by Full Scope Media.',
 		heading: 'Real Estate Photographer in Okemos, MI',
 		featuredSlug: '4442-greenwood-dr-okemos-mi-48864',
 		intro: [
@@ -42,7 +42,7 @@ export const locations: Location[] = [
 		state: 'MI',
 		title: 'Real Estate Photographer in Lansing, MI | Full Scope Media',
 		description:
-			'Professional real estate photographer serving Lansing, MI. Full Scope Media shoots photography, video, and aerial drone for Lansing listings — edited and delivered in 24 hours. See our recent Lansing work.',
+			'Real estate photographer in Lansing, MI. Photos delivered in 24 hours; video and drone video in 3–5 business days. View local work by Full Scope Media.',
 		heading: 'Real Estate Photographer in Lansing, MI',
 		featuredSlug: '1904-carvel-ct-lansing-mi-48910',
 		intro: [

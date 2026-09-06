@@ -1,36 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
-
-	const posts = [
-		{
-			title: 'Best Staging Companies in East Lansing',
-			date: 'January 20, 2025',
-			excerpt: 'First impressions matter — especially in real estate. Here are the staging companies we trust and recommend to our clients across Michigan.',
-			img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd9?w=800&q=80&auto=format&fit=crop',
-			slug: 'best-staging-companies-la',
-		},
-		{
-			title: 'How to Prep a House for a Shoot',
-			date: 'January 20, 2025',
-			excerpt: 'A little preparation before shoot day makes a world of difference. Here is our step-by-step guide for agents and homeowners.',
-			img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&auto=format&fit=crop',
-			slug: 'how-to-prep-house-shoot',
-		},
-		{
-			title: 'Why Every Listing Needs a Floorplan',
-			date: 'January 15, 2025',
-			excerpt: 'Buyers spend more time on listings with floorplans. Here is why adding one to every shoot is one of the simplest and highest-ROI decisions an agent can make.',
-			img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80&auto=format&fit=crop',
-			slug: 'why-every-listing-needs-floorplan',
-		},
-		{
-			title: 'Ten Techniques to Best Photograph Interior Spaces',
-			date: 'December 10, 2024',
-			excerpt: 'From managing natural light to composing the perfect wide angle, these are the ten techniques our photographers rely on for every interior shoot.',
-			img: 'https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800&q=80&auto=format&fit=crop',
-			slug: 'ten-techniques-photograph-interiors',
-		},
-	];
+	import { journalPosts } from '$lib/journal';
 </script>
 
 <Seo
@@ -50,23 +20,24 @@
 <!-- POSTS GRID -->
 <section class="px-8 lg:px-20 pb-28 max-w-6xl mx-auto">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16">
-		{#each posts as post}
+		{#each journalPosts as post (post.slug)}
 			<article class="group">
 				<a href="/journal/{post.slug}" class="block overflow-hidden aspect-[16/10] mb-6">
 					<img
-						src={post.img}
-						alt={post.title}
+						src={post.image.src}
+						alt={post.image.alt}
+						width={post.image.width}
+						height={post.image.height}
 						loading="lazy"
 						decoding="async"
 						class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 					/>
 				</a>
-				<p class="text-xs tracking-widest uppercase text-gray-500 mb-3">{post.date}</p>
 				<h2 class="text-2xl font-light mb-3 leading-snug" style="font-family: var(--font-serif)">
 					<a href="/journal/{post.slug}" class="hover:opacity-60 transition-opacity">{post.title}</a>
 				</h2>
 				<p class="text-sm text-gray-500 leading-relaxed mb-5">{post.excerpt}</p>
-				<a href="/journal/{post.slug}" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity">Read More</a>
+				<a href="/journal/{post.slug}" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity">Read More<span class="sr-only">: {post.title}</span></a>
 			</article>
 		{/each}
 	</div>

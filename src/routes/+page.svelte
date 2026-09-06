@@ -19,6 +19,7 @@
 	<ul>
 		<li><a href="/real-estate-photography">Real Estate Media — photography, video &amp; 3D tours for listings</a></li>
 		<li><a href="/studio">Studio — web design, SEO &amp; systems for small businesses</a></li>
+		<li><a href="/studio/web-design">Custom web design for Lansing and East Lansing businesses</a></li>
 	</ul>
 </main>
 

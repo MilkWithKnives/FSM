@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { siteUrl } from '$lib/business';
 
-	const siteUrl = 'https://fullscope-media.com';
 	const siteName = 'Full Scope Media LLC';
 	const defaultImage = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg`;
 

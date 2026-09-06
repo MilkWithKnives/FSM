@@ -166,7 +166,7 @@
 			</div>
 			<div>
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Turnaround</p>
-				<p class="text-sm text-gray-700">Guaranteed 24-hour turnaround — edited photos delivered within 24 hours of your shoot.</p>
+				<p class="text-sm text-gray-700">Edited photos delivered within 24 hours of your shoot. Video tours, including drone video, delivered within 3–5 business days.</p>
 			</div>
 			<div class="border-t border-gray-100 pt-8">
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Follow Along</p>

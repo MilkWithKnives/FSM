@@ -109,6 +109,6 @@
 <!-- CTA -->
 <section class="bg-neutral text-white py-20 md:py-24 px-6 text-center">
 	<h2 class="text-3xl md:text-5xl font-light mb-6" style="font-family: var(--font-serif)">Have a listing in {location.city}?</h2>
-	<p class="text-sm opacity-70 mb-8 max-w-xl mx-auto">Photos, video, and aerial drone — edited and delivered in 24 hours.</p>
+	<p class="text-sm opacity-70 mb-8 max-w-xl mx-auto">Edited photos delivered within 24 hours. Video tours, including drone video, delivered within 3–5 business days.</p>
 	<a href="/contact" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-10">GET IN TOUCH</a>
 </section>

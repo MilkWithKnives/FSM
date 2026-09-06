@@ -69,8 +69,8 @@
 </script>
 
 <Seo
-	title="Real Estate Photographer · East Lansing, MI | Full Scope Media"
-	description="Full Scope Media is a professional real estate photographer in East Lansing, MI — photography, cinematic video, aerial drone, floor plans & virtual staging. Edited photos delivered in 24 hours for listings across Greater Lansing."
+	title="Real Estate Photography & Media in East Lansing | Full Scope Media"
+	description="Real estate photography and media for listings in East Lansing, Lansing, and Okemos. Full Scope Media offers photography, video, drone, 3D tours, floor plans, and virtual staging."
 	ogTitle="East Lansing Real Estate Photographer | Full Scope Media"
 	ogDescription="Professional real estate photography, video & drone in East Lansing, MI. Edited photos delivered in 24 hours."
 />
@@ -243,5 +243,8 @@
 		<p class="text-xs tracking-[0.4em] uppercase mb-5 opacity-60">Ready to get started?</p>
 		<h2 class="text-3xl md:text-5xl lg:text-6xl font-light mb-8" style="font-family: var(--font-serif)">Let's Work Together</h2>
 		<a href="/contact" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-10 transition-all duration-300">GET IN TOUCH</a>
+		<p class="mt-8 text-sm text-white/70">
+			Need a site for your business instead? <a href="/studio/web-design" class="border-b border-white/60 pb-0.5 hover:text-white">Explore our Lansing-area web design services</a>.
+		</p>
 	</div>
 </section>

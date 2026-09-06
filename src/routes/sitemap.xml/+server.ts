@@ -1,8 +1,8 @@
 import type { RequestHandler } from '@sveltejs/kit';
+import { siteUrl } from '$lib/business';
 import { properties } from '$lib/properties';
 import { locations } from '$lib/locations';
-
-const siteUrl = 'https://fullscope-media.com';
+import { journalPosts } from '$lib/journal';
 
 const staticPages = [
 	{ path: '/', priority: '1.0', changefreq: 'weekly' },
@@ -39,7 +39,13 @@ const portfolioPages = properties.map((p) => ({
 	changefreq: 'monthly',
 }));
 
-const pages = [...staticPages, ...locationPages, ...portfolioPages];
+const journalPages = journalPosts.map((post) => ({
+	path: `/journal/${post.slug}`,
+	priority: '0.7',
+	changefreq: 'monthly',
+}));
+
+const pages = [...staticPages, ...locationPages, ...portfolioPages, ...journalPages];
 
 export const GET: RequestHandler = () => {
 	// No <lastmod>: without a real per-page modified date, stamping "today" on every
