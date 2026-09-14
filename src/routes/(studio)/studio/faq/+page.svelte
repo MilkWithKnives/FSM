@@ -38,14 +38,6 @@
 					acceptedAnswer: { '@type': 'Answer', text: faq.answer },
 				})),
 			},
-			{
-				'@type': 'BreadcrumbList',
-				itemListElement: [
-					{ '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
-					{ '@type': 'ListItem', position: 2, name: 'Studio', item: `${siteUrl}/studio` },
-					{ '@type': 'ListItem', position: 3, name: 'FAQ', item: `${siteUrl}/studio/faq` },
-				],
-			},
 		],
 	};
 </script>

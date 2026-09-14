@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import { businessJsonLd } from '$lib/business';
 	import EyeGate from '$lib/EyeGate.svelte';
+	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 
 	let { children } = $props();
 
@@ -20,6 +21,8 @@
 	<!-- Local Business JSON-LD (single source of truth in $lib/business.ts) -->
 	{@html `<script type="application/ld+json">${JSON.stringify(businessJsonLd).replace(/</g, '\\u003c')}<\/script>`}
 </svelte:head>
+
+<Breadcrumbs />
 
 <!-- Site chrome lives in the route groups: (photo) carries the real-estate nav/footer,
      (studio) the studio grid chrome. The root is shared head + the eye gate only. -->

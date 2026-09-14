@@ -48,14 +48,6 @@
 					description:
 						'Custom, responsive small-business websites with performance, accessibility, and technical SEO foundations.',
 				},
-				{
-					'@type': 'BreadcrumbList',
-					itemListElement: [
-						{ '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
-						{ '@type': 'ListItem', position: 2, name: 'Studio', item: `${siteUrl}/studio` },
-						{ '@type': 'ListItem', position: 3, name: 'Web Design', item: `${siteUrl}/studio/web-design` },
-					],
-				},
 			],
 	};
 </script>

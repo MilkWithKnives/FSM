@@ -20,14 +20,6 @@
 				author: { '@type': 'Organization', '@id': `${siteUrl}/#business`, name: 'Full Scope Media LLC', url: `${siteUrl}/about` },
 				publisher: { '@id': `${siteUrl}/#business` },
 			},
-			{
-				'@type': 'BreadcrumbList',
-				itemListElement: [
-					{ '@type': 'ListItem', position: 1, name: 'Real Estate Media', item: `${siteUrl}/real-estate-photography` },
-					{ '@type': 'ListItem', position: 2, name: 'Journal', item: `${siteUrl}/journal` },
-					{ '@type': 'ListItem', position: 3, name: post.title, item: url },
-				],
-			},
 		],
 	});
 </script>
