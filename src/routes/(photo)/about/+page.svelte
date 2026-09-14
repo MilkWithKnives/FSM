@@ -50,6 +50,12 @@
 			<p class="text-sm text-gray-500 leading-relaxed mb-8">
 				Based in East Lansing, we serve agents, developers, and homeowners across Michigan — from Lansing and Okemos to Grand Ledge and Metro Detroit.
 			</p>
+			<p class="text-sm text-gray-500 leading-relaxed mb-8">
+				Beyond listing media, our <a href="/studio" class="underline underline-offset-4">Studio</a>
+				brings that same attention to small-business websites, brand photography, and systems.
+				Explore our <a href="/studio/web-design" class="underline underline-offset-4">web design and development</a>
+				if your next project is a website.
+			</p>
 			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">WORK WITH US</a>
 		</div>
 		<div class="overflow-hidden aspect-[4/5]">

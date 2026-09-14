@@ -1,0 +1,147 @@
+[
+  {
+    "request": "https://www.fullscope-media.com/",
+    "hops": [
+      {
+        "url": "https://www.fullscope-media.com/",
+        "status": 301,
+        "location": "https://fullscope-media.com/"
+      },
+      {
+        "url": "https://fullscope-media.com/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "request": "http://fullscope-media.com/",
+    "hops": [
+      {
+        "url": "http://fullscope-media.com/",
+        "status": 301,
+        "location": "https://fullscope-media.com/"
+      },
+      {
+        "url": "https://fullscope-media.com/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "request": "http://www.fullscope-media.com/",
+    "hops": [
+      {
+        "url": "http://www.fullscope-media.com/",
+        "status": 301,
+        "location": "https://www.fullscope-media.com/"
+      },
+      {
+        "url": "https://www.fullscope-media.com/",
+        "status": 301,
+        "location": "https://fullscope-media.com/"
+      },
+      {
+        "url": "https://fullscope-media.com/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "request": "https://www.fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+    "hops": [
+      {
+        "url": "https://www.fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 301,
+        "location": "https://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "request": "http://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+    "hops": [
+      {
+        "url": "http://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 301,
+        "location": "https://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "request": "http://www.fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+    "hops": [
+      {
+        "url": "http://www.fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 301,
+        "location": "https://www.fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://www.fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 301,
+        "location": "https://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "request": "https://www.fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two",
+    "hops": [
+      {
+        "url": "https://www.fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 301,
+        "location": "https://fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 308,
+        "location": "/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "request": "http://www.fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two",
+    "hops": [
+      {
+        "url": "http://www.fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 301,
+        "location": "https://www.fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://www.fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 301,
+        "location": "https://fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://fullscope-media.com/studio/web-design/?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 308,
+        "location": "/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two"
+      },
+      {
+        "url": "https://fullscope-media.com/studio/web-design?utm_source=seo-audit&ref=a%2Fb&ref=two",
+        "status": 200,
+        "location": null
+      }
+    ]
+  }
+]

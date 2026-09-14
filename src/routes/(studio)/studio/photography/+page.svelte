@@ -42,6 +42,11 @@
 			Lansing — shot for the places it will actually live: your website, your Google profile,
 			your marketing.
 		</p>
+		<p class="st-body">
+			Planning a new site alongside the shoot? Our
+			<a href="/studio/web-design" class="website-link">custom web design service</a>
+			can bring the imagery and page layouts together.
+		</p>
 		<div class="st-ctas">
 			<a href="/studio/contact" class="st-btn st-btn-solid">Book a shoot</a>
 		</div>
@@ -91,6 +96,10 @@
 </section>
 
 <style>
+	.website-link {
+		text-decoration: underline;
+		text-underline-offset: 4px;
+	}
 	.row {
 		display: grid;
 		grid-template-columns: clamp(48px, 6vw, 90px) 1fr 1.2fr;

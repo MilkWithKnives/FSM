@@ -1,0 +1,976 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "title": "Full Scope Media \u2014 Real Estate Photography & Web Studio \u00b7 East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Full Scope Media is an East Lansing, MI media studio: real estate photography, video and 3D tours for listings \u2014 plus web design, SEO, and systems integration for small businesses across Michigan."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/"
+    ],
+    "h1": "Full Scope Media",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 74,
+    "headings": [
+      "h1"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/",
+      "og:title": "Full Scope Media \u2014 Real Estate Photography & Web Studio \u00b7 East Lansing, MI",
+      "og:description": "Full Scope Media is an East Lansing, MI media studio: real estate photography, video and 3D tours for listings \u2014 plus web design, SEO, and systems integration for small businesses across Michigan.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/real-estate-photography",
+    "status": 200,
+    "title": "Real Estate Photography & Media in East Lansing | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Real estate photography and media for listings in East Lansing, Lansing, and Okemos. Full Scope Media offers photography, video, drone, 3D tours, floor plans, and virtual staging."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/real-estate-photography"
+    ],
+    "h1": "East Lansing Real Estate Photographer",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 275,
+    "headings": [
+      "h1",
+      "h2",
+      "h3",
+      "h3",
+      "h3",
+      "h3",
+      "h3",
+      "h3",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/real-estate-photography",
+      "og:title": "East Lansing Real Estate Photographer | Full Scope Media",
+      "og:description": "Professional real estate photography, video & drone in East Lansing, MI. Edited photos delivered in 24 hours.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/studio",
+    "status": 200,
+    "title": "Studio \u2014 Web Design, Photography & Systems | Full Scope Media \u00b7 East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Full Scope Media's studio side: web design & build, brand photography, and systems integration for small businesses in East Lansing and across Michigan. One studio for everything your brand needs to be seen."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/studio"
+    ],
+    "h1": "We see the whole picture.",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 201,
+    "headings": [
+      "h1",
+      "h2",
+      "h3",
+      "h3",
+      "h3",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/studio",
+      "og:title": "Studio \u2014 Web Design, Photography & Systems | Full Scope Media \u00b7 East Lansing, MI",
+      "og:description": "Full Scope Media's studio side: web design & build, brand photography, and systems integration for small businesses in East Lansing and across Michigan. One studio for everything your brand needs to be seen.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/studio/web-design",
+    "status": 200,
+    "title": "Web Design in Lansing & East Lansing, MI | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Custom web design and development for small businesses in Lansing and East Lansing, MI. Responsive, performance-focused websites with strong SEO foundations."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/studio/web-design"
+    ],
+    "h1": "Custom web design for Lansing & East Lansing.",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 428,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h3",
+      "h3",
+      "h3",
+      "h3",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/studio/web-design",
+      "og:title": "Web Design in Lansing & East Lansing, MI | Full Scope Media",
+      "og:description": "Custom web design and development for small businesses in Lansing and East Lansing, MI. Responsive, performance-focused websites with strong SEO foundations.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/studio/systems",
+    "status": 200,
+    "title": "Systems & Data Integration for Small Businesses \u2014 Michigan | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Full Scope Media connects the tools your small business already uses \u2014 automations, dashboards, CRM and booking flows, data cleanup \u2014 so the whole operation runs as one. East Lansing, MI, serving businesses across Michigan."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/studio/systems"
+    ],
+    "h1": "Your tools should talk to each other.",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 235,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/studio/systems",
+      "og:title": "Systems & Data Integration for Small Businesses \u2014 Michigan | Full Scope Media",
+      "og:description": "Full Scope Media connects the tools your small business already uses \u2014 automations, dashboards, CRM and booking flows, data cleanup \u2014 so the whole operation runs as one. East Lansing, MI, serving businesses across Michigan.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/studio/photography",
+    "status": 200,
+    "title": "Brand & Product Photography \u2014 East Lansing, MI | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Brand, product, on-location, and aerial drone photography for businesses in East Lansing and Greater Lansing, MI. Full Scope Media shoots the imagery your website, Google profile, and marketing actually need."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/studio/photography"
+    ],
+    "h1": "Imagery your brand can stand on.",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 224,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/studio/photography",
+      "og:title": "Brand & Product Photography \u2014 East Lansing, MI | Full Scope Media",
+      "og:description": "Brand, product, on-location, and aerial drone photography for businesses in East Lansing and Greater Lansing, MI. Full Scope Media shoots the imagery your website, Google profile, and marketing actually need.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/studio/faq",
+    "status": 200,
+    "title": "Studio FAQ | Web Design & SEO | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Answers to common questions about Full Scope Media's web design services, responsive websites, SEO, and improvements to existing sites in Lansing and East Lansing."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/studio/faq"
+    ],
+    "h1": "Studio FAQ",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 153,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/studio/faq",
+      "og:title": "Studio FAQ | Web Design & SEO | Full Scope Media",
+      "og:description": "Answers to common questions about Full Scope Media's web design services, responsive websites, SEO, and improvements to existing sites in Lansing and East Lansing.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/studio/contact",
+    "status": 200,
+    "title": "Start a Project \u2014 Studio | Full Scope Media \u00b7 East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Start a project with Full Scope Media's studio: web design & build, local SEO, brand photography, and systems integration for small businesses in East Lansing and across Michigan. Tell us what you're building."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/studio/contact"
+    ],
+    "h1": "Tell us what you're building.",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 94,
+    "headings": [
+      "h1"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/studio/contact",
+      "og:title": "Start a Project \u2014 Studio | Full Scope Media \u00b7 East Lansing, MI",
+      "og:description": "Start a project with Full Scope Media's studio: web design & build, local SEO, brand photography, and systems integration for small businesses in East Lansing and across Michigan. Tell us what you're building.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/portfolio",
+    "status": 200,
+    "title": "Portfolio | Full Scope Media LLC \u00b7 Real Estate Photography East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Browse Full Scope Media LLC's real estate photography and video portfolio \u2014 featuring properties across East Lansing, Lansing, Okemos, and Metro Detroit."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/portfolio"
+    ],
+    "h1": "Portfolio",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 121,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/portfolio",
+      "og:title": "Portfolio | Full Scope Media LLC",
+      "og:description": "Real estate photography and video portfolio across East Lansing, Lansing, and greater Michigan.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/photos",
+    "status": 200,
+    "title": "Real Estate Photography | Full Scope Media LLC \u00b7 East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered within 24 hours. Serving Lansing, Okemos, and Metro Detroit."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/photos"
+    ],
+    "h1": "Photography",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 141,
+    "headings": [
+      "h1",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/photos",
+      "og:title": "Real Estate Photography | Full Scope Media LLC",
+      "og:description": "40+ fully edited real estate photos delivered within 24 hours. Serving East Lansing and greater Michigan.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/videos",
+    "status": 200,
+    "title": "Real Estate Video Tours | Full Scope Media LLC \u00b7 East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Cinematic real estate video tours in East Lansing and greater Michigan. Property films, including aerial drone video, delivered within 3\u20135 business days."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/videos"
+    ],
+    "h1": "Video Tours",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 171,
+    "headings": [
+      "h1",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/videos",
+      "og:title": "Real Estate Video Tours | Full Scope Media LLC",
+      "og:description": "Cinematic real estate video tours with aerial drone integration. Serving East Lansing and greater Michigan.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/3d-tours",
+    "status": 200,
+    "title": "3D Virtual Tours \u2014 Matterport & Zillow 3D | Full Scope Media \u00b7 East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Interactive 3D home tours in East Lansing and greater Michigan. We shoot both Zillow 3D Home and Matterport tours, so buyers can walk through your listing online anytime. Starting at $300."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/3d-tours"
+    ],
+    "h1": "3D Tours",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 162,
+    "headings": [
+      "h1",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/3d-tours",
+      "og:title": "3D Virtual Tours \u2014 Matterport & Zillow 3D | Full Scope Media",
+      "og:description": "Interactive Matterport and Zillow 3D home tours, serving East Lansing and greater Michigan.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/floor-plans",
+    "status": 200,
+    "title": "Real Estate Floor Plans (CubiCasa) | Full Scope Media \u00b7 East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Professional, accurately scaled real estate floor plans in East Lansing and greater Michigan, produced with CubiCasa. Room dimensions and square footage delivered in 24\u201348 hours. Starting at $200."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/floor-plans"
+    ],
+    "h1": "Floor Plans",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 197,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/floor-plans",
+      "og:title": "Real Estate Floor Plans (CubiCasa) | Full Scope Media",
+      "og:description": "Accurately scaled CubiCasa floor plans with room dimensions, serving East Lansing and greater Michigan.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/virtual-staging",
+    "status": 200,
+    "title": "Virtual Staging | Full Scope Media \u00b7 East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Virtual staging for real estate in East Lansing and greater Michigan. Digitally furnish empty rooms so vacant listings feel like home \u2014 a fraction of the cost of physical staging. Delivered in 2\u20133 days."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/virtual-staging"
+    ],
+    "h1": "Virtual Staging",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 162,
+    "headings": [
+      "h1",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/virtual-staging",
+      "og:title": "Virtual Staging | Full Scope Media",
+      "og:description": "Photorealistic virtual staging for vacant listings, serving East Lansing and greater Michigan.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/pricing",
+    "status": 200,
+    "title": "Pricing | Full Scope Media LLC \u00b7 Real Estate Photography Packages East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Transparent real estate photography and video pricing by property size. Packages starting at $480 for photography, $480 for video. Serving East Lansing and greater Michigan."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/pricing"
+    ],
+    "h1": "Pricing",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 166,
+    "headings": [
+      "h1",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/pricing",
+      "og:title": "Pricing | Full Scope Media LLC",
+      "og:description": "Real estate photography packages starting at $480. Transparent pricing by property size, serving East Lansing, MI.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/faq",
+    "status": 200,
+    "title": "FAQ | Full Scope Media LLC \u00b7 Real Estate Photography East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Answers to common questions about Full Scope Media LLC's real estate photography and video \u2014 turnaround times, what's included, service area, payment, and more. Serving East Lansing and greater Michigan."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/faq"
+    ],
+    "h1": "FAQ",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 449,
+    "headings": [
+      "h1",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/faq",
+      "og:title": "FAQ | Full Scope Media LLC",
+      "og:description": "Common questions about real estate photography and video with Full Scope Media LLC \u2014 turnaround, pricing, service area, and more.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/about",
+    "status": 200,
+    "title": "About Us | Full Scope Media LLC \u00b7 Luxury Real Estate Media",
+    "title_count": 1,
+    "description": [
+      "Meet the Full Scope Media LLC team \u2014 experienced real estate photographers and media professionals serving East Lansing, Lansing, and greater Michigan."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/about"
+    ],
+    "h1": "About Us",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 163,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h3",
+      "h3",
+      "h3",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/about",
+      "og:title": "About Us | Full Scope Media LLC",
+      "og:description": "Meet the Full Scope Media LLC team \u2014 experienced real estate photographers serving East Lansing, MI.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/journal",
+    "status": 200,
+    "title": "Journal | Full Scope Media LLC \u00b7 Real Estate Photography Tips & Insights",
+    "title_count": 1,
+    "description": [
+      "Tips, guides, and insights from the Full Scope Media LLC team \u2014 covering staging, photography techniques, listing preparation, and the Michigan real estate market."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/journal"
+    ],
+    "h1": "Journal",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 129,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/journal",
+      "og:title": "Journal | Full Scope Media LLC",
+      "og:description": "Real estate photography tips, staging guides, and insights from the Full Scope Media LLC team.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/contact",
+    "status": 200,
+    "title": "Book a Shoot | Full Scope Media LLC \u00b7 Real Estate Photography East Lansing, MI",
+    "title_count": 1,
+    "description": [
+      "Book a full-service real estate media shoot \u2014 photography, video, drone, floor plans & virtual staging \u2014 with Full Scope Media LLC. Serving East Lansing, Mid-Michigan, Ann Arbor & Metro Detroit."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/contact"
+    ],
+    "h1": "Book a Shoot",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 110,
+    "headings": [
+      "h1"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/contact",
+      "og:title": "Book a Shoot | Full Scope Media LLC",
+      "og:description": "Book a real estate photography or video shoot in East Lansing, MI. Get in touch with Full Scope Media LLC today.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/real-estate-photographer/okemos",
+    "status": 200,
+    "title": "Real Estate Photographer in Okemos, MI | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Real estate photographer in Okemos, MI. Photos delivered in 24 hours; video and drone video in 3\u20135 business days. View local work by Full Scope Media."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/real-estate-photographer/okemos"
+    ],
+    "h1": "Real Estate Photographer in Okemos, MI",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 214,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/real-estate-photographer/okemos",
+      "og:title": "Real Estate Photographer in Okemos, MI",
+      "og:description": "Real estate photographer in Okemos, MI. Photos delivered in 24 hours; video and drone video in 3\u20135 business days. View local work by Full Scope Media.",
+      "og:image": "https://fullscope-media.com/portfolio/4442-greenwood-dr-okemos-mi-48864/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/real-estate-photographer/lansing",
+    "status": 200,
+    "title": "Real Estate Photographer in Lansing, MI | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Real estate photographer in Lansing, MI. Photos delivered in 24 hours; video and drone video in 3\u20135 business days. View local work by Full Scope Media."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/real-estate-photographer/lansing"
+    ],
+    "h1": "Real Estate Photographer in Lansing, MI",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 193,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/real-estate-photographer/lansing",
+      "og:title": "Real Estate Photographer in Lansing, MI",
+      "og:description": "Real estate photographer in Lansing, MI. Photos delivered in 24 hours; video and drone video in 3\u20135 business days. View local work by Full Scope Media.",
+      "og:image": "https://fullscope-media.com/portfolio/1904-carvel-ct-lansing-mi-48910/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/portfolio/622-vine-st-st-joseph-mi-49085",
+    "status": 200,
+    "title": "622 Vine St \u00b7 St. Joseph, MI | Full Scope Media LLC",
+    "title_count": 1,
+    "description": [
+      "Real estate photography for 622 Vine St, St. Joseph, MI 49085 by Full Scope Media LLC."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085"
+    ],
+    "h1": "622 Vine St",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 38,
+    "headings": [
+      "h1",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085",
+      "og:title": "622 Vine St \u00b7 St. Joseph, MI | Full Scope Media LLC",
+      "og:description": "Real estate photography for 622 Vine St, St. Joseph, MI 49085.",
+      "og:image": "https://fullscope-media.com/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/portfolio/4442-greenwood-dr-okemos-mi-48864",
+    "status": 200,
+    "title": "4442 Greenwood Dr \u00b7 Okemos, MI | Full Scope Media LLC",
+    "title_count": 1,
+    "description": [
+      "Real estate photography for 4442 Greenwood Dr, Okemos, MI 48864 by Full Scope Media LLC."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/portfolio/4442-greenwood-dr-okemos-mi-48864"
+    ],
+    "h1": "4442 Greenwood Dr",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 35,
+    "headings": [
+      "h1",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/portfolio/4442-greenwood-dr-okemos-mi-48864",
+      "og:title": "4442 Greenwood Dr \u00b7 Okemos, MI | Full Scope Media LLC",
+      "og:description": "Real estate photography for 4442 Greenwood Dr, Okemos, MI 48864.",
+      "og:image": "https://fullscope-media.com/portfolio/4442-greenwood-dr-okemos-mi-48864/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/portfolio/3977-stirrup-st-east-lansing-mi-48823",
+    "status": 200,
+    "title": "3977 Stirrup St \u00b7 East Lansing, MI | Full Scope Media LLC",
+    "title_count": 1,
+    "description": [
+      "Real estate photography for 3977 Stirrup St, East Lansing, MI 48823 by Full Scope Media LLC."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/portfolio/3977-stirrup-st-east-lansing-mi-48823"
+    ],
+    "h1": "3977 Stirrup St",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 36,
+    "headings": [
+      "h1",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/portfolio/3977-stirrup-st-east-lansing-mi-48823",
+      "og:title": "3977 Stirrup St \u00b7 East Lansing, MI | Full Scope Media LLC",
+      "og:description": "Real estate photography for 3977 Stirrup St, East Lansing, MI 48823.",
+      "og:image": "https://fullscope-media.com/portfolio/3977-stirrup-st-east-lansing-mi-48823/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/portfolio/2877-bessemer-rd-coloma-mi-49038",
+    "status": 200,
+    "title": "2877 Bessemer Rd \u00b7 Coloma, MI | Full Scope Media LLC",
+    "title_count": 1,
+    "description": [
+      "Real estate photography for 2877 Bessemer Rd, Coloma, MI 49038 by Full Scope Media LLC."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/portfolio/2877-bessemer-rd-coloma-mi-49038"
+    ],
+    "h1": "2877 Bessemer Rd",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 35,
+    "headings": [
+      "h1",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/portfolio/2877-bessemer-rd-coloma-mi-49038",
+      "og:title": "2877 Bessemer Rd \u00b7 Coloma, MI | Full Scope Media LLC",
+      "og:description": "Real estate photography for 2877 Bessemer Rd, Coloma, MI 49038.",
+      "og:image": "https://fullscope-media.com/portfolio/2877-bessemer-rd-coloma-mi-49038/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/portfolio/1904-carvel-ct-lansing-mi-48910",
+    "status": 200,
+    "title": "1904 Carvel Ct \u00b7 Lansing, MI | Full Scope Media LLC",
+    "title_count": 1,
+    "description": [
+      "Real estate photography for 1904 Carvel Ct, Lansing, MI 48910 by Full Scope Media LLC."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/portfolio/1904-carvel-ct-lansing-mi-48910"
+    ],
+    "h1": "1904 Carvel Ct",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 35,
+    "headings": [
+      "h1",
+      "h2"
+    ],
+    "og": {
+      "og:type": "website",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/portfolio/1904-carvel-ct-lansing-mi-48910",
+      "og:title": "1904 Carvel Ct \u00b7 Lansing, MI | Full Scope Media LLC",
+      "og:description": "Real estate photography for 1904 Carvel Ct, Lansing, MI 48910.",
+      "og:image": "https://fullscope-media.com/portfolio/1904-carvel-ct-lansing-mi-48910/01-2000.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/journal/how-to-prep-house-shoot",
+    "status": 200,
+    "title": "How to Prep a House for a Shoot | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Prepare your home for real estate photography with a room-by-room checklist covering clutter, cleaning, lighting, exterior spaces, pets, and shoot-day access."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/journal/how-to-prep-house-shoot"
+    ],
+    "h1": "How to Prep a House for a Shoot",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 816,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "article",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/journal/how-to-prep-house-shoot",
+      "og:title": "How to Prep a House for a Shoot | Full Scope Media",
+      "og:description": "Prepare your home for real estate photography with a room-by-room checklist covering clutter, cleaning, lighting, exterior spaces, pets, and shoot-day access.",
+      "og:image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=750&q=80&auto=format&fit=crop",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/journal/why-every-listing-needs-floorplan",
+    "status": 200,
+    "title": "Why Every Listing Needs a Floorplan | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Learn how a real estate floor plan explains room connections, dimensions, and multiple levels, and what to check before adding one to a property listing."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/journal/why-every-listing-needs-floorplan"
+    ],
+    "h1": "Why Every Listing Needs a Floorplan",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 776,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "article",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/journal/why-every-listing-needs-floorplan",
+      "og:title": "Why Every Listing Needs a Floorplan | Full Scope Media",
+      "og:description": "Learn how a real estate floor plan explains room connections, dimensions, and multiple levels, and what to check before adding one to a property listing.",
+      "og:image": "https://res.cloudinary.com/dowghnozl/image/upload/v1758550308/2-Floorplan_2_smqcpk.jpg",
+      "og:locale": "en_US"
+    }
+  },
+  {
+    "path": "/journal/ten-techniques-photograph-interiors",
+    "status": 200,
+    "title": "Ten Techniques to Best Photograph Interior Spaces | Full Scope Media",
+    "title_count": 1,
+    "description": [
+      "Ten practical interior photography techniques covering composition, camera position, vertical lines, light, exposure, focus, reflections, and consistent editing."
+    ],
+    "canonical": [
+      "https://fullscope-media.com/journal/ten-techniques-photograph-interiors"
+    ],
+    "h1": "Ten Techniques to Best Photograph Interior Spaces",
+    "h1_count": 1,
+    "robots": [
+      "index, follow"
+    ],
+    "main_words": 797,
+    "headings": [
+      "h1",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2",
+      "h2"
+    ],
+    "og": {
+      "og:type": "article",
+      "og:site_name": "Full Scope Media LLC",
+      "og:url": "https://fullscope-media.com/journal/ten-techniques-photograph-interiors",
+      "og:title": "Ten Techniques to Best Photograph Interior Spaces | Full Scope Media",
+      "og:description": "Ten practical interior photography techniques covering composition, camera position, vertical lines, light, exposure, focus, reflections, and consistent editing.",
+      "og:image": "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=1200&h=750&q=80&auto=format&fit=crop",
+      "og:locale": "en_US"
+    }
+  }
+]

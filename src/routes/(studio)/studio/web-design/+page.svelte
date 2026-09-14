@@ -15,7 +15,7 @@
 			name: 'Local SEO',
 			blurb:
 				'Being found is the whole point. We build search into the site itself — the pages, titles, structure, and schema that put you in front of people searching for what you do.',
-			points: ['Keyword research for your market', 'Location & service landing pages', 'Schema.org structured data', 'Google Business Profile optimization'],
+			points: ['Keyword research for your market', 'Useful service & local project pages', 'Schema.org structured data', 'Google Business Profile optimization'],
 		},
 		{
 			num: '03',
@@ -54,7 +54,7 @@
 
 <Seo
 	title="Web Design in Lansing & East Lansing, MI | Full Scope Media"
-	description="Custom web design and development for small businesses in Lansing and East Lansing, MI. Responsive, performance-focused websites with strong SEO foundations."
+	description="Hand-built websites for Lansing & East Lansing small businesses, with fast pages and SEO foundations. See what's included, how we work, and how to get started."
 />
 
 <svelte:head>
@@ -102,19 +102,22 @@
 <section id="seo" class="st-frame">
 	<div class="st-pad seo-grid">
 		<div>
-			<p class="st-kicker">SEO Specialist · Greater Lansing</p>
-			<h2 class="st-h2">Ranking is a feature, <span class="st-dim">not an add-on.</span></h2>
+			<p class="st-kicker">Local SEO · Greater Lansing</p>
+			<h2 class="st-h2">Search foundations, <span class="st-dim">built into the work.</span></h2>
 		</div>
 		<div class="seo-copy">
 			<p class="st-body">
-				Most "SEO specialists" are selling reports. We build the thing the reports ask for:
-				pages that answer what your customers actually search, markup that Google can read,
-				and a Google Business Profile that pulls its weight in the map pack.
+				Search engine optimization starts with a site people can use and search engines can
+				understand. A website build includes crawlable pages, descriptive titles and metadata,
+				structured data where it fits, and indexing setup. We organize services around the
+				questions your customers need answered before they call.
 			</p>
 			<p class="st-body">
-				It's how our own real estate photography side ranks in East Lansing — the same
-				playbook, applied to your business: keyword research, location pages, structured
-				data, reviews strategy, and the patience to keep tuning after launch.
+				For businesses serving Lansing and East Lansing, local SEO also means clear service-area
+				information and a useful Google Business Profile. After launch, ongoing search work can
+				include content improvements, profile optimization, and reviewing search and analytics
+				data to decide what needs attention next. That ongoing scope is discussed separately
+				from the website build.
 			</p>
 		</div>
 	</div>
@@ -126,14 +129,37 @@
 		<p class="st-kicker">How a project works</p>
 		<h2 id="process-heading" class="st-h2">A clear path from first conversation to launch.</h2>
 	</div>
-	<div class="steps">
+	<div class="project-steps">
 		{#each steps as step (step.num)}
-			<div class="step">
+			<div class="project-step">
 				<p class="st-num">{step.num}</p>
 				<h3>{step.name}</h3>
 				<p class="st-body">{step.blurb}</p>
 			</div>
 		{/each}
+	</div>
+</section>
+
+<section class="st-frame" aria-labelledby="project-fit-heading">
+	<div class="st-pad seo-grid">
+		<div>
+			<p class="st-kicker">The right fit</p>
+			<h2 id="project-fit-heading" class="st-h2">A website shaped around <span class="st-dim">how you work.</span></h2>
+		</div>
+		<div class="seo-copy">
+			<p class="st-body">
+				This approach suits small businesses that need to explain their services, show their work,
+				and make it easy to get in touch. Custom development gives us control over the page layout,
+				navigation, and mobile behavior. We build for readable content, keyboard-friendly navigation,
+				and images that fit the screen without making visitors wait on oversized files.
+			</p>
+			<p class="st-body">
+				Already have a website? We start by reviewing the current site, your goals, and its technical
+				constraints to see whether focused improvements or a new build makes sense. Share the URL
+				when you <a href="/studio/contact">tell us about your project</a>. Hosting, maintenance,
+				analytics, and future content updates can be part of that conversation too.
+			</p>
+		</div>
 	</div>
 </section>
 
@@ -200,8 +226,12 @@
 		flex-direction: column;
 		gap: 14px;
 	}
+	.seo-copy a {
+		text-decoration: underline;
+		text-underline-offset: 4px;
+	}
 
-	.steps {
+	.project-steps {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -210,17 +240,17 @@
 		flex-direction: column;
 		gap: 14px;
 	}
-	.step {
+	.project-step {
 		padding: clamp(22px, 3vw, 40px) clamp(18px, 2.5vw, 34px);
 		border-right: 1px solid var(--st-line);
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
 	}
-	.step:last-child {
+	.project-step:last-child {
 		border-right: none;
 	}
-	.step h3 {
+	.project-step h3 {
 		font-size: 18px;
 		font-weight: 800;
 	}
@@ -239,16 +269,16 @@
 			grid-template-columns: 1fr;
 			gap: 14px;
 		}
-		.steps {
+		.project-steps {
 			grid-template-columns: 1fr 1fr;
 		}
-		.step {
+		.project-step {
 			border-bottom: 1px solid var(--st-line);
 		}
-		.step:nth-child(even) {
+		.project-step:nth-child(even) {
 			border-right: none;
 		}
-		.step:nth-child(n + 3) {
+		.project-step:nth-child(n + 3) {
 			border-bottom: none;
 		}
 	}

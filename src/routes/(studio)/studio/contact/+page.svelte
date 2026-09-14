@@ -83,13 +83,14 @@
 				</div>
 
 				<div class="field">
-					<p class="label-line">Interested in</p>
-					<div class="toggles">
+					<p id="services-label" class="label-line">Interested in</p>
+					<div class="toggles" role="group" aria-labelledby="services-label">
 						{#each serviceOptions as service (service)}
 							<button
 								type="button"
 								class="chip"
 								class:on={services.includes(service)}
+								aria-pressed={services.includes(service)}
 								onclick={() => toggleService(service)}
 							>
 								{service}
