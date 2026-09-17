@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import { rate, priceLabel } from '$lib/pricing';
 	import { properties } from '$lib/properties';
 	import { photoSrcset, heroFallback, PHOTO_SIZES_FULL } from '$lib/images';
 	import { floorPlanExample } from '$lib/media';
@@ -19,7 +20,7 @@
 <Seo
 	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="Real Estate Floor Plans (CubiCasa) | Full Scope Media · East Lansing, MI"
-	description="Professional, accurately scaled real estate floor plans in East Lansing and greater Michigan, produced with CubiCasa. Room dimensions and square footage delivered in 24–48 hours. Starting at $200."
+	description="Professional, accurately scaled real estate floor plans in East Lansing and greater Michigan, produced with CubiCasa. Room dimensions and square footage delivered in 24–48 hours. Price: {priceLabel(rate('floor'))}."
 	ogDescription="Accurately scaled CubiCasa floor plans with room dimensions, serving East Lansing and greater Michigan."
 />
 
@@ -55,9 +56,9 @@
 				Photos sell the feeling of a home; a floor plan sells the flow. Buyers want to know how the rooms connect, where the furniture goes, and whether the layout actually works for them — and listings with a floor plan hold attention longer.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-10">
-				We produce clean, accurately scaled floor plans with <span class="text-gray-700">CubiCasa</span>, complete with room dimensions and total square footage. It's a small add-on that cuts down on wasted showings from buyers who were never the right fit.
+				We produce clean, accurately scaled floor plans with <span class="text-gray-700">CubiCasa</span>, complete with room dimensions and total square footage. A standalone plan is {priceLabel(rate('floor'))}. For {priceLabel(rate('basic'))}, Basic includes residential photos and a CubiCasa floor plan. {rate('basic').qualifier}
 			</p>
-			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">ADD A FLOOR PLAN</a>
+			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK A FLOOR PLAN</a>
 		</div>
 		<div>
 			<p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Every Floor Plan Includes</p>
@@ -70,8 +71,8 @@
 				{/each}
 			</ul>
 			<div class="pt-8 border-t border-gray-100">
-				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
-				<p class="text-3xl font-light" style="font-family: var(--font-serif)">$200</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Standalone</p>
+				<p class="text-3xl font-light" style="font-family: var(--font-serif)">{priceLabel(rate('floor'))}</p>
 				<a href="/pricing" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity mt-4 inline-block">View Full Pricing</a>
 			</div>
 		</div>

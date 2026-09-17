@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import { rate, priceLabel } from '$lib/pricing';
 	import { properties } from '$lib/properties';
 	import { photoSrcset, heroFallback, PHOTO_SIZES_FULL } from '$lib/images';
 
@@ -8,7 +9,7 @@
 	const includes = [
 		'Your choice of Zillow 3D Home or Matterport — whichever fits your listing',
 		'Fully navigable, room-to-room virtual walkthrough',
-		'Matterport dollhouse + floor-plan views',
+		...rate('tour').inclusions,
 		'Embeds directly on the MLS, Zillow, and your website',
 		'Hosted, shareable link — buyers tour anytime, anywhere',
 		'Delivered within 2–3 business days',
@@ -18,7 +19,7 @@
 <Seo
 	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="3D Virtual Tours — Matterport & Zillow 3D | Full Scope Media · East Lansing, MI"
-	description="Interactive 3D home tours in East Lansing and greater Michigan. We shoot both Zillow 3D Home and Matterport tours, so buyers can walk through your listing online anytime. Starting at $300."
+	description="Interactive 3D home tours in East Lansing and greater Michigan. We shoot both Zillow 3D Home and Matterport tours, so buyers can walk through your listing online anytime. Price: {priceLabel(rate('tour'))}."
 	ogDescription="Interactive Matterport and Zillow 3D home tours, serving East Lansing and greater Michigan."
 />
 
@@ -70,7 +71,7 @@
 			</ul>
 			<div class="pt-8 border-t border-gray-100">
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
-				<p class="text-3xl font-light" style="font-family: var(--font-serif)">$300</p>
+				<p class="text-3xl font-light" style="font-family: var(--font-serif)">{priceLabel(rate('tour'))}</p>
 				<a href="/pricing" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity mt-4 inline-block">View Full Pricing</a>
 			</div>
 		</div>

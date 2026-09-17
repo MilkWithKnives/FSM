@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import { rate, priceLabel } from '$lib/pricing';
 	import { properties, propertyArea } from '$lib/properties';
 	import {
 		photoSrcset,
@@ -17,7 +18,9 @@
 	);
 
 	const includes = [
-		'40+ fully edited, high-resolution images',
+		'Enough edited photos to do the property justice',
+		...rate('basic').inclusions,
+		rate('basic').qualifier,
 		'Wide-angle architectural exterior shots',
 		'Interior room-by-room coverage',
 		'Natural and artificial light optimization',
@@ -30,8 +33,8 @@
 <Seo
 	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="Real Estate Photography | Full Scope Media LLC · East Lansing, MI"
-	description="Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered within 24 hours. Serving Lansing, Okemos, and Metro Detroit."
-	ogDescription="40+ fully edited real estate photos delivered within 24 hours. Serving East Lansing and greater Michigan."
+	description="Professional real estate photography in East Lansing and greater Michigan. Interior and exterior photos, delivered within 24 hours. Serving Lansing, Okemos, and Metro Detroit."
+	ogDescription="Interior and exterior real estate photos delivered within 24 hours. Serving East Lansing and greater Michigan."
 />
 
 <!-- HERO -->
@@ -82,7 +85,7 @@
 			</ul>
 			<div class="mt-8 pt-8 border-t border-gray-100">
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
-				<p class="text-3xl font-light" style="font-family: var(--font-serif)">$480</p>
+				<p class="text-3xl font-light" style="font-family: var(--font-serif)">{priceLabel(rate('basic'))}</p>
 				<a href="/pricing" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity mt-4 inline-block">View Full Pricing</a>
 			</div>
 		</div>

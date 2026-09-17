@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import { rate, priceLabel } from '$lib/pricing';
 
 	const faqs = [
 		{
@@ -11,12 +12,12 @@
 			a: 'Video tours, including drone video, are delivered within 3–5 business days of your shoot.',
 		},
 		{
-			q: 'What is included in each shoot?',
-			a: 'Each photography package includes 1 location, a 2–2.5 hour shoot, and 40 fully edited, high-resolution photos delivered in web and print formats.',
+			q: 'How many photos will I get, and what is included?',
+			a: `Basic is ${priceLabel(rate('basic'))} for interior and exterior photos, with a CubiCasa floor plan included and 24-hour delivery. ${rate('basic').qualifier} I make enough photos to do the property justice and give it the time it needs.`,
 		},
 		{
 			q: 'Do you offer video tours, aerial drone, and Matterport 3D?',
-			a: 'Yes. Alongside photography we offer cinematic video tours, FAA-licensed aerial drone footage, floor plans, virtual staging, and Matterport 3D walkthroughs. These can be booked individually or bundled — see our Pricing page for package details.',
+			a: 'Yes. Alongside photography we offer cinematic video tours, FAA-licensed aerial drone footage, floor plans, virtual staging, and Matterport 3D walkthroughs. Services are priced individually — see the Pricing page for flat à la carte rates.',
 		},
 		{
 			q: 'How should I prepare the property for the shoot?',
@@ -27,8 +28,8 @@
 			a: 'We understand schedules change. Reschedules are accepted up to 48 hours before the shoot at no charge. Cancellations within 24 hours may incur a fee.',
 		},
 		{
-			q: 'Do you offer packages for larger properties over 5,000 sqft?',
-			a: 'Absolutely. For estates over 5,000 sqft or multi-location shoots, please contact us for a custom quote.',
+			q: 'What about larger properties or special requests?',
+			a: 'For properties well above the size thresholds, multi-location shoots, twilight shoots, virtual staging or rush turnaround, inquire for pricing.',
 		},
 		{
 			q: 'What are the usage rights for my photos?',
