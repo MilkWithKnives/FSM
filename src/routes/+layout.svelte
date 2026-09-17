@@ -2,10 +2,13 @@
 	import '../app.css';
 	import { page } from '$app/stores';
 	import { businessJsonLd } from '$lib/business';
+	import { reviewSchema } from '$lib/reviewSchema';
 	import EyeGate from '$lib/EyeGate.svelte';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 
 	let { children } = $props();
+	const reviewsVisible = $derived(['/', '/pricing', '/real-estate-photography'].includes($page.url.pathname) || $page.url.pathname.startsWith('/real-estate-photographer/'));
+	const business = $derived({ ...businessJsonLd, ...(reviewsVisible ? reviewSchema($page.data.location?.city) : {}) });
 
 	// The gate must outlive the mid-reveal navigation away from '/', so it renders
 	// here (not in the gateway page) and stays mounted until the reveal finishes.
@@ -19,7 +22,7 @@
 	<!-- Analytics is handled by Google Tag Manager (GTM-N8RVSFDH) in app.html. -->
 
 	<!-- Local Business JSON-LD (single source of truth in $lib/business.ts) -->
-	{@html `<script type="application/ld+json">${JSON.stringify(businessJsonLd).replace(/</g, '\\u003c')}<\/script>`}
+	{@html `<script type="application/ld+json">${JSON.stringify(business).replace(/</g, '\\u003c')}<\/script>`}
 </svelte:head>
 
 <Breadcrumbs />

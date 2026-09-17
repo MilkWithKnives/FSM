@@ -1,5 +1,6 @@
 <script lang="ts">
 	import logo from '$lib/assets/logo.svg';
+	import ServiceSchema from '$lib/ServiceSchema.svelte';
 	import { page } from '$app/stores';
 	import { locations } from '$lib/locations';
 
@@ -30,6 +31,8 @@
 		}
 	});
 </script>
+
+<ServiceSchema />
 
 <div class="drawer">
 	<input id="nav-drawer" type="checkbox" class="drawer-toggle" bind:checked={mobileOpen} />

@@ -80,5 +80,6 @@ export const businessJsonLd = {
 	},
 	priceRange: '$$',
 	image,
+	// TODO: Supply the official Facebook profile URL before adding it to sameAs.
 	sameAs: ['https://instagram.com/full.scope.media'],
 };
