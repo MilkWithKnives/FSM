@@ -65,7 +65,7 @@
 	</p>
 
 	<div class="mt-10 flex flex-wrap gap-4">
-		<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK A {location.city.toUpperCase()} SHOOT</a>
+		<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK {location.article.toUpperCase()} {location.city.toUpperCase()} SHOOT</a>
 		<a href="/pricing" class="btn btn-outline rounded-none tracking-widest text-xs px-8">VIEW PRICING</a>
 	</div>
 </section>

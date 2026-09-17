@@ -4,6 +4,8 @@ export type Location = {
 	/** URL slug under /real-estate-photographer/<slug> */
 	slug: string;
 	city: string;
+	article: 'a' | 'an';
+	landmarks: string[];
 	state: string;
 	/** <title> tag */
 	title: string;
@@ -23,6 +25,8 @@ export const locations: Location[] = [
 	{
 		slug: 'okemos',
 		city: 'Okemos',
+		article: 'an',
+		landmarks: ['Meridian Mall', 'Red Cedar River'],
 		state: 'MI',
 		title: 'Real Estate Photographer in Okemos, MI | Full Scope Media',
 		description:
@@ -39,6 +43,8 @@ export const locations: Location[] = [
 	{
 		slug: 'lansing',
 		city: 'Lansing',
+		article: 'a',
+		landmarks: [],
 		state: 'MI',
 		title: 'Real Estate Photographer in Lansing, MI | Full Scope Media',
 		description:
