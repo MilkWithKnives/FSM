@@ -9,7 +9,7 @@
 		PHOTO_SIZES_GALLERY,
 	} from '$lib/images';
 
-	const heroProperty = properties[0];
+	const heroProperty = properties[2];
 
 	// One photo from each property's gallery, in mixed order
 	const gallery = properties.flatMap((p) =>

@@ -3,7 +3,7 @@
 	import { properties, propertyArea } from '$lib/properties';
 	import { photoSrcset, photoFallback, PHOTO_SIZES_FULL, PHOTO_SIZES_HALF } from '$lib/images';
 
-	const heroProperty = properties[0];
+	const heroProperty = properties[2];
 
 	const aboutPhotoSrcset = (ext: 'avif' | 'webp' | 'jpg') =>
 		[800, 1400, 2000].map((w) => `/about/me-${w}.${ext}?v=20260917-lfs ${w}w`).join(', ');

@@ -11,7 +11,7 @@
 		PHOTO_SIZES_HALF,
 	} from '$lib/images';
 
-	const heroProperty = properties[0];
+	const heroProperty = properties[2];
 	const quoteProperty = properties[1];
 	const aboutProperty = properties[2];
 
@@ -28,8 +28,8 @@
 			title: 'Video Tours',
 			description:
 				'Cinematic property walkthroughs that immerse buyers in the experience before they ever set foot inside.',
-			slug: properties[3].slug,
-			photoIndex: properties[3].selected[2] ?? properties[3].selected[0],
+			slug: properties[1].slug,
+			photoIndex: properties[1].selected[2] ?? properties[1].selected[0],
 			href: '/videos',
 		},
 		{

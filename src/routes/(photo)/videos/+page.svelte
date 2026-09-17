@@ -8,7 +8,7 @@
 		PHOTO_SIZES_FULL,
 	} from '$lib/images';
 
-	const heroProperty = properties[0];
+	const heroProperty = properties[2];
 
 	const videos = properties.slice(0, 3).map((p) => ({
 		slug: p.slug,

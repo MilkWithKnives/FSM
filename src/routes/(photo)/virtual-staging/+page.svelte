@@ -3,7 +3,7 @@
 	import { properties } from '$lib/properties';
 	import { photoSrcset, heroFallback, PHOTO_SIZES_FULL } from '$lib/images';
 
-	const heroProperty = properties[3];
+	const heroProperty = properties[2];
 
 	const includes = [
 		'Photorealistic digital furniture and decor',
