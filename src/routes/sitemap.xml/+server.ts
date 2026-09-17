@@ -15,6 +15,7 @@ const staticPages = [
 	{ path: '/studio/contact', priority: '0.6', changefreq: 'yearly' },
 	{ path: '/portfolio', priority: '0.9', changefreq: 'weekly' },
 	{ path: '/photos', priority: '0.8', changefreq: 'monthly' },
+	{ path: '/drone', priority: '0.8', changefreq: 'monthly' },
 	{ path: '/videos', priority: '0.8', changefreq: 'monthly' },
 	{ path: '/3d-tours', priority: '0.8', changefreq: 'monthly' },
 	{ path: '/floor-plans', priority: '0.8', changefreq: 'monthly' },

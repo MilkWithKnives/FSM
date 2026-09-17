@@ -7,7 +7,7 @@ const image = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg?v
 const services = [
 	{ name: 'Real Estate Photography', path: '/photos', id: 'service' },
 	{ name: 'Cinematic Video Tours', path: '/videos', id: 'service' },
-	{ name: 'Aerial Drone Photography', path: '/videos', id: 'aerial-drone-service' },
+	{ name: 'Aerial Drone Photography', path: '/drone', id: 'service' },
 	{ name: '3D Tours (Matterport & Zillow 3D Home)', path: '/3d-tours', id: 'service' },
 	{ name: 'Floor Plans (CubiCasa)', path: '/floor-plans', id: 'service' },
 	{ name: 'Virtual Staging', path: '/virtual-staging', id: 'service' },

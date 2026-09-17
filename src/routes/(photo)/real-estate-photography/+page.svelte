@@ -40,7 +40,7 @@
 				"Stunning bird's-eye perspectives that showcase location, lot size, and surrounding amenities.",
 			slug: properties[0].slug,
 			photoIndex: properties[0].selected[0],
-			href: '/pricing',
+			href: '/drone',
 		},
 		{
 			title: '3D Tours',

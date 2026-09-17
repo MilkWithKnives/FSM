@@ -74,6 +74,7 @@
 							<ul class="dropdown-content z-10 menu bg-white shadow-lg border border-gray-100 rounded-none p-2 w-44 mt-1">
 								<li><a href="/photos" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Photos</a></li>
 								<li><a href="/videos" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Videos</a></li>
+<li><a href="/drone" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Aerial Drone</a></li>
 								<li><a href="/3d-tours" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">3D Tours</a></li>
 								<li><a href="/floor-plans" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Floor Plans</a></li>
 								<li><a href="/virtual-staging" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Virtual Staging</a></li>
@@ -135,6 +136,7 @@
 					<ul class="space-y-2.5">
 						<li><a href="/photos" class="text-sm text-gray-600 hover:text-black transition-colors">Photography</a></li>
 						<li><a href="/videos" class="text-sm text-gray-600 hover:text-black transition-colors">Video Tours</a></li>
+<li><a href="/drone" class="text-sm text-gray-600 hover:text-black transition-colors">Aerial Drone</a></li>
 						<li><a href="/3d-tours" class="text-sm text-gray-600 hover:text-black transition-colors">3D Tours</a></li>
 						<li><a href="/floor-plans" class="text-sm text-gray-600 hover:text-black transition-colors">Floor Plans</a></li>
 						<li><a href="/virtual-staging" class="text-sm text-gray-600 hover:text-black transition-colors">Virtual Staging</a></li>
@@ -251,6 +253,7 @@
 					<ul class="flex flex-col gap-3 pl-3">
 						<li><a href="/photos" class="text-sm tracking-wider text-gray-700" onclick={closeMenu}>Photos</a></li>
 						<li><a href="/videos" class="text-sm tracking-wider text-gray-700" onclick={closeMenu}>Videos</a></li>
+<li><a href="/drone" class="text-sm tracking-wider text-gray-700" onclick={closeMenu}>Aerial Drone</a></li>
 						<li><a href="/3d-tours" class="text-sm tracking-wider text-gray-700" onclick={closeMenu}>3D Tours</a></li>
 						<li><a href="/floor-plans" class="text-sm tracking-wider text-gray-700" onclick={closeMenu}>Floor Plans</a></li>
 						<li><a href="/virtual-staging" class="text-sm tracking-wider text-gray-700" onclick={closeMenu}>Virtual Staging</a></li>
