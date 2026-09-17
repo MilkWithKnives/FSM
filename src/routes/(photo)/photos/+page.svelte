@@ -62,15 +62,15 @@
 <section class="py-24 px-8 lg:px-20 max-w-6xl mx-auto">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
 		<div>
-			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">What We Deliver</p>
+			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">What I Deliver</p>
 			<h2 class="text-3xl md:text-4xl font-light leading-snug mb-8" style="font-family: var(--font-serif)">
 				Images that make buyers stop scrolling.
 			</h2>
 			<p class="text-sm text-gray-500 leading-relaxed mb-6">
-				Our photography packages are built around one goal: making your listing impossible to ignore. Using professional-grade equipment, careful staging consultation, and expert post-processing, we deliver images that are both technically perfect and emotionally compelling.
+				My photography packages are built around one goal: making your listing impossible to ignore. Using professional-grade equipment, careful staging consultation, and expert post-processing, I deliver images that are both carefully edited and true to the property.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-10">
-				Every shoot is tailored to the property — we don't use a one-size-fits-all approach. Whether it's a compact downtown condo or a sprawling lakeside estate, we find the angles and light that tell that home's unique story.
+				Every shoot is tailored to the property — I don't use a one-size-fits-all approach. Whether it's a compact downtown condo or a sprawling lakeside estate, I find the angles and light that tell that home's unique story.
 			</p>
 			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK A SHOOT</a>
 		</div>

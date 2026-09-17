@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import PersonalService from '$lib/PersonalService.svelte';
 	import { properties, propertyArea } from '$lib/properties';
 	import { photoSrcset, photoFallback, PHOTO_SIZES_FULL, PHOTO_SIZES_HALF } from '$lib/images';
 
@@ -11,9 +12,9 @@
 
 <Seo
 	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
-	title="About Us | Full Scope Media LLC · Luxury Real Estate Media"
-	description="Meet the Full Scope Media LLC team — experienced real estate photographers and media professionals serving East Lansing, Lansing, and greater Michigan."
-	ogDescription="Meet the Full Scope Media LLC team — experienced real estate photographers serving East Lansing, MI."
+	title="About the Photographer | Full Scope Media LLC · Luxury Real Estate Media"
+	description="Meet the Full Scope Media LLC photographer serving East Lansing, Lansing, and greater Michigan."
+	ogDescription="Meet the Full Scope Media LLC photographer serving East Lansing, MI."
 />
 
 <!-- HERO -->
@@ -31,10 +32,12 @@
 		/>
 	</picture>
 	<div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-6">
-		<p class="text-xs tracking-[0.4em] uppercase mb-4 opacity-70">Our Story</p>
-		<h1 class="text-5xl md:text-7xl font-light" style="font-family: var(--font-serif)">About Us</h1>
+		<p class="text-xs tracking-[0.4em] uppercase mb-4 opacity-70">My Story</p>
+		<h1 class="text-5xl md:text-7xl font-light" style="font-family: var(--font-serif)">About the Photographer</h1>
 	</div>
 </section>
+<PersonalService />
+
 
 <!-- FOUNDERS INTRO -->
 <section class="py-24 px-8 lg:px-20 max-w-6xl mx-auto">
@@ -42,7 +45,7 @@
 		<div>
 			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Based in East Lansing, Michigan</p>
 			<h2 class="text-4xl md:text-5xl font-light leading-snug mb-8" style="font-family: var(--font-serif)">
-				At Full Scope Media, we take pride in our work and the added value we bring to your properties.
+				At Full Scope Media, I take pride in my work and the added value I bring to your properties.
 			</h2>
 			<p class="text-sm text-gray-500 leading-relaxed mb-4">
 				Full Scope Media LLC is a real estate media studio with a singular mission: to create photography that doesn't just show a home — it makes people fall in love with it.
@@ -51,12 +54,12 @@
 				Based in East Lansing, we serve agents, developers, and homeowners across Michigan — from Lansing and Okemos to Grand Ledge and Metro Detroit.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-8">
-				Beyond listing media, our <a href="/studio" class="underline underline-offset-4">Studio</a>
+				Beyond listing media, my <a href="/studio" class="underline underline-offset-4">Studio</a>
 				brings that same attention to small-business websites, brand photography, and systems.
-				Explore our <a href="/studio/web-design" class="underline underline-offset-4">web design and development</a>
+				Explore my <a href="/studio/web-design" class="underline underline-offset-4">web design and development</a>
 				if your next project is a website.
 			</p>
-			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">WORK WITH US</a>
+			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">WORK WITH ME</a>
 		</div>
 		<div class="overflow-hidden aspect-[4/5]">
 			<picture>
@@ -79,8 +82,8 @@
 <!-- VALUES -->
 <section class="bg-gray-50 py-20 px-8 lg:px-20">
 	<div class="max-w-6xl mx-auto">
-		<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4 text-center">What Drives Us</p>
-		<h2 class="text-3xl md:text-4xl font-light text-center mb-16" style="font-family: var(--font-serif)">Our Values</h2>
+		<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4 text-center">What Drives Me</p>
+		<h2 class="text-3xl md:text-4xl font-light text-center mb-16" style="font-family: var(--font-serif)">My Values</h2>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 			<div class="text-center">
 				<p class="text-4xl font-light mb-4" style="font-family: var(--font-serif)">01</p>
@@ -90,12 +93,12 @@
 			<div class="text-center">
 				<p class="text-4xl font-light mb-4" style="font-family: var(--font-serif)">02</p>
 				<h3 class="text-xl font-light mb-3" style="font-family: var(--font-serif)">Reliability</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">We show up on time, deliver on deadline, and communicate clearly — so you can focus on closing the deal.</p>
+				<p class="text-sm text-gray-500 leading-relaxed">I show up on time, deliver on deadline, and communicate clearly — so you can focus on closing the deal.</p>
 			</div>
 			<div class="text-center">
 				<p class="text-4xl font-light mb-4" style="font-family: var(--font-serif)">03</p>
 				<h3 class="text-xl font-light mb-3" style="font-family: var(--font-serif)">Partnership</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">We think of ourselves as an extension of your team — invested in your success as much as our own craft.</p>
+				<p class="text-sm text-gray-500 leading-relaxed">I think of myself as an extension of your team — invested in your success as much as my own craft.</p>
 			</div>
 		</div>
 	</div>

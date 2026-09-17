@@ -55,7 +55,7 @@
 				Empty rooms photograph cold and make spaces look smaller than they are. Virtual staging fills them with photorealistic furniture so buyers can picture themselves living there — without the cost, logistics, or time of physically staging a vacant home.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-10">
-				We match the style to the property and its target buyer, and every staged image is clearly labeled as virtually staged to keep your listing MLS-compliant. Stage one hero room or the whole house — it's priced per image.
+				I match the style to the property and its target buyer, and every staged image is clearly labeled as virtually staged to keep your listing MLS-compliant. Stage one hero room or the whole house. Inquire for pricing.
 			</p>
 			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">STAGE A LISTING</a>
 		</div>

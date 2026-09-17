@@ -60,7 +60,7 @@
 
 <!-- PAGE HEADER -->
 <section class="pt-16 pb-6 px-5 md:px-10 lg:px-20 max-w-7xl mx-auto">
-	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">Our Work</p>
+	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">My Work</p>
 	<h1 class="text-4xl md:text-6xl font-light" style="font-family: var(--font-serif)">Portfolio</h1>
 </section>
 
@@ -197,7 +197,7 @@
 
 <!-- CTA -->
 <section class="bg-neutral text-white py-20 md:py-24 px-5 text-center">
-	<h2 class="text-3xl md:text-5xl font-light mb-6" style="font-family: var(--font-serif)">Work With Us</h2>
+	<h2 class="text-3xl md:text-5xl font-light mb-6" style="font-family: var(--font-serif)">Work With Me</h2>
 	<p class="text-sm text-white/70 mb-8 max-w-md mx-auto">Ready to elevate your next listing? Let's create something extraordinary together.</p>
 	<a href="/contact" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-10">GET IN TOUCH</a>
 </section>

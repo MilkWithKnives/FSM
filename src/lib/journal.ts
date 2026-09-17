@@ -179,7 +179,7 @@ export const journalPosts: JournalPost[] = [
 					'CubiCasa describes its schematic 2D plans as simple representations of a property’s layout and supplies downloadable image formats. The useful deliverable for a listing is a clear drawing that buyers can read, save, and compare with the gallery.',
 				],
 				links: [
-					{ label: 'View our floor plan service and example', href: '/floor-plans' },
+					{ label: 'View my floor plan service and example', href: '/floor-plans' },
 					{ label: 'CubiCasa: real estate floor plans', href: 'https://www.cubi.casa/products/real-estate-floor-plans/' },
 				],
 			},

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import PersonalService from '$lib/PersonalService.svelte';
 	import Testimonials from '$lib/Testimonials.svelte';
 	import LocationLinks from '$lib/LocationLinks.svelte';
 	import { propertyArea } from '$lib/properties';
@@ -50,6 +51,8 @@
 		</h1>
 	</div>
 </section>
+<PersonalService />
+
 
 <!-- INTRO -->
 <section class="py-16 md:py-24 px-6 lg:px-20 max-w-4xl mx-auto">
@@ -62,7 +65,7 @@
 	{/each}
 
 	<p class="text-sm text-gray-500 leading-relaxed mt-8">
-		<span class="text-gray-700 font-medium">Neighborhoods we shoot in {location.city}:</span>
+		<span class="text-gray-700 font-medium">Neighborhoods I shoot in {location.city}:</span>
 		{location.neighborhoods.join(' · ')}
 	</p>
 

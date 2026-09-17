@@ -95,8 +95,8 @@
 
 			<!-- END: Book Us button (always) -->
 			<div class="navbar-end">
-				<a href="/contact" class="cta" aria-label="Book us">
-					<span>BOOK US</span>
+				<a href="/contact" class="cta" aria-label="Book a shoot">
+					<span>BOOK A SHOOT</span>
 					<svg width="15" height="10" viewBox="0 0 13 10" aria-hidden="true">
 						<path d="M1,5 L11,5"></path>
 						<polyline points="8 1 12 5 8 9"></polyline>
@@ -152,7 +152,7 @@
 
 			<!-- AREAS WE SERVE -->
 			<div class="max-w-6xl mx-auto mt-10 pt-8 border-t border-gray-100">
-				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Areas We Serve</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Areas I Serve</p>
 				<ul class="flex flex-wrap gap-x-6 gap-y-2">
 					{#each locations as loc (loc.slug)}
 						<li>
@@ -263,7 +263,7 @@
 				<li><a href="/contact" class="text-base tracking-wider text-gray-800" onclick={closeMenu}>Contact</a></li>
 			</ul>
 			<div class="mt-auto pt-8">
-				<a href="/contact" class="btn btn-neutral w-full rounded-none tracking-widest text-xs" onclick={closeMenu}>BOOK US</a>
+				<a href="/contact" class="btn btn-neutral w-full rounded-none tracking-widest text-xs" onclick={closeMenu}>BOOK A SHOOT</a>
 			</div>
 		</div>
 	</div>

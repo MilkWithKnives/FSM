@@ -5,7 +5,7 @@
 	const faqs = [
 		{
 			q: 'How quickly will I receive my photos?',
-			a: 'We guarantee a 24-hour turnaround — your edited photos are delivered within 24 hours of your shoot via an online gallery. Same-day rush delivery is also available upon request for an additional fee.',
+			a: 'I guarantee a 24-hour turnaround — your edited photos are delivered within 24 hours of your shoot via an online gallery. For rush turnaround, inquire for pricing.',
 		},
 		{
 			q: 'How quickly will I receive my video tour or drone video?',
@@ -17,15 +17,15 @@
 		},
 		{
 			q: 'Do you offer video tours, aerial drone, and Matterport 3D?',
-			a: 'Yes. Alongside photography we offer cinematic video tours, FAA-licensed aerial drone footage, floor plans, virtual staging, and Matterport 3D walkthroughs. Services are priced individually — see the Pricing page for flat à la carte rates.',
+			a: 'Yes. Alongside photography I offer cinematic video tours, FAA-licensed aerial drone footage, floor plans, virtual staging, and Matterport 3D walkthroughs. Services are priced individually — see the Pricing page for flat à la carte rates.',
 		},
 		{
 			q: 'How should I prepare the property for the shoot?',
-			a: 'Declutter surfaces, turn on all interior lights, open blinds for natural light, and tuck away personal items, cords, and pet bowls. A little staging goes a long way — arriving to a camera-ready home means we can focus on capturing it at its best.',
+			a: 'Declutter surfaces, turn on all interior lights, open blinds for natural light, and tuck away personal items, cords, and pet bowls. A little staging goes a long way — arriving to a camera-ready home means I can focus on capturing it at its best.',
 		},
 		{
 			q: 'What if I need to reschedule?',
-			a: 'We understand schedules change. Reschedules are accepted up to 48 hours before the shoot at no charge. Cancellations within 24 hours may incur a fee.',
+			a: 'I understand schedules change. Reschedules are accepted up to 48 hours before the shoot at no charge. Cancellations within 24 hours may incur a fee.',
 		},
 		{
 			q: 'What about larger properties or special requests?',
@@ -37,7 +37,7 @@
 		},
 		{
 			q: 'What payment methods do you accept?',
-			a: 'We accept all major credit cards, Zelle, and ACH bank transfer. Payment is due within 3 days of image delivery.',
+			a: 'I accept all major credit cards, Zelle, and ACH bank transfer. Payment is due within 3 days of image delivery.',
 		},
 		{
 			q: 'Do you shoot outside of East Lansing?',
@@ -72,7 +72,7 @@
 <!-- INTRO -->
 <section class="px-8 lg:px-20 pb-12 max-w-4xl mx-auto">
 	<p class="text-sm text-gray-500 max-w-xl leading-relaxed mt-4">
-		Everything you need to know about working with us — from turnaround times to what's included. Don't see your question? <a href="/contact" class="border-b border-black pb-0.5 hover:opacity-60 transition-opacity">Get in touch</a> and we'll be happy to help.
+		Everything you need to know about working with me — from turnaround times to what's included. Don't see your question? <a href="/contact" class="border-b border-black pb-0.5 hover:opacity-60 transition-opacity">Get in touch</a> and I'll be happy to help.
 	</p>
 </section>
 
@@ -97,6 +97,6 @@
 <!-- CTA -->
 <section class="bg-neutral text-white py-24 px-8 text-center">
 	<h2 class="text-4xl md:text-5xl font-light mb-8" style="font-family: var(--font-serif)">Still Have Questions?</h2>
-	<p class="text-sm text-white/70 mb-8 max-w-md mx-auto">We're happy to walk you through anything. Reach out and we'll get you everything you need.</p>
+	<p class="text-sm text-white/70 mb-8 max-w-md mx-auto">I'm happy to walk you through anything. Reach out and I'll get you everything you need.</p>
 	<a href="/contact" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-10">GET IN TOUCH</a>
 </section>

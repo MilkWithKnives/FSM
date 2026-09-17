@@ -72,7 +72,7 @@
 <!-- INQUIRY FORM + INFO -->
 <section class="px-8 lg:px-20 py-20 max-w-6xl mx-auto">
 	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-2">Have Questions First?</p>
-	<p class="text-sm text-gray-500 mb-12">Send us a detailed inquiry and we'll follow up within 1–2 business days.</p>
+	<p class="text-sm text-gray-500 mb-12">Send me a detailed inquiry and I'll follow up directly.</p>
 
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
 
@@ -81,7 +81,7 @@
 			{#if actionResult?.success}
 				<div class="py-20 text-center">
 					<p class="text-4xl font-light mb-4" style="font-family: var(--font-serif)">Thank You</p>
-					<p class="text-sm text-gray-500">We've received your inquiry and will be in touch within 1–2 business days.</p>
+					<p class="text-sm text-gray-500">I've received your inquiry and will be in touch directly.</p>
 				</div>
 			{:else}
 				{#if actionResult?.error}
@@ -138,7 +138,7 @@
 
 					<div class="flex flex-col gap-1">
 						<label for="message" class="text-xs tracking-widest uppercase text-gray-500">Additional Notes</label>
-						<textarea id="message" name="message" bind:value={formData.message} rows="5" class="textarea textarea-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm resize-none" placeholder="Tell us about the property, any special requests, or questions you have..."></textarea>
+						<textarea id="message" name="message" bind:value={formData.message} rows="5" class="textarea textarea-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm resize-none" placeholder="Tell me about the property, any special requests, or questions you have..."></textarea>
 					</div>
 
 					<div>
@@ -151,11 +151,11 @@
 		<!-- INFO SIDEBAR -->
 		<div class="flex flex-col gap-10">
 			<div>
-				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Call Us</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Call Me</p>
 				<a href="tel:+19895257768" class="text-sm text-gray-700 hover:text-black transition-colors">(989) 525-7768</a>
 			</div>
 			<div>
-				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Email Us</p>
+				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Email Me</p>
 				<a href="mailto:rchampion@fullscope-media.com" class="text-sm text-gray-700 hover:text-black transition-colors">rchampion@fullscope-media.com</a>
 			</div>
 			<div>

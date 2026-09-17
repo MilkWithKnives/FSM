@@ -67,7 +67,7 @@
 				Move buyers before they ever visit.
 			</h2>
 			<p class="text-sm text-gray-500 leading-relaxed mb-6">
-				A great property video doesn't just show a home — it tells its story. Our cinematic video packages combine smooth motion, thoughtful composition, and expert color grading to produce films that feel like they belong in a luxury magazine.
+				A great property video doesn't just show a home — it tells its story. My cinematic video packages combine smooth motion, thoughtful composition, and expert color grading to produce films that feel like they belong in a luxury magazine.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-10">
 				Listings with video receive significantly more engagement online. Add aerial drone footage for a complete, immersive package that sets your listing apart from every other property in the market.

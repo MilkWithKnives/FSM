@@ -5,15 +5,15 @@
 
 <Seo
 	title="Journal | Full Scope Media LLC · Real Estate Photography Tips & Insights"
-	description="Tips, guides, and insights from the Full Scope Media LLC team — covering staging, photography techniques, listing preparation, and the Michigan real estate market."
-	ogDescription="Real estate photography tips, staging guides, and insights from the Full Scope Media LLC team."
+	description="Tips, guides, and insights from the Full Scope Media LLC — covering staging, photography techniques, listing preparation, and the Michigan real estate market."
+	ogDescription="Real estate photography tips, staging guides, and insights from the Full Scope Media LLC."
 />
 
 <!-- HEADER -->
 <section class="pt-20 pb-16 px-8 lg:px-20 max-w-6xl mx-auto">
 	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Insights & Ideas</p>
 	<h1 class="text-5xl md:text-7xl font-light" style="font-family: var(--font-serif)">Journal</h1>
-	<p class="text-sm text-gray-500 mt-6 max-w-md leading-relaxed">Tips, stories, and resources from the Full Scope Media team — for agents, developers, and anyone passionate about beautiful spaces.</p>
+	<p class="text-sm text-gray-500 mt-6 max-w-md leading-relaxed">Tips, stories, and resources from the Full Scope Media — for agents, developers, and anyone passionate about beautiful spaces.</p>
 </section>
 
 <!-- POSTS GRID -->

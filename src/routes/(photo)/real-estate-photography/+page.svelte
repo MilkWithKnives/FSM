@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import PersonalService from '$lib/PersonalService.svelte';
 	import Testimonials from '$lib/Testimonials.svelte';
 	import { inView } from '$lib/actions/inView';
 	import { properties, propertyArea } from '$lib/properties';
@@ -122,6 +123,8 @@
 		<div class="w-px h-6 bg-white/60 animate-bounce" style="animation-duration:2s"></div>
 	</div>
 </section>
+<PersonalService />
+
 
 <style>
 	@keyframes heroZoom {
@@ -134,8 +137,8 @@
 <section class="bg-gray-50 py-16 md:py-24 px-5 md:px-10 lg:px-20">
 	<div class="max-w-7xl mx-auto">
 		<div use:inView class="reveal text-center mb-12 md:mb-16">
-			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">What We Offer</p>
-			<h2 class="text-3xl md:text-5xl font-light" style="font-family: var(--font-serif)">Our Services</h2>
+			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">What I Offer</p>
+			<h2 class="text-3xl md:text-5xl font-light" style="font-family: var(--font-serif)">My Services</h2>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
 			{#each services as service, i (service.title)}
@@ -193,7 +196,7 @@
 		<div class="order-2 md:order-1 reveal" use:inView>
 			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-5">About Full Scope Media</p>
 			<h2 class="text-3xl md:text-4xl lg:text-5xl font-light leading-snug mb-6" style="font-family: var(--font-serif)">
-				We take pride in the value we bring to your properties.
+				I take pride in the value I bring to your properties.
 			</h2>
 			<p class="text-sm text-gray-500 leading-relaxed mb-4">
 				Full Scope Media is a professional real estate photographer based in East Lansing, MI. We work alongside agents, developers, and homeowners across Greater Lansing and Mid-Michigan to create imagery that moves markets.
@@ -201,7 +204,7 @@
 			<p class="text-sm text-gray-500 leading-relaxed mb-8">
 				Great photography doesn't just document a property — it sells a lifestyle.
 			</p>
-			<a href="/about" class="btn btn-neutral rounded-none tracking-widest text-xs px-8 hover:scale-105 transition-transform duration-200">MEET THE TEAM</a>
+			<a href="/about" class="btn btn-neutral rounded-none tracking-widest text-xs px-8 hover:scale-105 transition-transform duration-200">MEET YOUR PHOTOGRAPHER</a>
 		</div>
 		<div class="overflow-hidden aspect-[4/5] order-1 md:order-2 reveal-scale" use:inView>
 			<picture>
@@ -238,14 +241,14 @@
 	</div>
 </section>
 
-<!-- WORK WITH US CTA -->
+<!-- WORK WITH ME CTA -->
 <section class="bg-neutral text-white py-20 md:py-28 px-5 text-center">
 	<div class="reveal" use:inView>
 		<p class="text-xs tracking-[0.4em] uppercase mb-5 opacity-60">Ready to get started?</p>
 		<h2 class="text-3xl md:text-5xl lg:text-6xl font-light mb-8" style="font-family: var(--font-serif)">Let's Work Together</h2>
 		<a href="/contact" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-10 transition-all duration-300">GET IN TOUCH</a>
 		<p class="mt-8 text-sm text-white/70">
-			Need a site for your business instead? <a href="/studio/web-design" class="border-b border-white/60 pb-0.5 hover:text-white">Explore our Lansing-area web design services</a>.
+			Need a site for your business instead? <a href="/studio/web-design" class="border-b border-white/60 pb-0.5 hover:text-white">Explore my Lansing-area web design services</a>.
 		</p>
 	</div>
 </section>

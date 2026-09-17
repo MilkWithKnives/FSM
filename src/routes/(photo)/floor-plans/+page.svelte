@@ -57,7 +57,7 @@
 				Photos sell the feeling of a home; a floor plan sells the flow. Buyers want to know how the rooms connect, where the furniture goes, and whether the layout actually works for them — and listings with a floor plan hold attention longer.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-10">
-				We produce clean, accurately scaled floor plans with <span class="text-gray-700">CubiCasa</span>, complete with room dimensions and total square footage. A standalone plan is {priceLabel(rate('floor'))}. For {priceLabel(rate('basic'))}, Basic includes residential photos and a CubiCasa floor plan. {rate('basic').qualifier}
+				I produce clean, accurately scaled floor plans with <span class="text-gray-700">CubiCasa</span>, complete with room dimensions and total square footage. A standalone plan is {priceLabel(rate('floor'))}. For {priceLabel(rate('basic'))}, Basic includes residential photos and a CubiCasa floor plan. {rate('basic').qualifier}
 			</p>
 			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK A FLOOR PLAN</a>
 		</div>

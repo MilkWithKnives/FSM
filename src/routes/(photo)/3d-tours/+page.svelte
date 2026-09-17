@@ -20,7 +20,7 @@
 <Seo
 	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="3D Virtual Tours — Matterport & Zillow 3D | Full Scope Media · East Lansing, MI"
-	description="Interactive 3D home tours in East Lansing and greater Michigan. We shoot both Zillow 3D Home and Matterport tours, so buyers can walk through your listing online anytime. Price: {priceLabel(rate('tour'))}."
+	description="Interactive 3D home tours in East Lansing and greater Michigan. I shoot both Zillow 3D Home and Matterport tours, so buyers can walk through your listing online anytime. Price: {priceLabel(rate('tour'))}."
 	ogDescription="Interactive Matterport and Zillow 3D home tours, serving East Lansing and greater Michigan."
 />
 
@@ -56,7 +56,7 @@
 				A 3D tour turns your listing into an always-open house. Buyers move room to room, see how spaces connect, and revisit the home as many times as they like — which means the people who book a showing are already serious.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-10">
-				We shoot both <span class="text-gray-700">Zillow 3D Home</span> and <span class="text-gray-700">Matterport</span>, and recommend whichever fits your listing and platform mix. Prefer one over the other? Just tell us — it's your call.
+				I shoot both <span class="text-gray-700">Zillow 3D Home</span> and <span class="text-gray-700">Matterport</span>, and recommend whichever fits your listing and platform mix. Prefer one over the other? Just tell me — it's your call.
 			</p>
 			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK A 3D TOUR</a>
 		</div>
