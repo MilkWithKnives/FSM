@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import LocationLinks from '$lib/LocationLinks.svelte';
 	import { propertyArea } from '$lib/properties';
 	import {
 		photoSrcset,
@@ -104,6 +105,8 @@
 		</div>
 	</section>
 {/if}
+
+<LocationLinks current={location.slug} />
 
 <!-- CTA -->
 <section class="bg-neutral text-white py-20 md:py-24 px-6 text-center">

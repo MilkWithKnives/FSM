@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import LocationLinks from '$lib/LocationLinks.svelte';
 	import { rate, priceLabel } from '$lib/pricing';
 	import { properties, propertyArea } from '$lib/properties';
 	import {
@@ -127,6 +128,8 @@
 		<a href="/contact" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity">Inquire About Video Production</a>
 	</div>
 </section>
+
+<LocationLinks />
 
 <!-- CTA -->
 <section class="bg-neutral text-white py-24 px-8 text-center">

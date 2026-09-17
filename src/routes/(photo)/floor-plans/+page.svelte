@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import LocationLinks from '$lib/LocationLinks.svelte';
 	import { rate, priceLabel } from '$lib/pricing';
 	import { properties } from '$lib/properties';
 	import { photoSrcset, heroFallback, PHOTO_SIZES_FULL } from '$lib/images';
@@ -92,6 +93,8 @@
 		Learn <a href="/journal/why-every-listing-needs-floorplan" class="underline underline-offset-4">why a floor plan belongs alongside your listing photography</a>.
 	</p>
 </section>
+
+<LocationLinks />
 
 <!-- CTA -->
 <section class="bg-neutral text-white py-24 px-8 text-center">

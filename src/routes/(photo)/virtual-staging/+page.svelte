@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import LocationLinks from '$lib/LocationLinks.svelte';
 	import { properties } from '$lib/properties';
 	import { photoSrcset, heroFallback, PHOTO_SIZES_FULL } from '$lib/images';
 
@@ -76,6 +77,8 @@
 		</div>
 	</div>
 </section>
+
+<LocationLinks />
 
 <!-- CTA -->
 <section class="bg-neutral text-white py-24 px-8 text-center">
