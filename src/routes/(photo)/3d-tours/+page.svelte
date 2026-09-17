@@ -16,9 +16,9 @@
 </script>
 
 <Seo
+	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="3D Virtual Tours — Matterport & Zillow 3D | Full Scope Media · East Lansing, MI"
 	description="Interactive 3D home tours in East Lansing and greater Michigan. We shoot both Zillow 3D Home and Matterport tours, so buyers can walk through your listing online anytime. Starting at $300."
-	ogTitle="3D Virtual Tours — Matterport & Zillow 3D | Full Scope Media"
 	ogDescription="Interactive Matterport and Zillow 3D home tours, serving East Lansing and greater Michigan."
 />
 

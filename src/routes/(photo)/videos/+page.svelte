@@ -30,9 +30,9 @@
 </script>
 
 <Seo
+	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="Real Estate Video Tours | Full Scope Media LLC · East Lansing, MI"
 	description="Cinematic real estate video tours in East Lansing and greater Michigan. Property films, including aerial drone video, delivered within 3–5 business days."
-	ogTitle="Real Estate Video Tours | Full Scope Media LLC"
 	ogDescription="Cinematic real estate video tours with aerial drone integration. Serving East Lansing and greater Michigan."
 />
 

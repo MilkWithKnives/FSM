@@ -1,0 +1,35 @@
+src/lib/business.ts:25: *   2. Served as a standalone document at /business.jsonld and advertised to AI agents
+src/lib/business.ts:26: *      via the `describedby` Link response header (see hooks.server.ts) so an agent can
+src/lib/business.ts:50:	areaServed: [
+src/lib/business.ts:54:		'Grand Ledge',
+src/lib/business.ts:55:		'Mid-Michigan',
+src/lib/business.ts:61:		'Ann Arbor',
+src/lib/business.ts:63:		'Metro Detroit',
+src/lib/journal.ts:51:					'Confirm which rooms, exterior areas, and outbuildings belong in the gallery. Tell the photographer about features that deserve attention, such as a renovated kitchen, a separate workspace, or access to an outdoor living area. Explain any access restrictions before the appointment.',
+src/lib/journal.ts:143:					'Keep labels and measurements legible at the size the plan will appear online. If a buyer needs to confirm that a particular piece of furniture fits, encourage them to verify the relevant dimensions at the property. Preserve measurement notes that come with the plan instead of cropping them from the published image.',
+src/lib/journal.ts:218:				paragraphs: ['Decide whether the photograph explains the whole room, a connection between rooms, or a particular feature. A view through the kitchen toward the dining area serves a different purpose from a close view of cabinetry. Choose the frame that communicates that purpose instead of trying to include every object.'],
+src/lib/journal.ts:260:					'Compare adjoining rooms for consistent brightness and color. Apply suitable lens corrections, review perspective, and check the crop after geometric adjustments. Preserve the appearance of the property’s permanent features rather than using editing to invent a different space.',
+src/routes/(photo)/about/+page.svelte:14:	description="Meet the Full Scope Media LLC team — experienced real estate photographers and media professionals serving East Lansing, Lansing, and greater Michigan."
+src/routes/(photo)/about/+page.svelte:16:	ogDescription="Meet the Full Scope Media LLC team — experienced real estate photographers serving East Lansing, MI."
+src/routes/(photo)/about/+page.svelte:51:				Based in East Lansing, we serve agents, developers, and homeowners across Michigan — from Lansing and Okemos to Grand Ledge and Metro Detroit.
+src/routes/(photo)/about/+page.svelte:88:				<p class="text-sm text-gray-500 leading-relaxed">Every image is crafted with the same care as editorial photography — because your listing deserves nothing less.</p>
+src/routes/(photo)/portfolio/+page.svelte:57:	description="Browse Full Scope Media LLC's real estate photography and video portfolio — featuring properties across East Lansing, Lansing, Okemos, and Metro Detroit."
+src/routes/(photo)/pricing/+page.svelte:59:	description="Transparent real estate photography and video pricing by property size. Packages starting at $480 for photography, $480 for video. Serving East Lansing and greater Michigan."
+src/routes/(photo)/pricing/+page.svelte:61:	ogDescription="Real estate photography packages starting at $480. Transparent pricing by property size, serving East Lansing, MI."
+src/routes/(photo)/pricing/+page.svelte:130:		Turnaround times, what's included, payment, service area, and more — we've answered the questions we hear most.
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:55:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Serving {location.city}, {location.state}</p>
+src/routes/(photo)/videos/+page.svelte:36:	ogDescription="Cinematic real estate video tours with aerial drone integration. Serving East Lansing and greater Michigan."
+src/routes/(photo)/contact/+page.svelte:48:	description="Book a full-service real estate media shoot — photography, video, drone, floor plans & virtual staging — with Full Scope Media LLC. Serving East Lansing, Mid-Michigan, Ann Arbor & Metro Detroit."
+src/routes/(photo)/contact/+page.svelte:165:				<p class="text-xs text-gray-500 mt-1">Serving East Lansing · Lansing · Mid-Michigan · Ann Arbor · Metro Detroit</p>
+src/routes/(photo)/photos/+page.svelte:32:	description="Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered within 24 hours. Serving Lansing, Okemos, and Metro Detroit."
+src/routes/(photo)/photos/+page.svelte:34:	ogDescription="40+ fully edited real estate photos delivered within 24 hours. Serving East Lansing and greater Michigan."
+src/routes/(photo)/real-estate-photography/+page.svelte:198:				Full Scope Media is a professional real estate photographer based in East Lansing, MI. We work alongside agents, developers, and homeowners across Greater Lansing and Mid-Michigan to create imagery that moves markets.
+src/routes/(photo)/faq/+page.svelte:43:			a: 'Absolutely. Our service area spans greater Michigan — Lansing, Okemos, Grand Ledge, and across Mid-Michigan to Bay City, Saginaw, and Midland, as well as Ann Arbor and the Metro Detroit area. We travel for larger projects — contact us to discuss any travel fees.',
+src/routes/(photo)/faq/+page.svelte:50:	description="Answers to common questions about Full Scope Media LLC's real estate photography and video — turnaround times, what's included, service area, payment, and more. Serving East Lansing and greater Michigan."
+src/routes/(photo)/faq/+page.svelte:52:	ogDescription="Common questions about real estate photography and video with Full Scope Media LLC — turnaround, pricing, service area, and more."
+src/routes/(photo)/floor-plans/+page.svelte:23:	ogDescription="Accurately scaled CubiCasa floor plans with room dimensions, serving East Lansing and greater Michigan."
+src/routes/(photo)/+layout.svelte:153:			<!-- AREAS WE SERVE -->
+src/routes/(photo)/+layout.svelte:155:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Areas We Serve</p>
+src/routes/(photo)/+layout.svelte:169:				<p class="text-xs text-gray-500">© 2026 Full Scope Media LLC. All rights reserved.</p>
+src/routes/(photo)/virtual-staging/+page.svelte:22:	ogDescription="Photorealistic virtual staging for vacant listings, serving East Lansing and greater Michigan."
+src/routes/(photo)/3d-tours/+page.svelte:22:	ogDescription="Interactive Matterport and Zillow 3D home tours, serving East Lansing and greater Michigan."

@@ -16,9 +16,9 @@
 </script>
 
 <Seo
+	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="Virtual Staging | Full Scope Media · East Lansing, MI"
 	description="Virtual staging for real estate in East Lansing and greater Michigan. Digitally furnish empty rooms so vacant listings feel like home — a fraction of the cost of physical staging. Delivered in 2–3 days."
-	ogTitle="Virtual Staging | Full Scope Media"
 	ogDescription="Photorealistic virtual staging for vacant listings, serving East Lansing and greater Michigan."
 />
 

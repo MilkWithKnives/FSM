@@ -6,7 +6,6 @@
 <Seo
 	title="Journal | Full Scope Media LLC · Real Estate Photography Tips & Insights"
 	description="Tips, guides, and insights from the Full Scope Media LLC team — covering staging, photography techniques, listing preparation, and the Michigan real estate market."
-	ogTitle="Journal | Full Scope Media LLC"
 	ogDescription="Real estate photography tips, staging guides, and insights from the Full Scope Media LLC team."
 />
 

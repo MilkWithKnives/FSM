@@ -1,0 +1,249 @@
+src/lib/EyeGate.svelte:121:			? { t: `translate(${cx}px, ${cy}px) scale(8) scaleY(1)`, o: 0, trans: 'transform 780ms cubic-bezier(0.6, 0, 0.3, 1), opacity 480ms 120ms ease-out' }
+src/lib/EyeGate.svelte:225:		font-weight: 400;
+src/lib/EyeGate.svelte:258:		font-weight: 400;
+src/routes/(photo)/about/+page.svelte:9:		[800, 1400, 2000].map((w) => `/about/me-${w}.${ext}?v=20260917-lfs ${w}w`).join(', ');
+src/routes/(photo)/about/+page.svelte:43:			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Based in East Lansing, Michigan</p>
+src/routes/(photo)/about/+page.svelte:47:			<p class="text-sm text-gray-500 leading-relaxed mb-4">
+src/routes/(photo)/about/+page.svelte:50:			<p class="text-sm text-gray-500 leading-relaxed mb-8">
+src/routes/(photo)/about/+page.svelte:53:			<p class="text-sm text-gray-500 leading-relaxed mb-8">
+src/routes/(photo)/about/+page.svelte:66:					src="/about/me-1400.jpg?v=20260917-lfs"
+src/routes/(photo)/about/+page.svelte:82:		<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4 text-center">What Drives Us</p>
+src/routes/(photo)/about/+page.svelte:88:				<p class="text-sm text-gray-500 leading-relaxed">Every image is crafted with the same care as editorial photography — because your listing deserves nothing less.</p>
+src/routes/(photo)/about/+page.svelte:93:				<p class="text-sm text-gray-500 leading-relaxed">We show up on time, deliver on deadline, and communicate clearly — so you can focus on closing the deal.</p>
+src/routes/(photo)/about/+page.svelte:98:				<p class="text-sm text-gray-500 leading-relaxed">We think of ourselves as an extension of your team — invested in your success as much as our own craft.</p>
+src/lib/business.ts:4:	'Full Scope Media LLC is a full-scope media studio in East Lansing, MI. Real estate media — photography, cinematic video tours, aerial drone, floor plans, Matterport 3D tours, and virtual staging — plus web design & build, local SEO, brand photography, and systems integration for small businesses across Michigan.';
+src/lib/business.ts:5:const image = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg?v=20260917-lfs`;
+src/routes/(photo)/portfolio/+page.svelte:12:	const INTERVAL_MS = 6000;
+src/routes/(photo)/portfolio/+page.svelte:64:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">Our Work</p>
+src/routes/(photo)/portfolio/+page.svelte:84:				class="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out {i === current ? 'opacity-100 z-10' : 'opacity-0 z-0'}"
+src/routes/(photo)/portfolio/+page.svelte:124:				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+src/routes/(photo)/portfolio/+page.svelte:134:				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+src/routes/(photo)/portfolio/+page.svelte:153:				class="rounded-full transition-all duration-300 {i === current ? 'w-6 h-1.5 bg-black' : 'w-1.5 h-1.5 bg-gray-300 hover:bg-gray-500'}"
+src/routes/(photo)/portfolio/+page.svelte:161:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3 text-center">All Projects</p>
+src/routes/(photo)/portfolio/+page.svelte:183:					<p class="text-[10px] tracking-[0.3em] uppercase text-gray-500 mb-1.5">{project.tag}</p>
+src/routes/(photo)/portfolio/+page.svelte:185:					<p class="text-xs text-gray-500 mt-1">{propertyArea(project)}</p>
+src/routes/(photo)/portfolio/+page.svelte:194:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Follow Along</p>
+src/lib/assets/logo.svg:1:<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="400" height="280">
+src/lib/assets/logo.svg:3:  <rect width="400" height="280" fill="#231f20"/>
+src/routes/(photo)/portfolio/[slug]/+page.svelte:61:	<a href="/portfolio" class="text-xs tracking-widest uppercase text-gray-500 hover:text-black transition-colors">← All Work</a>
+src/routes/(photo)/portfolio/[slug]/+page.svelte:64:			<p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-2">{p.tag}</p>
+src/routes/(photo)/portfolio/[slug]/+page.svelte:66:			<p class="text-sm text-gray-500 mt-2">{propertyArea(p)} · {p.zip}</p>
+src/routes/(photo)/portfolio/[slug]/+page.svelte:68:		<p class="text-xs tracking-widest text-gray-500">{String(current + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}</p>
+src/routes/(photo)/portfolio/[slug]/+page.svelte:113:				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+src/routes/(photo)/portfolio/[slug]/+page.svelte:123:				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+src/routes/(photo)/portfolio/[slug]/+page.svelte:143:					class="flex-shrink-0 overflow-hidden transition-all duration-300 {i === current ? 'ring-2 ring-white opacity-100' : 'opacity-50 hover:opacity-100'}"
+src/routes/(photo)/pricing/+page.svelte:18:				{ name: 'Photography', price: '$480' },
+src/routes/(photo)/pricing/+page.svelte:19:				{ name: 'Video Tour', price: '$480' },
+src/routes/(photo)/pricing/+page.svelte:20:				{ name: 'Floorplan', price: '$200' },
+src/routes/(photo)/pricing/+page.svelte:21:				{ name: 'Matterport 3D', price: '$300' },
+src/routes/(photo)/pricing/+page.svelte:28:				{ name: 'Photography', price: '$520' },
+src/routes/(photo)/pricing/+page.svelte:29:				{ name: 'Video Tour', price: '$980' },
+src/routes/(photo)/pricing/+page.svelte:30:				{ name: 'Floorplan', price: '$300' },
+src/routes/(photo)/pricing/+page.svelte:31:				{ name: 'Matterport 3D', price: '$400' },
+src/routes/(photo)/pricing/+page.svelte:38:				{ name: 'Photography', price: '$600' },
+src/routes/(photo)/pricing/+page.svelte:39:				{ name: 'Video Tour', price: '$1,100' },
+src/routes/(photo)/pricing/+page.svelte:40:				{ name: 'Floorplan', price: '$350' },
+src/routes/(photo)/pricing/+page.svelte:41:				{ name: 'Matterport 3D', price: '$500' },
+src/routes/(photo)/pricing/+page.svelte:48:				{ name: 'Photography', price: '$720' },
+src/routes/(photo)/pricing/+page.svelte:49:				{ name: 'Video Tour', price: '$1,400' },
+src/routes/(photo)/pricing/+page.svelte:50:				{ name: 'Floorplan', price: '$400' },
+src/routes/(photo)/pricing/+page.svelte:51:				{ name: 'Matterport 3D', price: '$600' },
+src/routes/(photo)/pricing/+page.svelte:59:	description="Transparent real estate photography and video pricing by property size. Packages starting at $480 for photography, $480 for video. Serving East Lansing and greater Michigan."
+src/routes/(photo)/pricing/+page.svelte:61:	ogDescription="Real estate photography packages starting at $480. Transparent pricing by property size, serving East Lansing, MI."
+src/routes/(photo)/pricing/+page.svelte:66:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Transparent Pricing</p>
+src/routes/(photo)/pricing/+page.svelte:72:	<p class="text-sm text-gray-500 max-w-xl leading-relaxed mt-4">
+src/routes/(photo)/pricing/+page.svelte:73:		Photography packages include 1 location, a 2–2.5 hour shoot, and 40 fully edited photos delivered with a guaranteed 24-hour turnaround. Video tours, including drone video, are delivered within 3–5 business days. Custom packages available for larger estates.
+src/routes/(photo)/pricing/+page.svelte:97:				<p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-4">{tier.sqft}</p>
+src/routes/(photo)/pricing/+page.svelte:115:	<p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">Add-Ons</p>
+src/routes/(photo)/pricing/+page.svelte:119:			<p class="text-xs text-gray-500 mt-1 max-w-md">Digitally furnish empty rooms so vacant listings feel like a home buyers can picture themselves in.</p>
+src/routes/(photo)/pricing/+page.svelte:127:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Common Questions</p>
+src/routes/(photo)/pricing/+page.svelte:129:	<p class="text-sm text-gray-500 max-w-md mx-auto leading-relaxed mb-8">
+src/routes/(photo)/journal/+page.svelte:15:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Insights & Ideas</p>
+src/routes/(photo)/journal/+page.svelte:17:	<p class="text-sm text-gray-500 mt-6 max-w-md leading-relaxed">Tips, stories, and resources from the Full Scope Media team — for agents, developers, and anyone passionate about beautiful spaces.</p>
+src/routes/(photo)/journal/+page.svelte:39:				<p class="text-sm text-gray-500 leading-relaxed mb-5">{post.excerpt}</p>
+src/routes/(photo)/journal/+page.svelte:48:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Never Miss a Post</p>
+src/routes/(photo)/journal/+page.svelte:54:			class="input input-bordered rounded-none flex-1 border-gray-300 focus:outline-none focus:border-black text-sm"
+src/routes/(photo)/journal/[slug]/+page.svelte:91:	h1 { font-size: clamp(36px, 6vw, 62px); line-height: 1.1; font-weight: 300; }
+src/routes/(photo)/journal/[slug]/+page.svelte:92:	h2 { margin-bottom: 20px; font-size: clamp(28px, 4vw, 36px); line-height: 1.2; font-weight: 300; }
+src/routes/(photo)/videos/+page.svelte:63:			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Cinematic Property Films</p>
+src/routes/(photo)/videos/+page.svelte:67:			<p class="text-sm text-gray-500 leading-relaxed mb-6">
+src/routes/(photo)/videos/+page.svelte:70:			<p class="text-sm text-gray-500 leading-relaxed mb-10">
+src/routes/(photo)/videos/+page.svelte:76:			<p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Every Video Includes</p>
+src/routes/(photo)/videos/+page.svelte:79:					<li class="flex items-start gap-3 text-sm text-gray-600">
+src/routes/(photo)/videos/+page.svelte:86:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
+src/routes/(photo)/videos/+page.svelte:87:				<p class="text-3xl font-light" style="font-family: var(--font-serif)">$480</p>
+src/routes/(photo)/videos/+page.svelte:96:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-10 text-center">Recent Productions</p>
+src/routes/(photo)/videos/+page.svelte:115:						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-1" fill="white" viewBox="0 0 24 24">
+src/routes/(photo)/photos/+page.svelte:20:		'40+ fully edited, high-resolution images',
+src/routes/(photo)/photos/+page.svelte:32:	description="Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered within 24 hours. Serving Lansing, Okemos, and Metro Detroit."
+src/routes/(photo)/photos/+page.svelte:34:	ogDescription="40+ fully edited real estate photos delivered within 24 hours. Serving East Lansing and greater Michigan."
+src/routes/(photo)/photos/+page.svelte:61:			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">What We Deliver</p>
+src/routes/(photo)/photos/+page.svelte:65:			<p class="text-sm text-gray-500 leading-relaxed mb-6">
+src/routes/(photo)/photos/+page.svelte:68:			<p class="text-sm text-gray-500 leading-relaxed mb-10">
+src/routes/(photo)/photos/+page.svelte:74:			<p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Every Package Includes</p>
+src/routes/(photo)/photos/+page.svelte:77:					<li class="flex items-start gap-3 text-sm text-gray-600">
+src/routes/(photo)/photos/+page.svelte:84:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
+src/routes/(photo)/photos/+page.svelte:85:				<p class="text-3xl font-light" style="font-family: var(--font-serif)">$480</p>
+src/routes/(photo)/photos/+page.svelte:94:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-10 text-center">Sample Work</p>
+src/routes/(photo)/photos/+page.svelte:108:						class="w-full object-cover hover:scale-105 transition-transform duration-500"
+src/routes/(photo)/faq/+page.svelte:15:			a: 'Each photography package includes 1 location, a 2–2.5 hour shoot, and 40 fully edited, high-resolution photos delivered in web and print formats.',
+src/routes/(photo)/faq/+page.svelte:19:			a: 'Yes. Alongside photography we offer cinematic video tours, FAA-licensed aerial drone footage, floor plans, virtual staging, and Matterport 3D walkthroughs. These can be booked individually or bundled — see our Pricing page for package details.',
+src/routes/(photo)/faq/+page.svelte:68:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Common Questions</p>
+src/routes/(photo)/faq/+page.svelte:74:	<p class="text-sm text-gray-500 max-w-xl leading-relaxed mt-4">
+src/routes/(photo)/faq/+page.svelte:86:					<span class="text-gray-500 text-lg flex-shrink-0" aria-hidden="true">
+src/routes/(photo)/faq/+page.svelte:91:				<p class="text-sm text-gray-500 leading-relaxed pb-6">{faq.a}</p>
+src/lib/images.ts:3:export const PHOTO_WIDTHS = [800, 1400, 2000] as const;
+src/lib/images.ts:10:export const photoSrc = (slug: string, n: number, w: PhotoWidth = 1400): string =>
+src/lib/images.ts:13:export const photoFallback = (slug: string, n: number, w: PhotoWidth = 1400): string =>
+src/lib/images.ts:19:export const heroPhoto = (p: Property, w: PhotoWidth = 2000): string => photoSrc(p.slug, p.selected[0], w);
+src/lib/images.ts:20:export const heroFallback = (p: Property, w: PhotoWidth = 2000): string => photoFallback(p.slug, p.selected[0], w);
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:26:	image={property ? `/portfolio/${property.slug}/01-2000.jpg?v=20260917-lfs` : undefined}
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:30:<section class="relative h-[60vh] min-h-[400px] overflow-hidden">
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:55:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Serving {location.city}, {location.state}</p>
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:60:		<p class="text-base text-gray-600 leading-relaxed mb-5">{paragraph}</p>
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:63:	<p class="text-sm text-gray-500 leading-relaxed mt-8">
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:79:				<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">Recent Work in {location.city}</p>
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:81:				<p class="text-sm text-gray-500 mt-2">{property.tag} · {property.photoCount} photos delivered</p>
+src/routes/(photo)/real-estate-photographer/[city]/+page.svelte:96:								class="w-full object-cover hover:scale-105 transition-transform duration-500"
+src/lib/Seo.svelte:6:	const defaultImage = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg?v=20260917-lfs`;
+src/routes/(photo)/contact/+page.svelte:48:	description="Book a full-service real estate media shoot — photography, video, drone, floor plans & virtual staging — with Full Scope Media LLC. Serving East Lansing, Mid-Michigan, Ann Arbor & Metro Detroit."
+src/routes/(photo)/contact/+page.svelte:55:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">Get In Touch</p>
+src/routes/(photo)/contact/+page.svelte:67:		<p class="text-xs text-gray-500 tracking-wide">Opens availability calendar — confirmation sent automatically</p>
+src/routes/(photo)/contact/+page.svelte:75:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-2">Have Questions First?</p>
+src/routes/(photo)/contact/+page.svelte:76:	<p class="text-sm text-gray-500 mb-12">Send us a detailed inquiry and we'll follow up within 1–2 business days.</p>
+src/routes/(photo)/contact/+page.svelte:85:					<p class="text-sm text-gray-500">We've received your inquiry and will be in touch within 1–2 business days.</p>
+src/routes/(photo)/contact/+page.svelte:89:					<p class="text-sm text-red-600 mb-6 p-4 border border-red-200 bg-red-50">{actionResult.error}</p>
+src/routes/(photo)/contact/+page.svelte:100:							<label for="name" class="text-xs tracking-widest uppercase text-gray-500">Full Name *</label>
+src/routes/(photo)/contact/+page.svelte:101:							<input id="name" name="name" type="text" bind:value={formData.name} required class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" placeholder="Jane Smith" />
+src/routes/(photo)/contact/+page.svelte:104:							<label for="email" class="text-xs tracking-widest uppercase text-gray-500">Email *</label>
+src/routes/(photo)/contact/+page.svelte:105:							<input id="email" name="email" type="email" bind:value={formData.email} required class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" placeholder="jane@example.com" />
+src/routes/(photo)/contact/+page.svelte:111:							<label for="phone" class="text-xs tracking-widest uppercase text-gray-500">Phone</label>
+src/routes/(photo)/contact/+page.svelte:112:							<input id="phone" name="phone" type="tel" bind:value={formData.phone} class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" placeholder="(989) 555-0100" />
+src/routes/(photo)/contact/+page.svelte:115:							<label for="date" class="text-xs tracking-widest uppercase text-gray-500">Preferred Shoot Date</label>
+src/routes/(photo)/contact/+page.svelte:116:							<input id="date" name="date" type="date" bind:value={formData.date} class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" />
+src/routes/(photo)/contact/+page.svelte:121:						<label for="address" class="text-xs tracking-widest uppercase text-gray-500">Property Address *</label>
+src/routes/(photo)/contact/+page.svelte:122:						<input id="address" name="address" type="text" bind:value={formData.address} required class="input input-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm" placeholder="123 Hagadorn Rd, East Lansing, MI" />
+src/routes/(photo)/contact/+page.svelte:126:						<p class="text-xs tracking-widest uppercase text-gray-500">Services Needed</p>
+src/routes/(photo)/contact/+page.svelte:132:									class="btn btn-sm rounded-none tracking-widest text-xs {formData.services.includes(service) ? 'btn-neutral' : 'btn-outline border-gray-300 text-gray-600 hover:border-black hover:text-black hover:bg-transparent'}"
+src/routes/(photo)/contact/+page.svelte:141:						<label for="message" class="text-xs tracking-widest uppercase text-gray-500">Additional Notes</label>
+src/routes/(photo)/contact/+page.svelte:142:						<textarea id="message" name="message" bind:value={formData.message} rows="5" class="textarea textarea-bordered rounded-none border-gray-300 focus:outline-none focus:border-black text-sm resize-none" placeholder="Tell us about the property, any special requests, or questions you have..."></textarea>
+src/routes/(photo)/contact/+page.svelte:155:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Call Us</p>
+src/routes/(photo)/contact/+page.svelte:159:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Email Us</p>
+src/routes/(photo)/contact/+page.svelte:163:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Based In</p>
+src/routes/(photo)/contact/+page.svelte:165:				<p class="text-xs text-gray-500 mt-1">Serving East Lansing · Lansing · Mid-Michigan · Ann Arbor · Metro Detroit</p>
+src/routes/(photo)/contact/+page.svelte:168:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Turnaround</p>
+src/routes/(photo)/contact/+page.svelte:172:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Follow Along</p>
+src/routes/(photo)/contact/+page.server.ts:29:			return fail(400, { error: 'Please fill in all required fields.' });
+src/routes/(photo)/contact/+page.server.ts:33:<div style="font-family:sans-serif;max-width:600px;color:#1a1a1a">
+src/routes/(photo)/contact/+page.server.ts:34:  <h2 style="font-size:22px;font-weight:300;border-bottom:1px solid #eee;padding-bottom:12px;margin-bottom:20px">
+src/routes/(photo)/contact/+page.server.ts:71:			return fail(500, { error: 'Failed to send your message. Please email us directly at rchampion@fullscope-media.com.' });
+src/lib/assets/favicon.svg:1:<svg xmlns="http://www.w3.org/2000/svg" width="107" height="128" viewBox="0 0 107 128"><title>svelte-logo</title><path d="M94.157 22.819c-10.4-14.885-30.94-19.297-45.792-9.835L22.282 29.608A29.92 29.92 0 0 0 8.764 49.65a31.5 31.5 0 0 0 3.108 20.231 30 30 0 0 0-4.477 11.183 31.9 31.9 0 0 0 5.448 24.116c10.402 14.887 30.942 19.297 45.791 9.835l26.083-16.624A29.92 29.92 0 0 0 98.235 78.35a31.53 31.53 0 0 0-3.105-20.232 30 30 0 0 0 4.474-11.182 31.88 31.88 0 0 0-5.447-24.116" style="fill:#ff3e00"/><path d="M45.817 106.582a20.72 20.72 0 0 1-22.237-8.243 19.17 19.17 0 0 1-3.277-14.503 18 18 0 0 1 .624-2.435l.49-1.498 1.337.981a33.6 33.6 0 0 0 10.203 5.098l.97.294-.09.968a5.85 5.85 0 0 0 1.052 3.878 6.24 6.24 0 0 0 6.695 2.485 5.8 5.8 0 0 0 1.603-.704L69.27 76.28a5.43 5.43 0 0 0 2.45-3.631 5.8 5.8 0 0 0-.987-4.371 6.24 6.24 0 0 0-6.698-2.487 5.7 5.7 0 0 0-1.6.704l-9.953 6.345a19 19 0 0 1-5.296 2.326 20.72 20.72 0 0 1-22.237-8.243 19.17 19.17 0 0 1-3.277-14.502 17.99 17.99 0 0 1 8.13-12.052l26.081-16.623a19 19 0 0 1 5.3-2.329 20.72 20.72 0 0 1 22.237 8.243 19.17 19.17 0 0 1 3.277 14.503 18 18 0 0 1-.624 2.435l-.49 1.498-1.337-.98a33.6 33.6 0 0 0-10.203-5.1l-.97-.294.09-.968a5.86 5.86 0 0 0-1.052-3.878 6.24 6.24 0 0 0-6.696-2.485 5.8 5.8 0 0 0-1.602.704L37.73 51.72a5.42 5.42 0 0 0-2.449 3.63 5.79 5.79 0 0 0 .986 4.372 6.24 6.24 0 0 0 6.698 2.486 5.8 5.8 0 0 0 1.602-.704l9.952-6.342a19 19 0 0 1 5.295-2.328 20.72 20.72 0 0 1 22.237 8.242 19.17 19.17 0 0 1 3.277 14.503 18 18 0 0 1-8.13 12.053l-26.081 16.622a19 19 0 0 1-5.3 2.328" style="fill:#fff"/></svg>
+src/lib/Breadcrumbs.svelte:6:	const trail = $derived($page.status < 400 ? buildBreadcrumbs($page.url.pathname, $page.data) : []);
+src/lib/media.ts:4:	width: 2000,
+src/lib/media.ts:5:	height: 1500,
+src/lib/media.ts:6:	caption: 'Example floor plan showing room dimensions, doorways, stairs, and the connections between living spaces.',
+src/routes/(photo)/real-estate-photography/+page.svelte:22:				'High-resolution, fully edited images that capture every detail — from wide-angle architectural shots to intimate interior moments.',
+src/routes/(photo)/real-estate-photography/+page.svelte:54:				'Accurately scaled CubiCasa floor plans with room dimensions, so buyers grasp the layout at a glance.',
+src/routes/(photo)/real-estate-photography/+page.svelte:73:	description="Real estate photography and media for listings in East Lansing, Lansing, and Okemos. Full Scope Media offers photography, video, drone, 3D tours, floor plans, and virtual staging."
+src/routes/(photo)/real-estate-photography/+page.svelte:93:<section class="relative h-[100dvh] min-h-[500px] overflow-hidden">
+src/routes/(photo)/real-estate-photography/+page.svelte:115:		<a href="/portfolio" class="hero-line-3 btn btn-outline btn-sm mt-8 rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-8 transition-all duration-300">
+src/routes/(photo)/real-estate-photography/+page.svelte:136:			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">What We Offer</p>
+src/routes/(photo)/real-estate-photography/+page.svelte:158:					<p class="text-sm text-gray-500 leading-relaxed mb-4">{service.description}</p>
+src/routes/(photo)/real-estate-photography/+page.svelte:167:<section class="relative h-[50vh] md:h-[60vh] min-h-[300px] overflow-hidden">
+src/routes/(photo)/real-estate-photography/+page.svelte:193:			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-5">About Full Scope Media</p>
+src/routes/(photo)/real-estate-photography/+page.svelte:197:			<p class="text-sm text-gray-500 leading-relaxed mb-4">
+src/routes/(photo)/real-estate-photography/+page.svelte:200:			<p class="text-sm text-gray-500 leading-relaxed mb-8">
+src/routes/(photo)/real-estate-photography/+page.svelte:203:			<a href="/about" class="btn btn-neutral rounded-none tracking-widest text-xs px-8 hover:scale-105 transition-transform duration-200">MEET THE TEAM</a>
+src/routes/(photo)/real-estate-photography/+page.svelte:226:		<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">Stay In Touch</p>
+src/routes/(photo)/real-estate-photography/+page.svelte:228:		<p class="text-sm text-gray-500 mb-6">Get the latest listings, tips, and studio news.</p>
+src/routes/(photo)/real-estate-photography/+page.svelte:233:				class="input input-bordered rounded-none flex-1 border-gray-300 focus:outline-none focus:border-black text-sm transition-colors duration-200"
+src/routes/(photo)/real-estate-photography/+page.svelte:235:			<button type="submit" class="btn btn-neutral rounded-none tracking-widest text-xs px-8 hover:scale-105 transition-transform duration-200">SUBSCRIBE</button>
+src/routes/(photo)/real-estate-photography/+page.svelte:245:		<a href="/contact" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-10 transition-all duration-300">GET IN TOUCH</a>
+src/routes/(photo)/3d-tours/+page.svelte:20:	description="Interactive 3D home tours in East Lansing and greater Michigan. We shoot both Zillow 3D Home and Matterport tours, so buyers can walk through your listing online anytime. Starting at $300."
+src/routes/(photo)/3d-tours/+page.svelte:49:			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Matterport &amp; Zillow 3D Home</p>
+src/routes/(photo)/3d-tours/+page.svelte:53:			<p class="text-sm text-gray-500 leading-relaxed mb-6">
+src/routes/(photo)/3d-tours/+page.svelte:56:			<p class="text-sm text-gray-500 leading-relaxed mb-10">
+src/routes/(photo)/3d-tours/+page.svelte:62:			<p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Every 3D Tour Includes</p>
+src/routes/(photo)/3d-tours/+page.svelte:65:					<li class="flex items-start gap-3 text-sm text-gray-600">
+src/routes/(photo)/3d-tours/+page.svelte:72:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
+src/routes/(photo)/3d-tours/+page.svelte:73:				<p class="text-3xl font-light" style="font-family: var(--font-serif)">$300</p>
+src/routes/(photo)/+layout.svelte:46:					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+src/routes/(photo)/+layout.svelte:68:							<div tabindex="0" role="button" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black transition-colors cursor-pointer flex items-center gap-1 py-1">
+src/routes/(photo)/+layout.svelte:70:								<svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+src/routes/(photo)/+layout.svelte:75:								<li><a href="/photos" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Photos</a></li>
+src/routes/(photo)/+layout.svelte:76:								<li><a href="/videos" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Videos</a></li>
+src/routes/(photo)/+layout.svelte:77:								<li><a href="/3d-tours" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">3D Tours</a></li>
+src/routes/(photo)/+layout.svelte:78:								<li><a href="/floor-plans" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Floor Plans</a></li>
+src/routes/(photo)/+layout.svelte:79:								<li><a href="/virtual-staging" class="text-xs tracking-wider uppercase text-gray-500 hover:text-black rounded-none">Virtual Staging</a></li>
+src/routes/(photo)/+layout.svelte:87:								class="text-xs tracking-wider uppercase transition-colors {isActive(link.href) ? 'text-black border-b border-black pb-0.5' : 'text-gray-500 hover:text-black'}"
+src/routes/(photo)/+layout.svelte:121:					<p class="text-sm text-gray-500 leading-relaxed">Luxury real estate photography & media. East Lansing, MI.</p>
+src/routes/(photo)/+layout.svelte:124:					<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Navigate</p>
+src/routes/(photo)/+layout.svelte:126:						<li><a href="/portfolio" class="text-sm text-gray-600 hover:text-black transition-colors">Portfolio</a></li>
+src/routes/(photo)/+layout.svelte:127:						<li><a href="/about" class="text-sm text-gray-600 hover:text-black transition-colors">About</a></li>
+src/routes/(photo)/+layout.svelte:128:						<li><a href="/faq" class="text-sm text-gray-600 hover:text-black transition-colors">FAQ</a></li>
+src/routes/(photo)/+layout.svelte:129:						<li><a href="/journal" class="text-sm text-gray-600 hover:text-black transition-colors">Journal</a></li>
+src/routes/(photo)/+layout.svelte:130:						<li><a href="/contact" class="text-sm text-gray-600 hover:text-black transition-colors">Contact</a></li>
+src/routes/(photo)/+layout.svelte:134:					<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Services</p>
+src/routes/(photo)/+layout.svelte:136:						<li><a href="/photos" class="text-sm text-gray-600 hover:text-black transition-colors">Photography</a></li>
+src/routes/(photo)/+layout.svelte:137:						<li><a href="/videos" class="text-sm text-gray-600 hover:text-black transition-colors">Video Tours</a></li>
+src/routes/(photo)/+layout.svelte:138:						<li><a href="/3d-tours" class="text-sm text-gray-600 hover:text-black transition-colors">3D Tours</a></li>
+src/routes/(photo)/+layout.svelte:139:						<li><a href="/floor-plans" class="text-sm text-gray-600 hover:text-black transition-colors">Floor Plans</a></li>
+src/routes/(photo)/+layout.svelte:140:						<li><a href="/virtual-staging" class="text-sm text-gray-600 hover:text-black transition-colors">Virtual Staging</a></li>
+src/routes/(photo)/+layout.svelte:141:						<li><a href="/pricing" class="text-sm text-gray-600 hover:text-black transition-colors">Pricing</a></li>
+src/routes/(photo)/+layout.svelte:145:					<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Contact</p>
+src/routes/(photo)/+layout.svelte:146:					<a href="tel:+19895257768" class="text-sm text-gray-600 hover:text-black transition-colors block">(989) 525-7768</a>
+src/routes/(photo)/+layout.svelte:147:					<a href="mailto:rchampion@fullscope-media.com" class="text-sm text-gray-600 hover:text-black transition-colors block mt-1">rchampion@fullscope-media.com</a>
+src/routes/(photo)/+layout.svelte:148:					<p class="text-sm text-gray-600 mt-1">East Lansing, MI</p>
+src/routes/(photo)/+layout.svelte:149:					<a href="https://instagram.com/full.scope.media" class="text-xs tracking-widest uppercase text-gray-500 hover:text-black transition-colors mt-3 inline-block">@full.scope.media</a>
+src/routes/(photo)/+layout.svelte:155:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Areas We Serve</p>
+src/routes/(photo)/+layout.svelte:159:							<a href="/real-estate-photographer/{loc.slug}" class="text-sm text-gray-600 hover:text-black transition-colors">
+src/routes/(photo)/+layout.svelte:169:				<p class="text-xs text-gray-500">© 2026 Full Scope Media LLC. All rights reserved.</p>
+src/routes/(photo)/+layout.svelte:175:							<svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+src/routes/(photo)/+layout.svelte:176:								<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+src/routes/(photo)/+layout.svelte:180:							<svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg" fill="white">
+src/routes/(photo)/+layout.svelte:181:								<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+src/routes/(photo)/+layout.svelte:188:							<svg fill="currentColor" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+src/routes/(photo)/+layout.svelte:193:							<svg fill="white" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+src/routes/(photo)/+layout.svelte:201:							<svg viewBox="0 0 384 512" fill="currentColor" height="1.6em" xmlns="http://www.w3.org/2000/svg">
+src/routes/(photo)/+layout.svelte:206:							<svg viewBox="0 0 384 512" fill="white" height="1.6em" xmlns="http://www.w3.org/2000/svg">
+src/routes/(photo)/+layout.svelte:226:				<p class="text-xs text-gray-500">East Lansing, MI</p>
+src/routes/(photo)/+layout.svelte:242:					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+src/routes/(photo)/+layout.svelte:250:					<p class="text-xs tracking-widest uppercase text-gray-500 mb-3">Services</p>
+src/routes/(photo)/+layout.svelte:304:    font-weight: 600;
+src/routes/(photo)/+layout.svelte:407:    background: linear-gradient(72.44deg, #ff7a00 11.92%, #ff0169 51.56%, #d300c5 85.69%);
+src/routes/(photo)/virtual-staging/+page.svelte:49:			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Furnish It Digitally</p>
+src/routes/(photo)/virtual-staging/+page.svelte:53:			<p class="text-sm text-gray-500 leading-relaxed mb-6">
+src/routes/(photo)/virtual-staging/+page.svelte:56:			<p class="text-sm text-gray-500 leading-relaxed mb-10">
+src/routes/(photo)/virtual-staging/+page.svelte:62:			<p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Every Staging Project Includes</p>
+src/routes/(photo)/virtual-staging/+page.svelte:65:					<li class="flex items-start gap-3 text-sm text-gray-600">
+src/routes/(photo)/virtual-staging/+page.svelte:72:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Pricing</p>
+src/routes/(photo)/floor-plans/+page.svelte:10:		'Accurate, scaled 2D floor plan via CubiCasa',
+src/routes/(photo)/floor-plans/+page.svelte:21:	description="Professional, accurately scaled real estate floor plans in East Lansing and greater Michigan, produced with CubiCasa. Room dimensions and square footage delivered in 24–48 hours. Starting at $200."
+src/routes/(photo)/floor-plans/+page.svelte:23:	ogDescription="Accurately scaled CubiCasa floor plans with room dimensions, serving East Lansing and greater Michigan."
+src/routes/(photo)/floor-plans/+page.svelte:35:			alt="Real estate floor plan photography"
+src/routes/(photo)/floor-plans/+page.svelte:50:			<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Powered by CubiCasa</p>
+src/routes/(photo)/floor-plans/+page.svelte:54:			<p class="text-sm text-gray-500 leading-relaxed mb-6">
+src/routes/(photo)/floor-plans/+page.svelte:55:				Photos sell the feeling of a home; a floor plan sells the flow. Buyers want to know how the rooms connect, where the furniture goes, and whether the layout actually works for them — and listings with a floor plan hold attention longer.
+src/routes/(photo)/floor-plans/+page.svelte:57:			<p class="text-sm text-gray-500 leading-relaxed mb-10">
+src/routes/(photo)/floor-plans/+page.svelte:58:				We produce clean, accurately scaled floor plans with <span class="text-gray-700">CubiCasa</span>, complete with room dimensions and total square footage. It's a small add-on that cuts down on wasted showings from buyers who were never the right fit.
+src/routes/(photo)/floor-plans/+page.svelte:63:			<p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Every Floor Plan Includes</p>
+src/routes/(photo)/floor-plans/+page.svelte:66:					<li class="flex items-start gap-3 text-sm text-gray-600">
+src/routes/(photo)/floor-plans/+page.svelte:73:				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
+src/routes/(photo)/floor-plans/+page.svelte:74:				<p class="text-3xl font-light" style="font-family: var(--font-serif)">$200</p>
+src/routes/(photo)/floor-plans/+page.svelte:82:	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-4">See the layout</p>
+src/routes/(photo)/floor-plans/+page.svelte:85:		<a href={floorPlanExample.src} aria-label="Open the example floor plan at full size">
+src/routes/(photo)/floor-plans/+page.svelte:88:		<figcaption class="text-sm text-gray-500 leading-relaxed mt-4">{floorPlanExample.caption} Select the image to view it at full size.</figcaption>
+src/routes/(photo)/floor-plans/+page.svelte:90:	<p class="text-sm text-gray-600 mt-6">
+src/routes/(photo)/floor-plans/+page.svelte:91:		Learn <a href="/journal/why-every-listing-needs-floorplan" class="underline underline-offset-4">why a floor plan belongs alongside your listing photography</a>.
+src/lib/journal.ts:37:			src: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=750&q=80&auto=format&fit=crop',
+src/lib/journal.ts:39:			width: 1200,
+src/lib/journal.ts:122:		description: 'Learn how a real estate floor plan explains room connections, dimensions, and multiple levels, and what to check before adding one to a property listing.',
+src/lib/journal.ts:126:			'A photograph shows what a room looks like. A floor plan helps explain where that room sits in the home. Together, they answer two different questions: can I picture myself here, and does the arrangement of the space work for me?',
+src/lib/journal.ts:157:				paragraphs: ['Treat the floor plan as part of the listing content review. Check it against the property and the other marketing material before sending the gallery live.'],
+src/lib/journal.ts:168:				heading: 'Use the floor plan alongside the photography',
+src/lib/journal.ts:176:				heading: 'Add a floor plan to your real estate media',
+src/lib/journal.ts:178:					'Full Scope Media offers CubiCasa floor plans for listings in East Lansing and greater Michigan. Discuss the spaces you want covered when arranging your shoot so photography and the plan can be considered together.',
+src/lib/journal.ts:182:					{ label: 'View our floor plan service and example', href: '/floor-plans' },
+src/lib/journal.ts:183:					{ label: 'CubiCasa: real estate floor plans', href: 'https://www.cubi.casa/products/real-estate-floor-plans/' },
+src/lib/journal.ts:199:			src: 'https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=1200&h=750&q=80&auto=format&fit=crop',
+src/lib/journal.ts:201:			width: 1200,

@@ -46,7 +46,6 @@
 <Seo
 	title="Book a Shoot | Full Scope Media LLC · Real Estate Photography East Lansing, MI"
 	description="Book a full-service real estate media shoot — photography, video, drone, floor plans & virtual staging — with Full Scope Media LLC. Serving East Lansing, Mid-Michigan, Ann Arbor & Metro Detroit."
-	ogTitle="Book a Shoot | Full Scope Media LLC"
 	ogDescription="Book a real estate photography or video shoot in East Lansing, MI. Get in touch with Full Scope Media LLC today."
 />
 

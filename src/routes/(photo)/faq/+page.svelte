@@ -48,7 +48,6 @@
 <Seo
 	title="FAQ | Full Scope Media LLC · Real Estate Photography East Lansing, MI"
 	description="Answers to common questions about Full Scope Media LLC's real estate photography and video — turnaround times, what's included, service area, payment, and more. Serving East Lansing and greater Michigan."
-	ogTitle="FAQ | Full Scope Media LLC"
 	ogDescription="Common questions about real estate photography and video with Full Scope Media LLC — turnaround, pricing, service area, and more."
 />
 

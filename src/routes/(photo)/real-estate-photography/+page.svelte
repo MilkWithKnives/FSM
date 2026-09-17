@@ -69,9 +69,9 @@
 </script>
 
 <Seo
+	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="Real Estate Photography & Media in East Lansing | Full Scope Media"
 	description="Real estate photography and media for listings in East Lansing, Lansing, and Okemos. Full Scope Media offers photography, video, drone, 3D tours, floor plans, and virtual staging."
-	ogTitle="East Lansing Real Estate Photographer | Full Scope Media"
 	ogDescription="Professional real estate photography, video & drone in East Lansing, MI. Edited photos delivered in 24 hours."
 />
 

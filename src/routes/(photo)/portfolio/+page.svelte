@@ -55,7 +55,6 @@
 <Seo
 	title="Portfolio | Full Scope Media LLC · Real Estate Photography East Lansing, MI"
 	description="Browse Full Scope Media LLC's real estate photography and video portfolio — featuring properties across East Lansing, Lansing, Okemos, and Metro Detroit."
-	ogTitle="Portfolio | Full Scope Media LLC"
 	ogDescription="Real estate photography and video portfolio across East Lansing, Lansing, and greater Michigan."
 />
 

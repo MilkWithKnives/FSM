@@ -57,7 +57,6 @@
 <Seo
 	title="Pricing | Full Scope Media LLC · Real Estate Photography Packages East Lansing, MI"
 	description="Transparent real estate photography and video pricing by property size. Packages starting at $480 for photography, $480 for video. Serving East Lansing and greater Michigan."
-	ogTitle="Pricing | Full Scope Media LLC"
 	ogDescription="Real estate photography packages starting at $480. Transparent pricing by property size, serving East Lansing, MI."
 />
 

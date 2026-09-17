@@ -10,9 +10,9 @@
 </script>
 
 <Seo
+	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="About Us | Full Scope Media LLC · Luxury Real Estate Media"
 	description="Meet the Full Scope Media LLC team — experienced real estate photographers and media professionals serving East Lansing, Lansing, and greater Michigan."
-	ogTitle="About Us | Full Scope Media LLC"
 	ogDescription="Meet the Full Scope Media LLC team — experienced real estate photographers serving East Lansing, MI."
 />
 

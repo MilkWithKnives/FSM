@@ -28,9 +28,9 @@
 </script>
 
 <Seo
+	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
 	title="Real Estate Photography | Full Scope Media LLC · East Lansing, MI"
 	description="Professional real estate photography in East Lansing and greater Michigan. 40+ fully edited photos, delivered within 24 hours. Serving Lansing, Okemos, and Metro Detroit."
-	ogTitle="Real Estate Photography | Full Scope Media LLC"
 	ogDescription="40+ fully edited real estate photos delivered within 24 hours. Serving East Lansing and greater Michigan."
 />
 
