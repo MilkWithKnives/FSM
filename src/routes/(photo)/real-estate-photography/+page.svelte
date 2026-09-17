@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import Testimonials from '$lib/Testimonials.svelte';
 	import { inView } from '$lib/actions/inView';
 	import { properties, propertyArea } from '$lib/properties';
 	import {
@@ -248,3 +249,5 @@
 		</p>
 	</div>
 </section>
+
+<Testimonials />

@@ -1,5 +1,6 @@
 <script lang="ts">
  import Seo from '$lib/Seo.svelte';
+	import Testimonials from '$lib/Testimonials.svelte';
  import { serviceRates, rate, priceLabel } from '$lib/pricing';
 </script>
 <Seo title="Real Estate Photography Pricing | Full Scope Media · East Lansing, MI"
@@ -24,3 +25,5 @@
  {/each}
  <a href="/faq" class="text-sm underline underline-offset-4">Questions about delivery or booking? Read the FAQ.</a>
 </section>
+
+<Testimonials />

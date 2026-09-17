@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import Testimonials from '$lib/Testimonials.svelte';
 	import LocationLinks from '$lib/LocationLinks.svelte';
 	import { propertyArea } from '$lib/properties';
 	import {
@@ -114,3 +115,5 @@
 	<p class="text-sm opacity-70 mb-8 max-w-xl mx-auto">Edited photos delivered within 24 hours. Video tours, including drone video, delivered within 3–5 business days.</p>
 	<a href="/contact" class="btn btn-outline btn-sm rounded-none tracking-widest text-xs border-white text-white hover:bg-white hover:text-black px-10">GET IN TOUCH</a>
 </section>
+
+<Testimonials city={location.city} />
