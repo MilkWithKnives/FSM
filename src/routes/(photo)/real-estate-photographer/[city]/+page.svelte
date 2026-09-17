@@ -23,7 +23,7 @@
 	description={location.description}
 	ogTitle={location.heading}
 	ogDescription={location.description}
-	image={property ? `/portfolio/${property.slug}/01-2000.jpg` : undefined}
+	image={property ? `/portfolio/${property.slug}/01-2000.jpg?v=20260917-lfs` : undefined}
 />
 
 <!-- HERO -->

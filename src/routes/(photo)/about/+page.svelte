@@ -6,7 +6,7 @@
 	const heroProperty = properties[0];
 
 	const aboutPhotoSrcset = (ext: 'avif' | 'webp' | 'jpg') =>
-		[800, 1400, 2000].map((w) => `/about/me-${w}.${ext} ${w}w`).join(', ');
+		[800, 1400, 2000].map((w) => `/about/me-${w}.${ext}?v=20260917-lfs ${w}w`).join(', ');
 </script>
 
 <Seo
@@ -63,7 +63,7 @@
 				<source type="image/avif" srcset={aboutPhotoSrcset('avif')} sizes={PHOTO_SIZES_HALF} />
 				<source type="image/webp" srcset={aboutPhotoSrcset('webp')} sizes={PHOTO_SIZES_HALF} />
 				<img
-					src="/about/me-1400.jpg"
+					src="/about/me-1400.jpg?v=20260917-lfs"
 					srcset={aboutPhotoSrcset('jpg')}
 					sizes={PHOTO_SIZES_HALF}
 					alt="Founder, Full Scope Media LLC"

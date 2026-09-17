@@ -1,0 +1,24 @@
+[Unit]
+Description=Full Scope Media SvelteKit website
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/fsm/FSM
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=3000
+Environment=ORIGIN=https://fullscope-media.com
+EnvironmentFile=-/etc/fullscope-media.env
+ExecStart=/usr/local/bin/node build/index.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

@@ -8,13 +8,13 @@ const pad = (n: number): string => String(n).padStart(2, '0');
 const base = (slug: string, n: number): string => `/portfolio/${slug}/${pad(n)}`;
 
 export const photoSrc = (slug: string, n: number, w: PhotoWidth = 1400): string =>
-	`${base(slug, n)}-${w}.webp`;
+	`${base(slug, n)}-${w}.webp?v=20260917-lfs`;
 
 export const photoFallback = (slug: string, n: number, w: PhotoWidth = 1400): string =>
-	`${base(slug, n)}-${w}.jpg`;
+	`${base(slug, n)}-${w}.jpg?v=20260917-lfs`;
 
 export const photoSrcset = (slug: string, n: number, ext: 'avif' | 'webp' | 'jpg' = 'webp'): string =>
-	PHOTO_WIDTHS.map((w) => `${base(slug, n)}-${w}.${ext} ${w}w`).join(', ');
+	PHOTO_WIDTHS.map((w) => `${base(slug, n)}-${w}.${ext}?v=20260917-lfs ${w}w`).join(', ');
 
 export const heroPhoto = (p: Property, w: PhotoWidth = 2000): string => photoSrc(p.slug, p.selected[0], w);
 export const heroFallback = (p: Property, w: PhotoWidth = 2000): string => photoFallback(p.slug, p.selected[0], w);

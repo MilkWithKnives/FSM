@@ -1,6 +1,6 @@
 import { fail } from '@sveltejs/kit';
 import nodemailer from 'nodemailer';
-import { SMTP_USER, SMTP_PASS } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import type { Actions } from './$types';
 
 const transporter = nodemailer.createTransport({
@@ -8,8 +8,8 @@ const transporter = nodemailer.createTransport({
 	port: 587,
 	secure: false,
 	auth: {
-		user: SMTP_USER,
-		pass: SMTP_PASS,
+		user: env.SMTP_USER,
+		pass: env.SMTP_PASS,
 	},
 });
 
@@ -57,8 +57,8 @@ export const actions: Actions = {
 
 		try {
 			await transporter.sendMail({
-				from: `"Full Scope Media" <${SMTP_USER}>`,
-				to: SMTP_USER,
+				from: `"Full Scope Media" <${env.SMTP_USER}>`,
+				to: env.SMTP_USER,
 				replyTo: email,
 				subject: `New Inquiry — ${name} · ${address}`,
 				text,
