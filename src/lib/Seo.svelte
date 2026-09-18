@@ -3,7 +3,7 @@
 	import { siteUrl } from '$lib/business';
 
 	const siteName = 'Full Scope Media LLC';
-	const defaultImage = `${siteUrl}/portfolio/622-vine-st-st-joseph-mi-49085/01-2000.jpg?v=20260917-lfs`;
+	const defaultImage = `${siteUrl}/eye-og.png`;
 
 	let {
 		title,

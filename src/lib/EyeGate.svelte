@@ -10,7 +10,9 @@
   that happens partway through the reveal animation.
 -->
 <script lang="ts">
+	import { untrack } from 'svelte';
 	import { goto } from '$app/navigation';
+	import EyeArtwork from '$lib/EyeArtwork.svelte';
 
 	type Choice = { label: string; href: string };
 
@@ -43,18 +45,53 @@
 		dy = $state(0),
 		px = $state(0),
 		py = $state(0);
-	let timers: ReturnType<typeof setTimeout>[] = [];
+	type PendingTimer = { id?: ReturnType<typeof setTimeout>; remaining: number; started: number; callback: () => void };
+ let timers: PendingTimer[] = [];
+ function resumeTimer(timer: PendingTimer) {
+  timer.started = performance.now();
+  timer.id = setTimeout(() => {
+   timers = timers.filter(item => item !== timer);
+   timer.callback();
+  }, timer.remaining);
+ }
+ function schedule(callback: () => void, delay: number) {
+  const timer: PendingTimer = { remaining: delay, started: performance.now(), callback };
+  timers.push(timer);
+  if (visible && tabVisible) resumeTimer(timer);
+ }
+ function clearTimers() { timers.forEach(timer => clearTimeout(timer.id)); timers = []; }
+ let chosenHref = '';
 
-	$effect(() => {
-		reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-		// The gate is the whole viewport — no scrolling while it covers the page.
-		const prev = document.body.style.overflow;
-		document.body.style.overflow = 'hidden';
-		return () => {
-			document.body.style.overflow = prev;
-			timers.forEach(clearTimeout);
-		};
-	});
+	let container = $state<HTMLDivElement>();
+ let visible = $state(true);
+ let tabVisible = $state(true);
+ $effect(() => {
+  const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const motion = () => { reduced = media.matches; if (media.matches) { dx = dy = px = py = 0; wink = false; if (chosenHref && phase !== 'open') { clearTimers(); goto(chosenHref); phase = 'open'; onrevealend(); } } };
+  const visibility = () => { tabVisible = !document.hidden; };
+  untrack(motion); visibility();
+  media.addEventListener('change', motion);
+  document.addEventListener('visibilitychange', visibility);
+  const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; });
+  if (container) observer.observe(container);
+  return () => {
+   observer.disconnect();
+   media.removeEventListener('change', motion);
+   document.removeEventListener('visibilitychange', visibility);
+   clearTimers();
+  };
+ });
+ $effect(() => {
+  const paused = !visible || !tabVisible;
+  for (const timer of timers) {
+   if (paused && timer.id !== undefined) {
+    clearTimeout(timer.id); timer.remaining = Math.max(0, timer.remaining - (performance.now() - timer.started)); timer.id = undefined;
+   } else if (!paused && timer.id === undefined) resumeTimer(timer);
+  }
+  for (const animation of container?.getAnimations({ subtree: true }) ?? []) {
+   if (paused) animation.pause(); else animation.play();
+  }
+ });
 
 	// Eye geometry: the logo almond is ~88 x 46 user units centered at (287.22, 296.5).
 	// Scale responsively: ~74% of viewport width, capped by 42% of height.
@@ -65,7 +102,7 @@
 	const coverScale = $derived(Math.ceil((Math.max(w, h) * 2.6) / (46 * s)));
 
 	function onPointerMove(e: PointerEvent) {
-		if (phase !== 'idle') return;
+		if (phase !== 'idle' || reduced || !visible || !tabVisible) return;
 		const fx = Math.max(-0.5, Math.min(0.5, e.clientX / w - 0.5));
 		const fy = Math.max(-0.5, Math.min(0.5, e.clientY / h - 0.5));
 		dx = Math.round(fx * 2 * 2.75 * s);
@@ -76,9 +113,9 @@
 
 	// Clicking the eye itself doesn't navigate — it just blinks back at you.
 	function blink() {
-		if (phase !== 'idle' || wink || reduced) return;
+		if (phase !== 'idle' || wink || reduced || !visible || !tabVisible) return;
 		wink = true;
-		timers.push(setTimeout(() => (wink = false), 170));
+		schedule(() => (wink = false), 170);
 	}
 
 	function choose(e: MouseEvent, href: string) {
@@ -89,21 +126,20 @@
 			return;
 		}
 		dx = dy = px = py = 0;
+		chosenHref = href;
 		phase = 'closing';
 		onrevealstart();
-		timers.push(
-			setTimeout(() => (phase = 'opening'), 130),
+			schedule(() => (phase = 'opening'), 130);
 			// Navigate the moment the hole starts expanding: the destination renders
 			// underneath while the eye is still opening over it.
-			setTimeout(() => {
+			schedule(() => {
 				phase = 'expanding';
 				goto(href);
-			}, 860),
-			setTimeout(() => {
+			}, 860);
+			schedule(() => {
 				phase = 'open';
 				onrevealend();
-			}, 1650)
-		);
+			}, 1650);
 	}
 
 	const later = $derived(phase === 'expanding' || phase === 'open');
@@ -133,7 +169,7 @@
 <svelte:window bind:innerWidth={w} bind:innerHeight={h} />
 
 {#if phase !== 'open'}
-	<div class="eye-gate">
+	<div class="eye-gate" class:reduced={reduced} class:revealing={phase !== 'idle'} bind:this={container}>
 		<svg
 			viewBox="0 0 {w} {h}"
 			onpointermove={onPointerMove}
@@ -150,12 +186,7 @@
 			<rect x="0" y="0" width={w} height={h} fill={ink} mask="url(#{uid})" />
 			<g style="transform: {eye.t}; transition: {eye.trans}; opacity: {eye.o};">
 				<g transform="scale({s}) translate(-287.22 -296.5)">
-					<path fill={line} d="M286.81,319.69c-12.74,0-27.79-4.58-43.24-19.3l-.68-.65.61-.72c.37-.45,9.35-10.96,24.8-16.38,14.26-5,36.87-6.31,63.55,15.9l.83.69-.74.77c-.43.45-10.78,11.11-26.9,16.6-5.21,1.78-11.38,3.09-18.21,3.09ZM245.65,299.61c18.28,17.07,38.03,22.15,58.72,15.1,13.23-4.51,22.65-12.8,25.33-15.33-20.53-16.76-40.93-21.76-60.67-14.87-12.7,4.43-21.08,12.66-23.38,15.11Z" />
-					<path fill={line} d="M329.94,290.08c-17.93-15.8-37.88-20.62-59.29-14.33-16.04,4.71-26.93,14.23-27.04,14.33l-1.33-1.5c.45-.4,11.28-9.88,27.73-14.73,15.22-4.49,38.2-5.57,61.25,14.73l-1.32,1.5Z" />
-					<g class="iris" style="transform: translate({px}px, {py}px); opacity: {irisO};">
-						<path fill={line} d="M287.37,313.49c-10.78,0-19.55-8.77-19.55-19.55,0-4.53,1.58-8.95,4.46-12.43l1.54,1.27c-2.58,3.13-4.01,7.1-4.01,11.16,0,9.68,7.87,17.55,17.55,17.55s17.55-7.87,17.55-17.55c0-3.66-1.12-7.17-3.23-10.15l1.63-1.16c2.36,3.32,3.6,7.23,3.6,11.31,0,10.78-8.77,19.55-19.55,19.55Z" />
-						<circle fill={line} cx="287.22" cy="292.79" r="12.1" />
-					</g>
+					<EyeArtwork {line} {px} {py} {irisO} />
 				</g>
 			</g>
 		</svg>
@@ -183,7 +214,7 @@
 
 <style>
 	.eye-gate {
-		position: fixed;
+		position: absolute;
 		inset: 0;
 		/* dvh keeps it covering the real visible area on mobile browsers */
 		height: 100dvh;
@@ -191,6 +222,8 @@
 		font-family: var(--font-studio, monospace);
 		touch-action: manipulation;
 	}
+	.eye-gate.revealing { position: fixed; }
+	.eye-gate.reduced :global(g) { transition: none !important; }
 	svg {
 		position: absolute;
 		inset: 0;
@@ -199,9 +232,6 @@
 		display: block;
 		outline: none;
 		-webkit-tap-highlight-color: transparent;
-	}
-	.iris {
-		transition: transform 90ms linear, opacity 260ms ease-out;
 	}
 
 	.wordmark {
@@ -298,9 +328,4 @@
 	.bl { bottom: 0; left: 0; }
 	.br { bottom: 0; right: 0; }
 
-	@media (prefers-reduced-motion: reduce) {
-		.iris {
-			transition: none;
-		}
-	}
 </style>

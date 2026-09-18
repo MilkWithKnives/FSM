@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-	import { page } from '$app/stores';
+	import { page, navigating } from '$app/stores';
+	import EyeMotif from '$lib/EyeMotif.svelte';
 	import { businessJsonLd } from '$lib/business';
 	import { reviewSchema } from '$lib/reviewSchema';
 	import EyeGate from '$lib/EyeGate.svelte';
@@ -34,3 +35,9 @@
 {/if}
 
 {@render children()}
+
+{#if $navigating && !$page.url.pathname.startsWith('/studio') && !$navigating.to?.url.pathname.startsWith('/studio')}
+ <div role="status" class="fixed bottom-6 right-6 z-50 bg-white p-3 border border-gray-100">
+  <EyeMotif /><span class="sr-only">Loading page</span>
+ </div>
+{/if}
