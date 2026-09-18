@@ -63,7 +63,7 @@
 		<div>
 			<p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-2">{p.tag}</p>
 			<h1 class="text-3xl md:text-5xl font-light" style="font-family: var(--font-serif)">{p.address}</h1>
-			<p class="text-sm text-gray-500 mt-2">{propertyArea(p)} · {p.zip}</p>
+			<p class="text-sm text-gray-500 mt-2">{propertyArea(p)}{#if p.zip} · {p.zip}{/if}</p>
 		</div>
 		<p class="text-xs tracking-widest text-gray-500">{String(current + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}</p>
 	</div>
