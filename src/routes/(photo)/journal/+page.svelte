@@ -4,6 +4,7 @@
 </script>
 
 <Seo
+	image={journalPosts[0].image.src}
 	title="Journal | Full Scope Media LLC · Real Estate Photography Tips & Insights"
 	description="Tips, guides, and insights from the Full Scope Media LLC — covering staging, photography techniques, listing preparation, and the Michigan real estate market."
 	ogDescription="Real estate photography tips, staging guides, and insights from the Full Scope Media LLC."
