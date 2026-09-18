@@ -19,7 +19,7 @@
 </script>
 
 <Seo
-	image={`/portfolio/${heroProperty.slug}/01-2000.jpg?v=20260917-lfs`}
+	image={floorPlanExample.src}
 	title="Real Estate Floor Plans (CubiCasa) | Full Scope Media · East Lansing, MI"
 	description="Professional, accurately scaled real estate floor plans in East Lansing and greater Michigan, produced with CubiCasa. Room dimensions and square footage delivered in 24–48 hours. Price: {priceLabel(rate('floor'))}."
 	ogDescription="Accurately scaled CubiCasa floor plans with room dimensions, serving East Lansing and greater Michigan."

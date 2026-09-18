@@ -1,7 +1,7 @@
 export const floorPlanExample = {
-	src: 'https://res.cloudinary.com/dowghnozl/image/upload/v1758550308/2-Floorplan_2_smqcpk.jpg',
-	alt: 'Floor plan showing a kitchen, dining area, living room, primary bedroom, bathrooms, laundry, and room dimensions',
+	src: '/floor-plans/mac-avenue-suite-106.jpg',
+	alt: 'CubiCasa floor plan for 301 M.A.C. Avenue Suite 106 showing two rooms and their dimensions',
 	width: 2000,
 	height: 1500,
-	caption: 'Example floor plan showing room dimensions, doorways, stairs, and the connections between living spaces.',
+	caption: 'A delivered CubiCasa floor plan showing the rooms, dimensions and entrance of a commercial suite.',
 };

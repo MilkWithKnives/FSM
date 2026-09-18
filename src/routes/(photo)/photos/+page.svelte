@@ -87,6 +87,7 @@
 			<div class="mt-8 pt-8 border-t border-gray-100">
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Starting At</p>
 				<p class="text-3xl font-light" style="font-family: var(--font-serif)">{priceLabel(rate('basic'))}</p>
+				<p class="text-sm text-gray-600 mt-4">{rate('commercial').name}: {priceLabel(rate('commercial'))}. {rate('commercial').qualifier} {rate('commercial').inclusions.join('. ')}.</p>
 				<a href="/pricing" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity mt-4 inline-block">View Full Pricing</a>
 			</div>
 		</div>

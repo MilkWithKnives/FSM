@@ -36,7 +36,7 @@ export const locations: Location[] = [
 		intro: [
 			'Okemos homes sell on lifestyle as much as square footage — the mature lots, the proximity to top-rated Okemos schools, the quick reach to Meridian Mall and the Red Cedar River. My job is to make a buyer feel all of that before they ever schedule a showing.',
 			'I recently photographed 4442 Greenwood Dr right here in Okemos: a full photo and video package covering every room, the exterior, and the surrounding neighborhood. The gallery below is the actual delivered work — not stock — so you can see exactly what your Okemos listing would look like.',
-			'From Indian Hills and Tihart to the newer builds off Jolly and Okemos Road, I know how to light and frame Okemos properties to compete with the best listings in Ingham County.',
+			'From Indian Hills and Tihart to the newer builds off Jolly and Okemos Road, I know how to light and frame Okemos properties to show their rooms and setting clearly.',
 		],
 		neighborhoods: ['Indian Hills', 'Tihart', 'Chippewa Hills', 'Ferndale', 'Okemos Road corridor'],
 	},

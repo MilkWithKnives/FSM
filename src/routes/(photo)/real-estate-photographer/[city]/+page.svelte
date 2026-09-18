@@ -82,7 +82,7 @@
 			<div class="text-center mb-12">
 				<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-3">Recent Work in {location.city}</p>
 				<h2 class="text-2xl md:text-4xl font-light" style="font-family: var(--font-serif)">{property.address}, {location.city}</h2>
-				<p class="text-sm text-gray-500 mt-2">{property.tag} · {property.photoCount} photos delivered</p>
+				<p class="text-sm text-gray-500 mt-2">{property.tag}</p>
 			</div>
 			<div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
 				{#each gallery as item (item.slug + item.n)}

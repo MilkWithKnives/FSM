@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import { rate, priceLabel } from '$lib/pricing';
 	import LocationLinks from '$lib/LocationLinks.svelte';
 	import { properties } from '$lib/properties';
 	import { photoSrcset, heroFallback, PHOTO_SIZES_FULL } from '$lib/images';
@@ -71,7 +72,7 @@
 			</ul>
 			<div class="pt-8 border-t border-gray-100">
 				<p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Pricing</p>
-				<p class="text-3xl font-light" style="font-family: var(--font-serif)">Per image</p>
+				<p class="text-3xl font-light" style="font-family: var(--font-serif)">{priceLabel(rate('staging'))}</p>
 				<a href="/contact" class="text-xs tracking-widest uppercase border-b border-black pb-1 hover:opacity-60 transition-opacity mt-4 inline-block">Inquire for Pricing</a>
 			</div>
 		</div>

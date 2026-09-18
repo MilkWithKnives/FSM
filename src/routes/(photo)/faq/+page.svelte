@@ -5,7 +5,7 @@
 	const faqs = [
 		{
 			q: 'How quickly will I receive my photos?',
-			a: 'I guarantee a 24-hour turnaround — your edited photos are delivered within 24 hours of your shoot via an online gallery. For rush turnaround, inquire for pricing.',
+			a: 'I deliver photos within 24 hours — your edited photos are delivered within 24 hours of your shoot via an online gallery. For rush turnaround, inquire for pricing.',
 		},
 		{
 			q: 'How quickly will I receive my video tour or drone video?',
