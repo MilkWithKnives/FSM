@@ -2,7 +2,7 @@
  import Seo from '$lib/Seo.svelte';
  import { serviceRates, rate, priceLabel } from '$lib/pricing';
  import { properties } from '$lib/properties';
- import { heroFallback } from '$lib/images';
+ import { heroFallback, photoSrcset, PHOTO_SIZES_GALLERY } from '$lib/images';
  import Testimonials from '$lib/Testimonials.svelte';
  import LocationLinks from '$lib/LocationLinks.svelte';
  import PersonalService from '$lib/PersonalService.svelte';
@@ -11,7 +11,7 @@
 </script>
 <Seo title="East Lansing Real Estate Photographer | Full Scope Media"
  description={`Real estate photography in East Lansing. Basic starts at ${priceLabel(rate('basic'))} with a CubiCasa floor plan and 24-hour delivery. Work directly with your photographer.`} />
-<main class="root-content pt-[100dvh]">
+<main class="root-content pt-[100dvh]" style="--font-serif: var(--font-studio); font-family: var(--font-studio)">
  <section class="py-20 px-8 lg:px-20 max-w-6xl mx-auto">
   <p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-6">Full Scope Media · East Lansing, Michigan</p>
   <h1 class="text-4xl md:text-6xl font-light mb-8" style="font-family: var(--font-serif)">Real estate photography in East Lansing</h1>
@@ -32,7 +32,7 @@
  <section class="py-16 px-8 lg:px-20 max-w-6xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-light mb-10" style="font-family: var(--font-serif)">Local properties, delivered work</h2>
   <div class="grid md:grid-cols-3 gap-8">
-   {#each local as property}<a href="/portfolio/{property.slug}"><img src={heroFallback(property, 800)} alt={`${property.address}, ${property.city}`} width="800" height="533" class="w-full aspect-[3/2] object-cover" /><p class="text-sm mt-4">{property.address} · {property.city}</p></a>{/each}
+   {#each local as property}<a href="/portfolio/{property.slug}"><picture><source type="image/avif" srcset={photoSrcset(property.slug, property.selected[0], 'avif')} sizes={PHOTO_SIZES_GALLERY} /><source type="image/webp" srcset={photoSrcset(property.slug, property.selected[0], 'webp')} sizes={PHOTO_SIZES_GALLERY} /><img src={heroFallback(property, 800)} alt={`${property.address}, ${property.city}`} width="800" height="533" class="w-full aspect-[3/2] object-cover" /></picture><p class="text-sm mt-4">{property.address} · {property.city}</p></a>{/each}
   </div>
  </section>
  <Testimonials />
