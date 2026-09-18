@@ -36,6 +36,7 @@
 		},
 		{
 			title: 'Aerial Drone',
+			imagePath: '/uploads/drone/dji_0015',
 			description:
 				"Stunning bird's-eye perspectives that showcase location, lot size, and surrounding amenities.",
 			slug: properties[0].slug,
@@ -145,11 +146,11 @@
 				<div class="group reveal" use:inView={{ delay: i * 150 }}>
 					<div class="overflow-hidden aspect-[4/3] mb-5">
 						<picture>
-							<source type="image/avif" srcset={photoSrcset(service.slug, service.photoIndex, 'avif')} sizes={PHOTO_SIZES_GALLERY} />
-							<source type="image/webp" srcset={photoSrcset(service.slug, service.photoIndex, 'webp')} sizes={PHOTO_SIZES_GALLERY} />
+							<source type="image/avif" srcset={service.imagePath ? [800, 1400, 2000].map(w => `${service.imagePath}-${w}.avif ${w}w`).join(', ') : photoSrcset(service.slug, service.photoIndex, 'avif')} sizes={PHOTO_SIZES_GALLERY} />
+							<source type="image/webp" srcset={service.imagePath ? [800, 1400, 2000].map(w => `${service.imagePath}-${w}.webp ${w}w`).join(', ') : photoSrcset(service.slug, service.photoIndex, 'webp')} sizes={PHOTO_SIZES_GALLERY} />
 							<img
-								src={photoFallback(service.slug, service.photoIndex)}
-								srcset={photoSrcset(service.slug, service.photoIndex, 'jpg')}
+								src={service.imagePath ? `${service.imagePath}-1400.jpg` : photoFallback(service.slug, service.photoIndex)}
+								srcset={service.imagePath ? [800, 1400, 2000].map(w => `${service.imagePath}-${w}.jpg ${w}w`).join(', ') : photoSrcset(service.slug, service.photoIndex, 'jpg')}
 								sizes={PHOTO_SIZES_GALLERY}
 								alt="Real estate {service.title.toLowerCase()} by Full Scope Media LLC"
 								loading="lazy"
