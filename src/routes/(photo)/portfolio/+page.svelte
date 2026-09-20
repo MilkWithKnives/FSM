@@ -1,13 +1,18 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
 	import { onMount } from 'svelte';
-	import { properties, propertyArea } from '$lib/properties';
+	import { properties as allProperties, propertyArea } from '$lib/properties';
 	import {
 		photoSrcset,
 		heroFallback,
 		PHOTO_SIZES_FULL,
 		PHOTO_SIZES_HALF,
 	} from '$lib/images';
+
+	const properties = [
+		...allProperties.filter((property) => property.slug === 'onondaga-mi'),
+		...allProperties.filter((property) => property.slug !== 'onondaga-mi'),
+	];
 
 	const INTERVAL_MS = 6000;
 	const total = properties.length;
