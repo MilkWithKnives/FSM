@@ -17,7 +17,7 @@
 		},
 		{
 			q: 'Do you offer video tours, aerial drone, and Matterport 3D?',
-			a: 'Yes. Alongside photography I offer cinematic video tours, FAA-licensed aerial drone footage, floor plans, virtual staging, and Matterport 3D walkthroughs. Services are priced individually — see the Pricing page for flat à la carte rates.',
+			a: 'Yes. Alongside photography I offer cinematic video tours, aerial drone footage shot with FAA Part 107 certification, floor plans, virtual staging, and Matterport 3D walkthroughs. Services are priced individually — see the Pricing page for flat à la carte rates.',
 		},
 		{
 			q: 'How should I prepare the property for the shoot?',

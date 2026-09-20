@@ -152,6 +152,7 @@
 					<a href="mailto:rchampion@fullscope-media.com" class="text-sm text-gray-600 hover:text-black transition-colors block mt-1">rchampion@fullscope-media.com</a>
 					<p class="text-sm text-gray-600 mt-1">East Lansing, MI</p>
 					<a href="https://instagram.com/full.scope.media" class="text-xs tracking-widest uppercase text-gray-500 hover:text-black transition-colors mt-3 inline-block">@full.scope.media</a>
+					<a href="https://www.facebook.com/share/1DGaFo82vB/" class="text-xs tracking-widest uppercase text-gray-500 hover:text-black transition-colors mt-3 block">Facebook</a>
 				</div>
 			</div>
 

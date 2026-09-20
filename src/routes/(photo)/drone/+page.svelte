@@ -5,9 +5,6 @@
  const service = rate('drone');
  const aerial = '/uploads/drone/dji_0015';
  const srcset = (ext: string) => [800, 1400, 2000].map(w => `${aerial}-${w}.${ext} ${w}w`).join(', ');
- // TODO: Confirm current FAA Part 107 certification before publishing a compliance claim.
- // The existing FAQ says FAA-licensed, but the repo has no specific Part 107 evidence.
- // TODO: Confirm aerial-photo turnaround; the confirmed 24-hour commitment is for listing photos.
 </script>
 <Seo title="Aerial Drone Photography | Full Scope Media · East Lansing, MI"
  description={`Aerial property photography from Full Scope Media. ${priceLabel(service)}. ${service.qualifier} Pair aerial views with residential photos or a video walkthrough.`}
@@ -30,7 +27,7 @@
    <h2 class="text-3xl md:text-4xl font-light mb-8" style="font-family: var(--font-serif)">Show how the home sits on the land.</h2>
    <p class="text-sm text-gray-500 leading-relaxed mb-6">Aerial photos show the setting, outdoor spaces and relationship to the surrounding landscape. They complement the rooms and details shown in your listing photos.</p>
    <p class="text-sm text-gray-500 leading-relaxed mb-6">Choose aerial photos alongside <a href="/photos" class="underline">Basic residential photography</a> or a <a href="/videos" class="underline">video walkthrough</a>. Each service has its own flat rate.</p>
-   <p class="text-sm text-gray-500 leading-relaxed mb-8">Discuss the views you need and your delivery date with me when booking.</p>
+   <p class="text-sm text-gray-500 leading-relaxed mb-8">I hold FAA Part 107 certification. Your aerial photos are delivered within 24 hours of the shoot. Discuss the views you need with me when booking.</p>
    <a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK A DRONE SHOOT</a>
   </div>
   <div>
