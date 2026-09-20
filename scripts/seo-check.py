@@ -22,6 +22,10 @@ USER_AGENT = "Mozilla/5.0 (compatible; FullScopeSEOCheck/1.0)"
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
 
+def is_image_asset(path):
+    return Path(urlsplit(path).path).suffix.lower() in {'.jpg', '.jpeg', '.png', '.webp', '.avif', '.gif', '.svg', '.ico'}
+
+
 class Document(HTMLParser):
     def __init__(self, html):
         super().__init__()
@@ -175,6 +179,9 @@ def run(base, output):
             target = urlsplit(urljoin(expected, link.get("href", "")))
             if target.netloc != "fullscope-media.com" or target.path.startswith("/cdn-cgi/"):
                 continue
+            if is_image_asset(target.path) or Path(target.path).suffix.lower() in {".mp4", ".webm"}:
+                assets.add(target.path)
+                continue
             check(target.path in paths, f"{path}: internal link outside sitemap: {target.path}")
             graph[path].add(target.path)
             if target.fragment and target.path in documents:
@@ -203,7 +210,7 @@ def run(base, output):
         # Vite's hashed imports are checked in build output, public images in static/.
         directory = ROOT / ("build/client" if asset.startswith("/_app/") else "static")
         file = directory / unquote(urlsplit(asset).path).lstrip("/")
-        check(file.is_file() and not file.read_bytes().startswith(b"version https://git-lfs.github.com/spec/v1"), f"missing image or LFS pointer: {asset}")
+        check(file.is_file() and not file.open("rb").read(128).startswith(b"version https://git-lfs.github.com/spec/v1"), f"missing image or LFS pointer: {asset}")
 
     query = "/studio/web-design?utm_source=seo-check&ref=a%2Fb"
     _, status, _, _, doc = read_page(query)
@@ -217,7 +224,7 @@ def run(base, output):
         Path(output).write_text(json.dumps({"base": base, "routes": rows, "image_assets": len(assets), "failures": failures}, indent=2) + "\n")
     for failure in failures:
         print("FAIL:", failure)
-    print(f"{len(rows)} routes; {len(assets)} image assets; {len(failures)} failures")
+    print(f"{len(rows)} routes; {len(assets)} media assets; {len(failures)} failures")
     return bool(failures)
 
 

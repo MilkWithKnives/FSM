@@ -50,6 +50,12 @@ class SEOCheckTests(unittest.TestCase):
         self.assertEqual(doc.schemas, [payload])
         self.assertEqual(len(doc.attrs("script")), 1)
 
+    def test_linked_images_are_assets_not_sitemap_pages(self):
+        self.assertTrue(seo.is_image_asset('/floor-plans/example.jpg'))
+        self.assertTrue(seo.is_image_asset('/photos/EXAMPLE.JPG?v=2'))
+        self.assertFalse(seo.is_image_asset('/floor-plans'))
+        self.assertFalse(seo.is_image_asset('/journal/photo-jpg'))
+
     def test_invalid_json_ld_fails(self):
         with self.assertRaises(json.JSONDecodeError):
             seo.Document('<script type="application/ld+json">{"bad":}</script>')
