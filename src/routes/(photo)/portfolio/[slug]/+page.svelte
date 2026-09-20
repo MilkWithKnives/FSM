@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PropertyVideo from '$lib/PropertyVideo.svelte';
 	import Seo from '$lib/Seo.svelte';
 	import { onMount } from 'svelte';
 	import { propertyFullAddress, propertyArea } from '$lib/properties';
@@ -167,3 +168,9 @@
 		>GET IN TOUCH</a
 	>
 </section>
+
+{#if p.video}
+	<section class="px-5 md:px-10 lg:px-20 py-16 max-w-7xl mx-auto">
+		<PropertyVideo property={p} />
+	</section>
+{/if}

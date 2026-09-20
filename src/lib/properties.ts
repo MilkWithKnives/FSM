@@ -5,6 +5,7 @@ export type Property = {
 	state: string;
 	zip: string;
 	tag: string;
+	video?: string;
 	photoCount: number;
 	selected: number[];
 };
@@ -44,6 +45,7 @@ export const properties: Property[] = [
 	{
 		slug: '2877-bessemer-rd-coloma-mi-49038',
 		address: '2877 Bessemer Rd',
+		video: '/videos/2877-bessemer-rd.mp4',
 		city: 'Coloma',
 		state: 'MI',
 		zip: '49038',
@@ -54,6 +56,7 @@ export const properties: Property[] = [
 	{
 		slug: '1904-carvel-ct-lansing-mi-48910',
 		address: '1904 Carvel Ct',
+		video: '/videos/1904-carvel-ct.mp4',
 		city: 'Lansing',
 		state: 'MI',
 		zip: '48910',

@@ -1,25 +1,18 @@
 <script lang="ts">
 	import Seo from '$lib/Seo.svelte';
+	import PropertyVideo from '$lib/PropertyVideo.svelte';
 	import LocationLinks from '$lib/LocationLinks.svelte';
 	import { rate, priceLabel } from '$lib/pricing';
-	import { properties, propertyArea } from '$lib/properties';
+	import { properties } from '$lib/properties';
 	import {
 		photoSrcset,
-		photoFallback,
 		heroFallback,
 		PHOTO_SIZES_FULL,
 	} from '$lib/images';
 
 	const heroProperty = properties[2];
 
-	const videos = properties.slice(0, 3).map((p) => ({
-		slug: p.slug,
-		title: `${p.address} · ${p.city}`,
-		tag: p.tag.includes('Floorplans') ? 'Cinematic Tour + Aerial' : 'Cinematic Tour',
-		address: p.address,
-		area: propertyArea(p),
-		coverIndex: p.selected[0],
-	}));
+	const videos = properties.filter((property) => property.video).sort((a) => a.city === 'Lansing' ? -1 : 1);
 
 	const includes = [
 		'Cinematic property walkthrough',
@@ -67,10 +60,10 @@
 				Move buyers before they ever visit.
 			</h2>
 			<p class="text-sm text-gray-500 leading-relaxed mb-6">
-				A great property video doesn't just show a home — it tells its story. My cinematic video packages combine smooth motion, thoughtful composition, and expert color grading to produce films that feel like they belong in a luxury magazine.
+				A great property video doesn't just show a home — it tells its story. My video walkthroughs combine smooth motion, thoughtful composition, and expert color grading to produce films that feel like they belong in a luxury magazine.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-10">
-				Listings with video receive significantly more engagement online. Add aerial drone footage for a complete, immersive package that sets your listing apart from every other property in the market.
+				Pair a video walkthrough with separately priced aerial photos to show the property and its setting from different perspectives.
 			</p>
 			<a href="/contact" class="btn btn-neutral rounded-none tracking-widest text-xs px-8">BOOK A VIDEO SHOOT</a>
 		</div>
@@ -97,31 +90,11 @@
 <section class="px-8 lg:px-20 pb-28 max-w-6xl mx-auto">
 	<p class="text-xs tracking-[0.4em] uppercase text-gray-500 mb-10 text-center">Recent Productions</p>
 	<div class="flex flex-col gap-8">
-		{#each videos as video (video.slug)}
-			<a href="/portfolio/{video.slug}" class="group relative overflow-hidden aspect-[16/9] block">
-				<picture>
-					<source type="image/avif" srcset={photoSrcset(video.slug, video.coverIndex, 'avif')} sizes={PHOTO_SIZES_FULL} />
-					<source type="image/webp" srcset={photoSrcset(video.slug, video.coverIndex, 'webp')} sizes={PHOTO_SIZES_FULL} />
-					<img
-						src={photoFallback(video.slug, video.coverIndex)}
-						srcset={photoSrcset(video.slug, video.coverIndex, 'jpg')}
-						sizes={PHOTO_SIZES_FULL}
-						alt={video.title}
-						loading="lazy"
-						decoding="async"
-						class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-					/>
-				</picture>
-				<div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white">
-					<div class="w-16 h-16 rounded-full border border-white/70 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
-						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-1" fill="white" viewBox="0 0 24 24">
-							<path d="M8 5v14l11-7z" />
-						</svg>
-					</div>
-					<p class="text-lg font-light" style="font-family: var(--font-serif)">{video.title}</p>
-					<p class="text-xs tracking-widest uppercase mt-1 opacity-70">{video.tag}</p>
-				</div>
-			</a>
+		{#each videos as property (property.slug)}
+			<div>
+				<PropertyVideo {property} />
+				<a href="/portfolio/{property.slug}" class="inline-block mt-4 text-sm border-b border-black pb-1">View {property.address} photos</a>
+			</div>
 		{/each}
 	</div>
 	<div class="text-center mt-12">
