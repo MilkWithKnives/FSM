@@ -41,7 +41,7 @@
 		},
 		{
 			q: 'Do you shoot outside of East Lansing?',
-			a: 'Absolutely. Our service area spans greater Michigan — Lansing, Okemos, Grand Ledge, and across Mid-Michigan to Bay City, Saginaw, and Midland, as well as Ann Arbor and the Metro Detroit area. We travel for larger projects — contact us to discuss any travel fees.',
+			a: 'Absolutely. My service area spans greater Michigan — Lansing, Okemos, Grand Ledge, and across Mid-Michigan to Bay City, Saginaw, and Midland, as well as Ann Arbor and the Metro Detroit area. I travel for larger projects — contact me to discuss any travel fees.',
 		},
 	];
 </script>

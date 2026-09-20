@@ -51,7 +51,7 @@
 				Full Scope Media LLC is a real estate media studio with a singular mission: to create photography that doesn't just show a home — it makes people fall in love with it.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-8">
-				Based in East Lansing, we serve agents, developers, and homeowners across Michigan — from Lansing and Okemos to Grand Ledge and Metro Detroit.
+				Based in East Lansing, I serve agents, developers, and homeowners across Michigan — from Lansing and Okemos to Grand Ledge and Metro Detroit.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-8">
 				Beyond listing media, my <a href="/studio" class="underline underline-offset-4">Studio</a>
@@ -98,7 +98,7 @@
 			<div class="text-center">
 				<p class="text-4xl font-light mb-4" style="font-family: var(--font-serif)">03</p>
 				<h3 class="text-xl font-light mb-3" style="font-family: var(--font-serif)">Partnership</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">I think of myself as an extension of your team — invested in your success as much as my own craft.</p>
+				<p class="text-sm text-gray-500 leading-relaxed">I’m invested in your success as much as my own craft.</p>
 			</div>
 		</div>
 	</div>

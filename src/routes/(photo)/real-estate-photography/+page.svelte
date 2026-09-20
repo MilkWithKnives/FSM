@@ -200,7 +200,7 @@
 				I take pride in the value I bring to your properties.
 			</h2>
 			<p class="text-sm text-gray-500 leading-relaxed mb-4">
-				Full Scope Media is a professional real estate photographer based in East Lansing, MI. We work alongside agents, developers, and homeowners across Greater Lansing and Mid-Michigan to create imagery that moves markets.
+				Full Scope Media is a professional real estate photographer based in East Lansing, MI. I work alongside agents, developers, and homeowners across Greater Lansing and Mid-Michigan to create imagery that moves markets.
 			</p>
 			<p class="text-sm text-gray-500 leading-relaxed mb-8">
 				Great photography doesn't just document a property — it sells a lifestyle.

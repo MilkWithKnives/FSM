@@ -68,7 +68,7 @@ export const actions: Actions = {
 			return { success: true };
 		} catch (err) {
 			console.error('Mail error:', err);
-			return fail(500, { error: 'Failed to send your message. Please email us directly at rchampion@fullscope-media.com.' });
+			return fail(500, { error: 'Failed to send your message. Please email me directly at rchampion@fullscope-media.com.' });
 		}
 	},
 };

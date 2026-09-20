@@ -198,7 +198,7 @@
 
 		<div class="wordmark" style="opacity: {chromeO};">
 			FULL SCOPE MEDIA
-			<p class="tagline">Every detail under our eye</p>
+			<p class="tagline">Every detail under my eye</p>
 		</div>
 
 		<nav class="choices" style="opacity: {chromeO}; pointer-events: {phase === 'idle' ? 'auto' : 'none'};" aria-label="Choose a site">
