@@ -21,7 +21,7 @@
 		{
 			question: 'Can you help with an existing small-business website?',
 			answer:
-				'Yes. The first step is to review the current site, business goals, content, and technical constraints so we can recommend whether focused improvements or a new build makes more sense.',
+				'Yes. The first step is to review the current site, business goals, content, and technical constraints so I can recommend whether focused improvements or a new build makes more sense.',
 		},
 	];
 

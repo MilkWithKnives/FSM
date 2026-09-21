@@ -36,7 +36,7 @@
 	<span class="st-cross bl"></span><span class="st-cross br"></span>
 	<div class="st-pad st-hero">
 		<p class="st-kicker">Photography · Web · Systems &amp; Data</p>
-		<h1 class="st-h1">We see the <span class="st-dim">whole picture.</span></h1>
+		<h1 class="st-h1">I see the <span class="st-dim">whole picture.</span></h1>
 		<p class="st-body">
 			One studio for everything your brand needs to be seen — photography, web design &amp;
 			build, and the systems that tie it all together. Based in East Lansing, working with

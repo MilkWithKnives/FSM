@@ -6,21 +6,21 @@
 			num: '01',
 			name: 'Automate the busywork',
 			blurb:
-				'The invoice that gets retyped into three places. The booking that has to be copied to the calendar, the spreadsheet, and the group chat. We wire your tools together so it happens once.',
+				'The invoice that gets retyped into three places. The booking that has to be copied to the calendar, the spreadsheet, and the group chat. I wire your tools together so it happens once.',
 			points: ['Bookings → calendar → invoicing flows', 'Automatic follow-ups & reminders', 'Form submissions routed where they belong'],
 		},
 		{
 			num: '02',
 			name: 'See your numbers',
 			blurb:
-				"Revenue lives in one app, jobs in another, ad spend in a third. We pull it into one dashboard so Monday morning starts with answers instead of tab-hopping.",
+				"Revenue lives in one app, jobs in another, ad spend in a third. I pull it into one dashboard so Monday morning starts with answers instead of tab-hopping.",
 			points: ['One dashboard across your tools', 'Reports that send themselves', 'Numbers a non-accountant can read'],
 		},
 		{
 			num: '03',
 			name: 'Connect the stack',
 			blurb:
-				"CRM, point of sale, email list, website — most small-business tools can talk to each other; they just haven't been introduced. We build the connections and keep them healthy.",
+				"CRM, point of sale, email list, website — most small-business tools can talk to each other; they just haven't been introduced. I build the connections and keep them healthy.",
 			points: ['CRM & email list syncing', 'Website ↔ back-office integration', 'Data cleanup & migrations'],
 		},
 	];
@@ -38,17 +38,17 @@
 		<p class="st-kicker">Systems &amp; Data · Michigan</p>
 		<h1 class="st-h1">Your tools should <span class="st-dim">talk to each other.</span></h1>
 		<p class="st-body">
-			Most small businesses run on five apps and a lot of retyping. We build the integrations,
+			Most small businesses run on five apps and a lot of retyping. I build the integrations,
 			automations, and dashboards that make them run as one operation — so the data moves
 			itself and you get your evenings back.
 		</p>
 		<div class="st-ctas">
-			<a href="/studio/contact" class="st-btn st-btn-solid">Tell us what's manual</a>
+			<a href="/studio/contact" class="st-btn st-btn-solid">Tell me what's manual</a>
 		</div>
 	</div>
 </section>
 
-<!-- WHAT WE FIX -->
+<!-- WHAT I FIX -->
 <section>
 	{#each problems as item (item.num)}
 		<div class="st-frame row">

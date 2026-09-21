@@ -25,7 +25,7 @@
 
 <Seo
 	title="Start a Project — Studio | Full Scope Media · East Lansing, MI"
-	description="Start a project with Full Scope Media's studio: web design & build, local SEO, brand photography, and systems integration for small businesses in East Lansing and across Michigan. Tell us what you're building."
+	description="Start a project with Full Scope Media's studio: web design & build, local SEO, brand photography, and systems integration for small businesses in East Lansing and across Michigan. Tell me what you're building."
 />
 
 <!-- HEADER -->
@@ -33,10 +33,10 @@
 	<span class="st-cross bl"></span><span class="st-cross br"></span>
 	<div class="st-pad st-hero header">
 		<p class="st-kicker">Contact · Studio</p>
-		<h1 class="st-h1">Tell us what <span class="st-dim">you're building.</span></h1>
+		<h1 class="st-h1">Tell me what <span class="st-dim">you're building.</span></h1>
 		<p class="st-body">
 			A website, a rebrand, a stack of tools that won't cooperate — describe it in a couple of
-			sentences and we'll follow up within 1–2 business days.
+			sentences and I'll follow up within 1–2 business days.
 		</p>
 	</div>
 </section>
@@ -48,7 +48,7 @@
 			<div class="success">
 				<p class="st-num">✓</p>
 				<h2 class="st-h2">Received.</h2>
-				<p class="st-body">We've got your inquiry and will be in touch within 1–2 business days.</p>
+				<p class="st-body">I've got your inquiry and will be in touch within 1–2 business days.</p>
 			</div>
 		{:else}
 			{#if actionResult?.error}

@@ -14,7 +14,7 @@
 			num: '02',
 			name: 'Local SEO',
 			blurb:
-				'Being found is the whole point. We build search into the site itself — the pages, titles, structure, and schema that put you in front of people searching for what you do.',
+				'Being found is the whole point. I build search into the site itself — the pages, titles, structure, and schema that put you in front of people searching for what you do.',
 			points: ['Keyword research for your market', 'Useful service & local project pages', 'Schema.org structured data', 'Google Business Profile optimization'],
 		},
 		{
@@ -27,10 +27,10 @@
 	];
 
 	const steps = [
-			{ num: '01', name: 'Discover', blurb: 'We learn what you do, who needs it, and what a useful website must help them accomplish.' },
+			{ num: '01', name: 'Discover', blurb: 'I learn what you do, who needs it, and what a useful website must help them accomplish.' },
 			{ num: '02', name: 'Design', blurb: 'A look that fits your business — reviewed with you before a line is built.' },
 			{ num: '03', name: 'Build', blurb: 'Hand-coded, fast, accessible. You watch it come together on a live preview.' },
-			{ num: '04', name: 'Launch', blurb: 'We prepare indexing, analytics, and the technical SEO foundation, then support the site as it grows.' },
+			{ num: '04', name: 'Launch', blurb: 'I prepare indexing, analytics, and the technical SEO foundation, then support the site as it grows.' },
 	];
 
 
@@ -54,7 +54,7 @@
 
 <Seo
 	title="Web Design in Lansing & East Lansing, MI | Full Scope Media"
-	description="Hand-built websites for Lansing & East Lansing small businesses, with fast pages and SEO foundations. See what's included, how we work, and how to get started."
+	description="Hand-built websites for Lansing & East Lansing small businesses, with fast pages and SEO foundations. See what's included, how I work, and how to get started."
 />
 
 <svelte:head>
@@ -109,7 +109,7 @@
 			<p class="st-body">
 				Search engine optimization starts with a site people can use and search engines can
 				understand. A website build includes crawlable pages, descriptive titles and metadata,
-				structured data where it fits, and indexing setup. We organize services around the
+				structured data where it fits, and indexing setup. I organize services around the
 				questions your customers need answered before they call.
 			</p>
 			<p class="st-body">
@@ -149,14 +149,14 @@
 		<div class="seo-copy">
 			<p class="st-body">
 				This approach suits small businesses that need to explain their services, show their work,
-				and make it easy to get in touch. Custom development gives us control over the page layout,
-				navigation, and mobile behavior. We build for readable content, keyboard-friendly navigation,
+				and make it easy to get in touch. Custom development gives me control over the page layout,
+				navigation, and mobile behavior. I build for readable content, keyboard-friendly navigation,
 				and images that fit the screen without making visitors wait on oversized files.
 			</p>
 			<p class="st-body">
-				Already have a website? We start by reviewing the current site, your goals, and its technical
+				Already have a website? I start by reviewing the current site, your goals, and its technical
 				constraints to see whether focused improvements or a new build makes sense. Share the URL
-				when you <a href="/studio/contact">tell us about your project</a>. Hosting, maintenance,
+				when you <a href="/studio/contact">tell me about your project</a>. Hosting, maintenance,
 				analytics, and future content updates can be part of that conversation too.
 			</p>
 		</div>
@@ -170,7 +170,7 @@
 			<p class="st-kicker">Proof of work</p>
 			<p class="st-body">
 				You're on it. This site — the eye, the photography side, the studio — was designed
-				and hand-built by us, end to end.
+				and hand-built by me, end to end.
 			</p>
 		</div>
 		<a href="/real-estate-photography" class="st-btn">See the photography side</a>

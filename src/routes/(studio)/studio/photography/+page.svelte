@@ -43,7 +43,7 @@
 			your marketing.
 		</p>
 		<p class="st-body">
-			Planning a new site alongside the shoot? Our
+			Planning a new site alongside the shoot? My
 			<a href="/studio/web-design" class="website-link">custom web design service</a>
 			can bring the imagery and page layouts together.
 		</p>
